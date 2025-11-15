@@ -313,12 +313,12 @@
                      "tome:type": 0,
                      "tome:type_2": 4
                    },
-	          	     "run_command": {
-              			"command": [
-              			   "replaceitem entity @s slot.weapon.mainhand 0 bucket 0"
-              			 ],
-              			 "target": "other"
-              		 }
+                             "run_command": {
+                                "command": [
+                                   "item replace entity @s slot.weapon.mainhand 0 with bucket 1 0"
+                                 ],
+                                 "target": "other"
+                         }
                  },
                  {
                    "condition": "query.block_property('tome:type') == 3 && query.block_property('tome:good') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'fermented_spider_eye'",
