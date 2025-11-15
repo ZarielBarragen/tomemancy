@@ -1,0 +1,140 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+		"controller.animation.collide": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"active": "query.skin_id == 1"
+						},
+						{
+							"active_2": "query.skin_id == 2"
+						},
+						{
+							"active_3": "query.skin_id == 3"
+						},
+						{
+							"active_4": "query.skin_id == 4"
+						},
+						{
+							"active_5": "query.skin_id == 5"
+						},
+						{
+							"active_6": "query.skin_id == 6"
+						},
+						{
+							"active_7": "query.skin_id == 7"
+						},
+						{
+							"active_8": "query.skin_id == 8"
+						},
+						{
+							"active_9": "query.skin_id == 9"
+						},
+						{
+							"active_10": "query.skin_id == 10"
+						},
+						{
+							"active_11": "query.skin_id == 11"
+						},
+						{
+							"active_12": "query.skin_id == 12"
+						},
+						{
+							"active_13": "query.skin_id == 13"
+						},
+						{
+							"active_14": "query.skin_id == 14"
+						},
+						{
+							"active_15": "query.skin_id == 15"
+						},
+						{
+							"active_16": "query.skin_id == 16"
+						}
+					]
+				},
+				"active": {
+					"on_entry": ["/particle tome:lunar_burst ~ ~ ~", "/kill @s"]
+				},
+				"active_2": {
+					"on_entry": ["/particle tome:hex_burst ~ ~ ~", "/kill @s"]
+				},
+				"active_3": {
+					"on_entry": ["/particle tome:tele_burst ~ ~ ~", "/kill @s"]
+				},
+				"active_4": {
+					"on_entry": ["/particle tome:hex_burst ~ ~ ~", "/kill @s"]
+				},
+				"active_5": {
+					"on_entry": ["/particle tome:hex_burst ~ ~ ~", "/execute as @e[r=3] run tag @s add decay", "/kill @s"]
+				},
+				"active_6": {
+					"on_entry": [
+					  "/particle tome:frost_burst ~ ~ ~", 
+					  "/effect @e[r=2] slowness 30 1 false",
+					  "/effect @e[r=2] mining_fatigue 30 0 false",
+					  "/fill ~-1 ~-1 ~1 ~1 ~1 ~-1 tome:mystic_ice 0 replace double_plant",
+					  "/fill ~-1 ~-1 ~1 ~1 ~1 ~-1 tome:mystic_ice 0 replace grass",
+					  "/fill ~-1 ~-1 ~1 ~1 ~1 ~-1 tome:mystic_ice 0 replace red_flower",
+					  "/fill ~-1 ~-1 ~1 ~1 ~1 ~-1 tome:mystic_ice 0 replace yellow_flower",
+					  "/fill ~-1 ~-1 ~1 ~1 ~1 ~-1 tome:mystic_ice 0 replace air",
+					  "/kill @s"
+					  ]
+				},
+				"active_7": {
+					"on_entry": ["/particle tome:blood_burst ~ ~ ~", "/kill @s"]
+				},
+				"active_8": {
+					"on_entry": ["/particle tome:color_burst ~ ~ ~", "/effect @e[r=3] blindness 20 0 true", "/kill @s"]
+				},
+				"active_9": {
+					"on_entry": ["/particle tome:hex_burst ~ ~ ~", "/execute as @e[r=3] run tag @s add creeper_cursed", "/kill @s"]
+				},
+				"active_10": {
+					"on_entry": ["/particle tome:necro_burst ~ ~ ~", "/kill @s"]
+				},
+				"active_11": {
+					"on_entry": ["/particle tome:hex_burst ~ ~ ~", "/execute as @e[r=3] run tag @s add health_cursed", "/kill @s"]
+				},
+				"active_12": {
+					"on_entry": [
+					  "/particle tome:necro_burst ~ ~ ~", 
+					  "/effect @e[r=2] nausea 25 2 false", 
+					  "/effect @e[r=2] mining_fatigue 25 1 false", 
+					  "/kill @s"
+					  ]
+				},
+				"active_13": {
+					"on_entry": [
+					  "/particle tome:heart_burst ~ ~ ~",
+					  "/effect @e[r=3] weakness 45 8 true",
+					  "/effect @e[r=3] slowness 45 1 true",
+					  "/kill @s"
+					  ]
+				},
+				"active_14": {
+					"on_entry": [
+					  "/camerashake add @a[r=6] 4 2 positional",
+					  "@s minecraft:explode"
+					  ]
+				},
+				"active_15": {
+					"on_entry": [
+					  "/particle tome:water_splash ~~~",
+					  "/execute as @e[r=3] run scoreboard players set @s drown 1",
+					  "/kill @s"
+					]
+				},
+				"active_16": {
+					"on_entry": [
+					  "/particle tome:frost_burst ~~~",
+					  "/execute as @e[r=3] run scoreboard players set @s freezing 1",
+					  "/kill @s"
+					]
+				}
+			}
+		}
+  }
+}

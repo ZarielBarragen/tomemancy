@@ -1,0 +1,662 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:crossbow"
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 2,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "item",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 3,
+                "max": 5
+              }
+            }
+          ],
+          "name": "minecraft:wheat"
+        },
+        {
+          "type": "item",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 5
+              }
+            }
+          ],
+          "name": "minecraft:potato"
+        },
+        {
+          "type": "item",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 3,
+                "max": 5
+              }
+            }
+          ],
+          "name": "minecraft:carrot"
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:log2",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_data",
+              "data": 1
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 2,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "item",
+          "weight": 7,
+          "name": "minecraft:experience_bottle"
+        },
+        {
+          "type": "item",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 6
+              }
+            }
+          ],
+          "name": "minecraft:string"
+        },
+        {
+          "type": "item",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 7
+              }
+            }
+          ],
+          "name": "minecraft:arrow"
+        },
+        {
+          "type": "item",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "name": "minecraft:tripwire_hook"
+        },
+        {
+          "type": "item",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "name": "minecraft:iron_ingot"
+        },
+        {
+          "type": "item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
+          "name": "minecraft:book"
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "tome:air_cushion",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:lightning_bolt",
+          "weight": 95,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:downpour",
+          "weight": 90,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:electric_blitz",
+          "weight": 80,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:lightning_fangs",
+          "weight": 75,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:levitate",
+          "weight": 65,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:hoist",
+          "weight": 60,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:lightning_carnage",
+          "weight": 60,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:boost",
+          "weight": 90,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:float",
+          "weight": 70,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:gigavolt",
+          "weight": 40,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:lightning_storm",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "empty",
+          "weight": 110
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "tome:air_cushion_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ],
+          "weight": 120
+        },
+        {
+          "type": "item",
+          "name": "tome:lightning_bolt_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 120
+        },
+        {
+          "type": "item",
+          "name": "tome:downpour_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 120
+        },
+        {
+          "type": "item",
+          "name": "tome:boost_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 6
+              }
+            }
+          ],
+          "weight": 80
+        },
+        {
+          "type": "item",
+          "name": "tome:electric_blitz_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 6
+              }
+            }
+          ],
+          "weight": 80
+        },
+        {
+          "type": "item",
+          "name": "tome:lightning_fangs_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 6
+              }
+            }
+          ],
+          "weight": 80
+        },
+        {
+          "type": "item",
+          "name": "tome:hoist_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "tome:levitate_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "tome:lightning_carnage_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 4
+              }
+            }
+          ],
+          "weight": 35
+        },
+        {
+          "type": "item",
+          "name": "tome:gigavolt_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "tome:wind_page",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+
+                "§7§kMysticalum Aeloum Finite§r"
+              ]
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "empty",
+          "weight": 35
+        }
+      ]
+    },
+      {
+        "rolls": {
+          "min": 0,
+          "max": 2
+        },
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:written_book",
+            "weight": 10,
+            "functions": [
+              {
+                "function": "set_book_contents",
+                "author": "Eugine C.",
+                "title": "Blood #5",
+                "pages": [
+                  "{\"rawtext\":[ {\"translate\":\"sigil.five1\", \"with\":[\"\n\"]}]}"
+                ]
+              },
+              {
+                "function": "set_name",
+                "name": "§r§fSigil of Levitation"
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "name": "minecraft:written_book",
+            "weight": 10,
+            "functions": [
+              {
+                "function": "set_book_contents",
+                "author": "Simon E.",
+                "title": "Blood #6",
+                "pages": [
+                  "{\"rawtext\":[ {\"translate\":\"sigil.six1\", \"with\":[\"\n\"]}]}"
+                ]
+              },
+              {
+                "function": "set_name",
+                "name": "§r§fSigil of the Rod"
+              }
+            ]
+          },
+          {
+            "type": "empty",
+            "weight": 20
+          }
+        ]
+      }
+  ]
+}

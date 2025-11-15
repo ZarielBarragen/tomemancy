@@ -1,0 +1,83 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "tome:all_page",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.pages"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:foil": true,
+      "minecraft:hand_equipped": false,
+      "minecraft:icon":{
+         "texture":"all_page"
+      },
+      "minecraft:display_name":{
+         "value":"Page of Unbridled Magic"
+      },
+
+      "minecraft:can_destroy_in_creative": false,
+         "minecraft:on_use":{
+            "on_use":{
+               "event":"choose"
+            }
+         }
+      },
+      "events":{
+         "choose":{
+            "sequence": [
+            {
+              "condition": "query.scoreboard('fire') != 1 || query.scoreboard('water') != 1 || query.scoreboard('plant') != 1 || query.scoreboard('wind') != 1 || query.scoreboard('curse') != 1 || query.scoreboard('undead') != 1 || query.scoreboard('light') != 1 || query.scoreboard('mystic') != 1",
+              "randomize": [
+                {
+                  "weight": 50,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                      "scoreboard players set @s fire 1",
+                      "scoreboard players set @s water 1",
+                      "scoreboard players set @s plant 1",
+                      "scoreboard players set @s wind 1",
+                      "scoreboard players set @s curse 1",
+                      "scoreboard players set @s light 1",
+                      "scoreboard players set @s mystic 1",
+                      "scoreboard players set @s undead 1",
+                      "tellraw @s {\"rawtext\":[{\"text\":\"You now have the knowledge of Magic. All Tomes, regardless of Element, are now available.§r\"}]}"
+                    ],
+                    "target": "holder"
+                  },
+                  "decrement_stack": {}
+                },
+                {
+                  "weight": 50,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                      "tellraw @s {\"rawtext\":[{\"text\":\"The knowledge stored in this Page is too profound for you to understand. You gain nothing from trying to read it.§r\"}]}"
+                    ],
+                    "target": "holder"
+                  },
+                  "decrement_stack": {}
+                }
+              ]
+             },
+              {
+                 "condition": "query.scoreboard('fire') == 1 && query.scoreboard('water') == 1 && query.scoreboard('plant') == 1 && query.scoreboard('wind') == 1 && query.scoreboard('curse') == 1 && query.scoreboard('undead') == 1 && query.scoreboard('light') == 1 && query.scoreboard('mystic') == 1",
+                 "run_command": {
+                   "command": [
+                     "tellraw @s {\"rawtext\":[{\"text\":\"You already have the full knowledge of Tomemancy. All Pages are now useless to you.§r\"}]}"
+                     ],
+                   "target": "holder"
+                 }
+              }
+            ]
+         }
+      }
+   }
+}

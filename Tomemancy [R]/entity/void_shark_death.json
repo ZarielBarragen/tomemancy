@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tome:void_shark_death",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "default": "textures/entity/void_shark/void_shark"
+      },
+      "geometry": {
+        "default": "geometry.void_shark"
+      },
+      "animations": {
+        "death": "animation.void_shark.death"
+      },
+      "scripts": {
+        "animate": [
+          { "death": "!q.is_alive" }
+        ]
+      },
+      "render_controllers": [ "controller.render.void_shark" ]
+    }
+  }
+}

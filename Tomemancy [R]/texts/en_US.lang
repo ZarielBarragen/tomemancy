@@ -1,0 +1,520 @@
+tile.tome:barrier_block.name=Barrier
+tile.tome:candlelight.name=Candle Light
+tile.tome:light.name=Light
+tile.tome:magic_magma.name=Magma
+tile.tome:mystic_dirt.name=Magical Dirt
+tile.tome:mystic_ice.name=Magical Ice
+tile.tome:blood_sigil.name=Blood Sigil
+tile.tome:tome_table.name=Tome Table
+entity.tome:wizard.name=Wizard Merchant
+entity.tome:spawn_wizard.name=Wizard Merchant
+entity.tome:void_shark.name=Void Shark
+
+
+item.spawn_egg.entity.tome:wizard.name=Spawn Wizard Merchant
+item.spawn_egg.entity.tome:void_shark.name=Spawn Void Shark
+
+
+entity.tome:zombie_minion.name=Zombie Minion
+entity.tome:skeleton_minion.name=Skeleton Minion
+entity.tome:skeleton_swordsman.name=Skeleton Swordsman Minion
+entity.tome:small_spider.name=Small Cave Spider
+
+magical.table.name=Scroll Table
+action.interact.wizard.enchant=Enchant
+
+
+
+##Text Tingz
+
+page.blank=§r
+
+guide.page.topic_0=%1%1%1%1%1%1<History of the Tomes>
+
+guide.page.one=In the olden days, there was once a clan of creatures known as The Wizards. They weren't particularly human, no matter their features, because of one thing. They could wield magic naturally, which is one thing no human could do.
+
+guide.page.two=Wizards were seen as powerful, mainly because they could perform all sorts of spells. These spells differed slightly from the Evoker's, which were bordered mainly on summoning. Wizards, depending on their personal preference could cast all sorts of spells,
+
+guide.page.three=slapping their enemies off the battlefield. They could burn, wither, poison, curse, and blast their foes with a variety of elements. They were the ones who created the Tomes, so it was only natural that they could cast the spells they hold.
+
+guide.page.four=It is said that the first Mage was a friend of the Wizards. After building a good enough relationship, they realized that they both had things they wanted but couldn't get but the other could provide almost easily. This led to the human
+
+guide.page.five=suggesting that they, the Wizards, teach the humans magic and the humans would acquire these things they desired. After some deliberation, the Wizards agreed.
+
+guide.page.topic_1=%1%1%1%1%1%1<The Tomes>
+
+guide.page2.one=The Wizards tried teaching the humans their ways, but there was a small problem. Humans could not naturally use magic. Humans §ocould§r create Enchantments, yes, but that required their hard-earned experience and counted as a sacrifice.
+
+guide.page2.two=So the Wizards came up with a solution: "Why not imbue books with our Spells, similar to the way Humans do it to create Enchantments?" And it did work. The humans found that they could use the spells through the books, which were called §oTomes§r.
+
+guide.page2.three=The Wizards dubbed this art §oTomemancy§r, the art of Tomes. They also called the humans who practiced it, §oTomemancers§r or just §oMages§r. The Wizards put a small drawback on the Tomes, however. Only Mages of that Tome's experience
+
+guide.page2.four=requirement could use it. For more information on this, check the book, §3Tomemancy 101§r. %1More or less, the human Mages traded emeralds and resources with the Wizards and they, in return, traded Tomes. A very fair trade in both of their eyes.
+
+guide.page.topic_2=%1%1%1%1%1%1<The Great Hiding>
+
+guide.page3.one=Now, the Wizards had one major enemy. The Illagers. Reading through ancient texts reveal that other factions disliked them but none like the Wizards.%1The Illagers were crazed villagers, that massacred the innocent Villagers by inhuman means
+
+guide.page3.two=which severely disgusted the Wizards, who were mostly peace-loving and even the most evil of them would never kill Villagers, much less massacre them, so whenever they crossed paths, it immediately spelled a fight.
+
+guide.page3.three=Eventually the Wizards got tired of this and one night, the Wizard population plummeted, leaving only empty houses behind. The Illagers took to calling this the "Great Hiding", in an attempt to insult the Wizards.
+
+guide.page3.four=The Mages had learned that by retracing the enchanted scripts with fresh §3Ink Sacs§r, they would be recharged, as well as by using §dAmethysts§r but retracing and charging tomemantic script was one thing. §oCreating§r it was another.
+
+guide.page3.five=This meant that Mages could repair their Tomes, but could not produce them, which led to all sorts of fights over who should get the remaining Tomes of Magic. This ended quite rapidly when a Wizard came to barter.
+
+guide.page3.six=The Wizard explained that his kin had moved on elsewhere, but they were still willing to trade if the humans were to find them roaming about. This made the humans ecstatic and now it is as it is now,
+
+guide.page3.seven=with Wizards appearing in strange and mundane places alike with trades.%1%1The system is quite similar to Wandering Traders actually, so whenever you meet a Wizard on your travels, make sure to bring a fair amount of emeralds.
+
+guide.page.topic_3=%1%1%1%1%1%1<Tomecrafting>
+
+guide.page4.one=After the Wizards came back, the Mages pleaded with them to teach them how to make Tomes. The Wizards refused at first because, if the Mages knew how to create Tomes, they would no longer require the service of their kind.
+
+guide.page4.two=They changed their minds after a while though reasoning that, if they did show the Mages a thing or two, their trust in them would increase. So the Wizards tried teaching the Mages how to create them.
+
+guide.page4.three=The Wizards guided the Mages in making their Tomes but they could only be created with Scrolls, which were in turn created with a widely forgotten technique by the Mages. The art was forgotten because of the sheer spontaneity
+
+guide.page4.four=of the mostly failed Tome duplicates. More information can be found in the book, §oScrolls: Magical Lifesavers or Killers?§r. The Mages dubbed the mystical table that helped them the §dTome Table§r. This table could create almost
+
+guide.page4.five=all Tomes, only excluding Tomes with no Scroll variant.
+
+ 
+guide.page.acknowledge=%1%1§lAcknowledgements:§r%1§8The Gibberish One§r for his absolutely amazing models and textures and §6Cybergoth Foundation§r, §2Ivy§r and §4Sumra§r for keeping me motivated throughout this project. Also a big thanks to all you guys who downloaded!
+
+
+##Scrolls: Magical Lifesavers or Killers?
+
+scrolls.page1= Over the centuries, Mages have been incorporating Scrolls into their Arcane craft. You can do this too but if you are new to the world of Scrolls, you may want to take a seat and read first. This book aims to help you decide whether
+
+scrolls.page2=Scrolls are really worth the trouble of finding or crafting.
+
+scrolls.page3=[(Dangerous?)]%1%1 What most Scroll users won't tell you about is how exceedingly dangerous Scrolls are. Tomes were crafted will delicate finesse by the wizards. Scrolls were crafted by Mages with
+
+scrolls.page4=the same finesse. Only 1 thing was different. Wizards have inherent Magic. Mages do not. This lack of magic prevented Mages from crafting Tomes(and Scrolls) alike. The Scroll Table was the workspace used to craft Scrolls. It used
+
+scrolls.page5=the Ambient Magic of the world, allowing for the magicless Mage to shape this borrowed Magic into what was needed to complete the Scroll. What you §odon't§r know is that harnessed Ambient Magic is highly unstable and even volatile, in some cases.
+
+scrolls.page6=This causes a phenomenon in Scrolls called "magical backfiring". These backfires can be anywhere from poisoning yourself a bit to outright killing yourself. The severity of the backfire only increases
+
+scrolls.page7=with the tier Scroll that is used. So don't be jumping for joy so much if you are to come across some high Tiered Scroll. It may be the last thing you do...
+
+scrolls.page8=[(Reliable?)]%1%1 Scrolls are stackable(to a maximum of 16) as they can only be used once. This may seem like a very bad trade off from Tomes, which have 400 uses before they crumble to dust, but Scrolls have an
+
+scrolls.page9=advantage Tomes will never have. You do not need to be at a specific level to use Scrolls. As long as the caster is at the Tier required, the Scroll can be cast(whether to kill you or help you, no one knows).
+
+scrolls.page10=[(Crafting)]%1%1 Crafting Scrolls is quite impossible in this age. The reason is because anytime a Mage has tried, they are mysteriously erased from the world. The reason for this is still unknown but researchers have warned against attempting the process.
+
+scrolls.page11=They can still be found in Towers and other magical locations. These Scrolls were made by earlier Mages. How? This is also unknown.
+
+
+##Tomepedia
+
+
+tome.page.topic=%1%1%1%1%1%1[Basic SpellTomes]
+
+
+tome.page.two=[§2§lAbsorb§r§r]%1%1Element: §2Ecomancy§r%1%1Lvl Required: 2%1%1§oAbsorbs the natural energy of the land beneath your feet. Grants Absorption II.§r%1%1Criteria: §c§oMust be standing on grass*§r§r
+
+tome.page.three=[§d§lAcceleration§r§r]%1%1Element: §dMystomancy§r%1%1Lvl Required: 3%1%1§oYour speed and jump height increases sharply for 25 seconds. Grants Speed II and Jump Boost II§r
+
+tome.page.four=[§7§lAir Cushion§r§r]%1%1Element: §7Atmomancy§r%1%1Lvl Required: 8%1%1§oThe caster enchants themself to float to the floor if falling from high enough.§r%1%1Criteria: §c§oMust be in the air to see the effects*§r§r
+
+tome.page.five=[§2§lBoulder Shot§r§r]%1%1Element: §2Ecomancy§r%1%1Lvl Required: 12%1%1The caster conjures boulders that are hurled at the target and deal damage. The higher the tier, the harder the material and the more damage it deals.§r
+
+tome.page.five.two=[§c§lCauterize§r§r]%1%1Element: §cPyromancy§r%1%1Lvl Required: 7%1%1§oA spell that burns the caster's wounds closed. It does 4 DMG before granting Regeneration II.§r
+
+tome.page.five.three=[§c§lCombust§r§r]%1%1Element: §cPyromancy§r%1%1Lvl Required: 9%1%1§oAllows the caster to conjure a mild explosion out of seemingly nowhere, damaging the mobs caught in it.§r
+
+tome.page.five.four=[§d§lConceal§r§r]%1%1Element: §dMystomancy§r%1%1Lvl Required: 7%1%1§oConceals the caster from sight for a short period of time. This spell is very basic in what it does and some even argue that it is better to use a potion.§r
+
+tome.page.six=[§l§8Curse Bolt§r§r]%1%1Element: §8Fulmamancy§r%1%1Lvl Required: 3%1%1§oA bolt of Fulmamantic energy is cast at the target. On collision, the entity is randomly hexed with a status effect for 10 seconds.§r
+
+tome.page.six.two=[§l§dDisplace§r§r]%1%1Element: §dMystomancy§r%1%1Lvl Required: 6%1%1§oThe caster disrupts space around them for short periods of time, allowing them to randomly shift their position anywhere in a 4×4 area.§r
+
+tome.page.six.three=[§l§1Douse§r§r]%1%1Element: §1Hydromancy§r%1%1Lvl Required: 1%1%1§oConjures water to douse you. Great for getting rid of firey accidents.§r
+
+tome.page.six.four=[§l§7Downpour§r§r]%1%1Element: §7Atmomancy§r%1%1Lvl Required: 7%1%1§oSummons a 30 second rain storm. Great for dousing large fires.§r
+
+tome.page.six.five=[§l§2Druidic Missile§r§r]%1%1Element: §2Ecomancy§r%1%1Lvl Required: 6%1%1§oThe energy of nature itself coagulates in the caster's palm before being lobbed at whatever poor creature is their target. Deals§r
+
+tome.page.seven=[§l§2Foliage Dome§r§r]%1%1Element: §2Ecomancy§r%1%1Lvl Required: 4%1%1§oA dome of leaves erupt around the caster's form, protecting them...well as much as leaves can protect.§r
+
+tome.page.seven.two=[§l§2Ground§r§r]%1%1Element: §2Ecomancy§r%1%1Lvl Required: 2%1%1§oThe caster lets everything weighing them down into the earth, nourishing any dirt around. This releasing grants them Speed II.§r
+
+tome.page.eight=[§l§6Heal§r§r]%1%1Element: §6Lumomancy§r%1%1Lvl Required: 5%1%1§oHeals.§r
+
+tome.page.nine=[§l§cIgnite§r§r]%1%1Element: §cPyromancy§r%1%1Lvl Required: 1%1%1§oIgnites the area the spell hits.§r
+
+tome.page.ten=[§l§6Light§r§r]%1%1Element: §6Lumomancy§r%1%1Lvl Required: 0%1%1§oConjures a flame wisp to light up an area. Interacting with it puts it out.§r
+
+tome.page.eleven=[§l§6Lightning Bolt§r§r]%1%1Element: §7Atmomancy§r%1%1Lvl Required: 12%1%1§oConjures a bolt of lightning that strikes exactly 6 blocks in front of the point of cast.§r
+
+tome.page.eleven.two=[§l§3Prestigidation§r§r]%1%1Element: None%1%1Lvl Required: 0%1%1§oA Tome that allows the caster to practice their magic, without harming anything or anyone. The magical effect conjured depends heavily on the Pages the Mage has learned.§r
+
+tome.page.eleven.three=[§l§dMagnetize§r§r]%1%1Element: §dMystomancy§r%1%1Lvl Required: 10%1%1§oItems around the caster are magnetized towards them, going into their inventory. Great for collecting all that excess loot.§r
+
+tome.page.twelve=[§l§dResistance§r§r]%1%1Element: §dMystomancy§r%1%1Lvl Required: 10%1%1§oMagically reinforces the caster, making them harder to kill. Grants Resistance I.§r
+
+tome.page.thirteen=[§l§5Summon Skeleton§r§r]%1%1Element: §5Necromancy§r%1%1Lvl Required: 14%1%1§oSummons a skeleton that is the caster's to command. They dissipate after 60 seconds.§r
+
+tome.page.fourteen=[§l§5Summon Zombie§r§r]%1%1Element: §5Necromancy§r%1%1Lvl Required: 14%1%1§oSummons a zombie that is the caster's to command. They dissipate after 60 seconds.§r
+
+tome.page.fifteen=[§l§2Toxic Bullet§r§r]%1%1Element: §2Ecomancy§r%1%1Lvl Required: 3%1%1§oA ball of toxin shoots at the target, having a 75% chance of inflicting Poison I. DMG:/.§r
+
+tome.page.sixteen=[§l§2Tunnel§r§r]%1%1Element: §2Ecomancy§r%1%1Lvl Required: 7%1%1§oRemoves dirt, stone and stone-like material (ores, etc) in a 3x3x1 area of wherever the caster is looking. The higher Tier the caster is, the more materials can be tunneled through.§r
+
+tome.page.seventeen=[§l§2Wall§r§r]%1%1Element: §2Ecomancy§r%1%1Lvl Required: 11%1%1§oA wall of earth erupts directly in front of the caster, in any direction they face.§r
+
+tome.page.eighteen=[§l§1Water Ball§r§r]%1%1Element: §1Hydromancy§r%1%1Lvl Required: 8%1%1§oA ball of pressurized water is shot at high speeds towards the victim. DMG: .§r
+
+tome.page.nineteen=[§l§2Web§r§r]%1%1Element: §2Ecomancy§r%1%1Lvl Required: 13%1%1§oWebs form in a wall directly in front of the caster in any direction they face. Useful for slowing down mobs (besides arachnids).§r
+
+
+
+tome.page.topic.two=%1%1%1%1%1%1[Apprentice SpellTomes]
+
+tome.chapter_two.page.one=[§d§lAegis§r§r]%1%1Element: §dMystomancy§r%1%1Lvl Required: 17%1%1§oA purple aura forms around the caster, giving some protection from harm. It, however, overrides armor.§r§r
+
+tome.chapter_two.page.two=[§d§lBlink§r§r]%1%1Element: §dMystomancy§r%1%1Lvl Required: 27%1%1§oThe caster manipulates time and space and sends themself 7 blocks forward instantly as long as there is enough space.§r§r
+
+tome.chapter_two.page.three=[§7§lBoost§r§r]%1%1Element: §7Atmomancy§r%1%1Lvl Required: 16%1%1§oA gust of air pushes the caster from behind, sending them forward at high speeds.§r§r
+
+tome.chapter_two.page.four=[§l§cCandle§r§l§6light§r§r]%1%1Element: §cPyromancy§r/§6Lumomancy§r%1%1Lvl Required: 16%1%1§oA small ball of fire forms overhead, lighting the path ahead for the Apprentice mage.§r§r
+
+tome.chapter_two.page.four.one=[§l§6Charm§r§r]%1%1Element: §6Lumomancy§r%1%1Lvl Required: 16%1%1§oAs a pacifist Tome, this Tome fires off a heart that Charms its victim, slowing them down and Weakening their attacks severely.§r§r
+
+tome.chapter_two.page.four.two=[§l§6Dispel§r§r]%1%1Element: §6Lumomancy§r%1%1Lvl Required: 18%1%1§oThe victim of this Tome is cleared of all effects, good or bad. Sneak Casting this spell clears the caster of all effects.§r§r
+
+tome.chapter_two.page.five=[§l§2Summon Spiders§r§r]%1%1Element: §2Ecomancy§r%1%1Lvl Required: 26%1%1§oSummons 3 small, poisonous spiders that fight at your command.§r§r
+
+tome.chapter_two.page.five.two=[§l§6Electric Blitz§r§r]%1%1Element: §7Atmomancy§r%1%1Lvl Required: 18%1%1§oThe caster gains the ability to move at incredible speeds, for the small price of getting struck by lightning.§r§r
+
+tome.chapter_two.page.five.three=[§l§5Enfeeble§r§r]%1%1Element: §5Necromancy§r%1%1Lvl Required: 18%1%1§oNecrotic energy seeps into the victim, causing them to become nauseous and weak.§r§r
+
+tome.chapter_two.page.five.four=[§l§6False Life§r§r]%1%1Element: §6Lumomancy§r%1%1Lvl Required: 26%1%1§oFor 2:30, the caster gains 10 extra hearts. Though temporary, these hearts will act as their own until the spell's duration is up.§r§r
+
+tome.chapter_two.page.five.five=[§l§8Fang Orchestra§r§r]%1%1Element: §8Fulmamancy§r%1%1Lvl Required: 22%1%1§oEvocation Fangs sprout from the ground, clamping on whatever it catches in its maw. Sneaking summons them around the caster. A spell directly copied from the Pillagers.§r
+
+tome.chapter_two.page.six=[§l§2Fatal Poison§r§r]%1%1Element: §2Ecomancy§r%1%1Lvl Required: 22%1%1§oSynthesizes a ball of poisonous energy that was made to kill by inflicting Fatal Poison I. Impact DMG: §r§r
+
+tome.chapter_two.page.seven=[§l§cFire Bolt§r§r]%1%1Element: §cPyromancy§r%1%1Lvl Required: 21%1%1§oA bolt of flame is fired, dealing damage and setting the victim on fire. Also sets blocks on fire.§r§r
+
+tome.chapter_two.page.eight=[§l§cFire Burst§r§r]%1%1Element: §cPyromancy§r%1%1Lvl Required: 23%1%1§oFire spouts from beneath the mage's feet, sending them a good distance into the air.§r§r
+
+tome.chapter_two.page.nine=[§l§cFire Spray§r§r]%1%1Element: §cPyromancy§r%1%1Lvl Required: 26%1%1§oSmall fireballs are shot out in a spray, setting whatever they hit on fire.§r§r
+
+tome.chapter_two.page.ten=[§l§cFireball§r§r]%1%1Element: §cPyromancy§r%1%1Lvl Required: 25%1%1§oA ball of fire of intense heat is compressed and shot forward, triggering a firey explosion on hit. At level 21, this fireball becomes stronger.§r
+
+tome.chapter_two.page.eleven=[§l§7Float§r§r]%1%1Element: §7Atmomancy§r%1%1Lvl Required: 28%1%1§oThe air beneath the caster's feet rises in an upward motion, carrying them with it. Can be used in quick succession but doing so is not advised.§r
+
+tome.chapter_two.page.twelve=[§l§1Frost Dome§r§r]%1%1Element: §1Hydromancy§r%1%1Lvl Required: 25%1%1§oThe water in the air crystallizes into ice, forming a dome around the mage. After ~45 seconds, the ice melts back into water.§r§r
+
+tome.chapter_two.page.fourteen=[§l§6Heal Other§r§r]%1%1Element: §6Lumomancy§r%1%1Lvl Required: 18%1%1§oHeals whatever it hits by. Undead mobs get damaged by.§r§r
+
+tome.chapter_two.page.fifteen=[§l§2Leaf Prison§r§r]%1%1Element: §2Ecomancy§r%1%1Lvl Required: 20%1%1§oTraps the victim in a 3x3 area of leaves.§r§r
+
+tome.chapter_two.page.sixteen=[§l§6Light Ball§r§r]%1%1Element: §6Lumomancy§r%1%1Lvl Required: 21%1%1§oA ball of damaging light. DMG:§r§r
+
+tome.chapter_two.page.sixteen.two=[§l§6Lightning Fangs§r§r]%1%1Element: §7Atmomancy§r%1%1Lvl Required: 22%1%1§oLightning comes down in a perfect line in front of the caster, striking anything in its path. Sneaking casts the spell in a circle around them.§r
+
+tome.chapter_two.page.sixteen.three=[§l§5Necro Ball§r§r]%1%1Element: §5Necromancy§r%1%1Lvl Required: 26%1%1§oA ball of necrotic energy that inflicts Instant Damage I.§r§r
+
+tome.chapter_two.page.seventeen=[§l§1Piercing Water§r§r]%1%1Element: §1Hydromancy§r%1%1Lvl Required: 26%1%1§oWater is shot at the target with such pressure that it pierces through blocks and mobs. DMG:§r§r
+
+tome.chapter_two.page.seventeen.two=[§l§1Powdered Frost§r§r]%1%1Element: §1Hydromancy§r%1%1Lvl Required: 24%1%1§oA ball of enchanted snow is sent at the foe, giving them the Freezing effect. They take 1 Frost Damage every 1 second for 15 seconds and receive Slowness 2.§r
+
+tome.chapter_two.page.eighteen=[§l§cRing of Fire§r§r]%1%1Element: §cPyromancy§r%1%1Lvl Required: 22%1%1§oFire is conjured around the caster in a circle, burning whatever comes close.§r§r
+
+tome.chapter_two.page.nineteen=[§l§2Sand Blast§r§r]%1%1Element: §2Ecomancy§r%1%1Lvl Required: 19%1%1§oSand is formed into a ball and shot forward, doing no damage but blinding and slowing down the victims caught in its AOE.§r§r
+
+tome.chapter_two.page.twenty=[§l§5Summon Skeleton Steed§r§r]%1%1Element: §5Necromancy§r%1%1Lvl Required: 28%1%1§oA one-time use Tome. Conjures a harmless skeleton horse to be used as a steed.§r§r
+
+tome.chapter_two.page.twenty_one=[§l§5Summon Skeleton Legion§r§r]%1%1Element: §5Necromancy§r%1%1Lvl Required: 29%1%1§oConjures a group of skeletons who attack at your command.§r§r
+
+tome.chapter_two.page.twenty_two=[§l§2Slime Ball§r§r]%1%1Element: §2Ecomancy§r%1%1Lvl Required: 21%1%1§oFires a ball of sticky slime. Does no damage but it slows down the target considerably.§r§r
+
+tome.chapter_two.page.twenty_two.two=[§l§2Stalactite Fall§r§r]%1%1Element: §2Ecomancy§r%1%1Lvl Required: 29%1%1§oPointed Dripstone is conjured in a line, moving away from the PoC (Point of Cast) and in the direction the caster is looking.§r§r
+
+tome.chapter_two.page.twenty_three=[§l§1Summon Snow Golem§r§r]%1%1Element: §1Hydromancy§r%1%1Lvl Required: 17%1%1§oSummons a snow golem. It functions exactly like a snow golem because it is just a snow golem.§r§r
+
+tome.chapter_two.page.twenty_four=[§l§dVanish§r§r]%1%1Element: §dMystomancy§r%1%1Lvl Required: 26%1%1§oThe mage teleports a small distance away from the point of cast, vanishing from sight for 10 seconds.§r§r
+
+tome.chapter_two.page.twenty_four.two=[§l§dVigor§r§r]%1%1Element: §6Lumomancy§r%1%1Lvl Required: 17%1%1§oThe caster becomes invigorated, healing their wounds at unnatural speeds and giving them a strength boost.§r§r
+
+tome.chapter_two.page.twenty_five=[§l§1Water Blast§r§r]%1%1Element: §1Hydromancy§r%1%1Lvl Required: 24%1%1§oThis Tome fires off a powerful blast of water that even blasts mobs back. DMG: §r§r
+
+tome.chapter_two.page.twenty_five.two=[§l§1Water of Life§r§r]%1%1Element: §1Hydromancy§r%1%1Lvl Required: 22%1%1§oThis Tome heals the caster if they are in water.§r§r
+
+tome.chapter_two.page.twenty_six=[§l§1Water Ward§r§r]%1%1Element: §1Hydromancy§r%1%1Lvl Required: 17%1%1§oThe Mage enchants themself, giving them Resistance and the ability to swim faster and breathe normally in the deep blue of the ocean.§r
+
+
+
+
+##Tomepedia 2
+
+tome2.page.one=If you are reading this book, that means you have come to learn more about the Spells of the Tomes. As the §oBasic Tomepedia§r covered all of the Basic and Apprentice Tomes, we shall be looking at the Acolyte and Advanced Tomes.
+
+tome2.chapter_one.topic=%1%1%1%1%1%1[Acolyte SpellTomes]
+
+
+
+tome2.page.three=[§l§1Blizzard§r§r]%1%1Element: §1Hydromancy§r%1%1Lvl Required: 33%1%1§oA blizzard is magically summoned, slowing and damaging all trapped within it.§r
+
+tome2.page.four=[§l§8Blight Curse§r§r]%1%1Element: §8Fulmamancy§r%1%1Lvl Required: 35%1%1§oThe victim of this Tome falls ill to a contagious disease, gaining Wither I for 25 seconds. Any creature in a 3x3 area of them becomes infected.§r
+
+tome2.page.five=[§l§6Cleanse§r§r]%1%1Element: §6Lumomancy§r%1%1Lvl Required: 32%1%1§oRids the caster of any negative effect, keeping positive effects. Can also remove Curses.§r
+
+tome2.page.six=[§l§cFire Ward§r§r]%1%1Element: §cPyromancy§r%1%1Lvl Required: 34%1%1§oThe caster is coated in a cloak of flames that burns monsters if they come too close to them.§r
+
+tome2.page.seven=[§l§1Frost Blast§r§r]%1%1Element: §1Hydromancy§r%1%1Lvl Required: 37%1%1§oA ball of frost is shot at the target. On hit, it bursts into pure cold energy, freezing anything caught in it. Even the very air freezes. Can also be used to freeze water.§r
+
+tome2.page.eight=[§l§6Greater Heal§r§r]%1%1Element: §6Lumomancy§r%1%1Lvl Required: 36%1%1§oThe Acolyte casts [§6Greater Heal§r§o], instantly healing themself by§r
+
+tome2.page.nine=[§l§6Group Heal§r§r]%1%1Element: §6Lumomancy§r%1%1Lvl Required: 38%1%1§oFires a ball of healing energy that heals everything in its AOE. Damages the Undead.§r
+
+tome2.page.nine.two=[§l§7Hoist§r§r]%1%1Element: §7Atmomancy§r%1%1Lvl Required: 42%1%1§oEntities in a 5x5 area around the caster are hoisted into the air, promptly falling to their deaths as the winders of gravity take hold.§r
+
+tome2.page.nine.three=[§l§8Hunger Hex§r§r]%1%1Element: §8Fulmamancy§r%1%1Lvl Required: 34%1%1§oCurses the victim to suffer a torturous hunger that lasts for 2 minutes.§r
+
+tome2.page.ten=[§l§7Levitate§r§r]%1%1Element: §7Atmomancy§r%1%1Lvl Required: 39%1%1§oThis Tome causes the mobs that it hits to levitate for a duration. It can be deadly however, as the mobs released from this effect at high altitudes are dropped unceremoniously to their deaths.§r
+
+tome2.page.eleven=[§l§6Lightning Carnage§r§r]%1%1Element: §7Atmomancy§r%1%1Lvl Required: 41%1%1§oThe clouds converge, sending down powerful bolts of lightning that strikes everything around the caster.§r
+
+tome2.page.twelve=[§l§dMetal Skin§r§r]%1%1Element: §dMystomancy§r%1%1Lvl Required: 40%1%1§oThe Acolyte's skin hardens to a hardness not unlike that of metal. However, as he tries moving, he realizes he is considerably slower than normal.§r
+
+tome2.page.twelve.two=§oThis would be a problem if he needs to run...§r
+
+tome2.page.twelve.three=[§l§6Miner's Blessing§r§r]%1%1Element: §6Lumomancy§r%1%1Lvl Required: 36%1%1§oThe caster calls for blessings from the Overworld, gaining Haste II for 1 minute.§r
+
+tome2.page.thirteen=[§l§2Poison Field§r§r]%1%1Element: §2Ecomancy§r%1%1Lvl Required: 37%1%1§oA ball of lingering poison that bursts into a large area on hit. DMG on direct hit: §r
+
+tome2.page.fourteen=[§l§2Power Sacrifice§r§r]%1%1Element: §dMystomancy§r%1%1Lvl Required: 42%1%1§oA frowned upon Tome among Mages. This Tome burns the mage's experience and turns it into health.§r
+
+tome2.page.fifteen=[§l§8Slowing Hex§r§r]%1%1Element: §8Fulmamancy§r%1%1Lvl Required: 34%1%1§oA small hex that gives the victim Slowness II, slowing them down effectively.§r
+
+tome2.page.sixteen=[§l§1Summon Snow Golem Rampage§r§r]%1%1Element: §1Hydromancy§r%1%1Lvl Required: 33%1§oSummons a small army of Snow Golems. They only attack what they perceive as monsters and do not care for your well-being if you are not being attacked by one.§r
+
+tome2.page.seventeen=[§l§dTeleport§r§r]%1%1Element: §dMystomancy§r%1%1Lvl Required: 35%1%1§oAn unequipped Acolyte runs through the Birch Forest, trying desperately to escape the monsters. He casts [§dTeleport§r§o], praying to the Old Ones that it lands somewhere safe.§r
+
+tome2.page.seventeen.two=§oAs the monsters start appearing before him to halt his escape, his surroundings instantly change. He now finds himself in a tree by a Plains filled with Sunflowers. He realizes, with relief, that he is safe.§r
+
+tome2.page.eighteen=[§l§dTime Forward§r§r]%1%1Element: §dMystomancy§r%1%1Lvl Required: 32%1%1§oTime heeds your command to move forward at an unnatural speed.§r
+
+tome2.page.nineteen=[§l§dTime Backward§r§r]%1%1Element: §dMystomancy§r%1%1Lvl Required: 32%1%1§oTime heeds your command to move unnaturally, going backwards.§r
+
+tome2.page.twenty=[§l§8Weakening Hex§r§r]%1%1Element: §8Fulmamancy§r%1%1Lvl Required: 34%1%1§oA small hex that gives the victim Weakness III, weakening them immensely.§r
+
+tome2.page.twenty_one=[§l§5Withering Hex§r§r]%1%1Element: §5Necromancy§r%1%1Lvl Required: 43%1%1§oThe victim is hexed with the Wither effect.§r
+
+tome2.page.twenty_two=[§l§5Summon Zombie Alliance§r§r]%1%1Element: §5Necromancy§r%1%1Lvl Required: 44%1%1§oSummons a small army of zombies that are the caster's to command.§r
+
+
+tome3.chapter_one.topic=%1%1%1%1%1%1[Advanced SpellTomes]
+
+tome3.page.one=[§l§2Acid Blast§r§r]%1%1Element: §2Ecomancy§r%1%1Lvl Required: 46%1%1§oA stronger version of [§2Poison Field§r§o]. The difference is it fatally poisons its victims. DMG:§r
+
+tome3.page.two=[§l§dBarrier§r§r]%1%1Element: §dMystomancy§r%1%1Lvl Required: 50%1%1§oAn invisible, impenetrable barrier forms around the caster, protecting them from almost anything.§r
+
+tome3.page.three=[§l§6Blessing§r§r]%1%1Element: §6Lumomancy§r%1%1Lvl Required: 47%1%1§oInvites down a blessing from the Old Ones. The caster is healed as if by [§6Greater Heal§r§o] and, as an added benefit, is given Regeneration for a duration.§r
+
+tome3.page.four=[§l§dCo§clo§6ur§afu§dl D§cis§6pl§aay§r§r]%1%1Element: §6Lumomancy§r%1%1Lvl Required: 46%1%1§oA very strange Spelltome. Casts a shower of sparkles in a multitude of colors. Anything caught in its AOE is blinded. DMG:§r
+
+tome3.page.five=[§l§8Curse of the Creeper§r§r]%1%1Element: §8Fulmamancy§r%1%1Lvl Required: 52%1%1§oThe victim is cursed with an almost undetectable Curse. After 25 seconds, the victim combusts, similiarly to that of a creeper, hence the name.§r
+
+tome3.page.five.two=[§l§8Cursed Vitality§r§r]%1%1Element: §8Fulmamancy§r%1%1Lvl Required: 50%1%1§oThe victim is cursed to take damage every 4 seconds. This curse, while it may seem quite mundane, has caused the death of many Mages as regeneration§r
+
+tome3.page.five.three=§ocannot heal their, sometimes grave, wounds.§r
+
+tome3.page.six=[§l§8Decay Orb§r§r]%1%1Element: §8Fulmamancy§r%1%1Lvl Required: 48%1%1§oAn orb of Curse Energy is lobbed at an area. On hit, it creates a deadly AOE of Wither for a duration.§r
+
+tome3.page.seven=[§l§dDragon Fireball§r§r]%1%1Element: §dMystomancy§r%1%1Lvl Required: 55%1%1§oA SpellTome said to be made from the Ender Dragon herself through way of her breath. Fires a Dragon Fireball.§r
+
+tome3.page.seven.two=[§l§dDrown§r§r]%1%1Element: §1Hydromancy§r%1%1Lvl Required: 48%1%1§oSummons water in the victim's lungs, drowning them where they stand for 15 seconds. Has no known counterspell besides Water Ward.§r
+
+tome3.page.seven.three=[§l§cExplosion§r§r]%1%1Element: §cPyromancy§r%1%1Lvl Required: 60%1%1§oUpon impact, a small summoning circle is conjured. Only that, it does not summon a creature. This spell summons heat and explosive energy from the Nether,
+
+tome3.page.seven.four=§orendering anything in its range asunder.§r
+
+tome3.page.eight=[§l§1Geyser§r§r]%1%1Element: §1Hydromancy§r%1%1Lvl Required: 52%1%1§oWater erupts from underneath creatures in an area, dealing a decent amount of damage to creatures.§r
+
+tome3.page.eight.two=[§l§6Gigavolt§r§r]%1%1Element: §7Atmomancy§r%1%1Lvl Required: 49%1%1§oA ball of electricity is sent at the target. On hit, lightning bolts converge at the point, causing an electrical explosion.§r
+
+tome3.page.eight.three=[§l§6Lightning Storm§r§r]%1%1Element: §7Atmomancy§r%1%1Lvl Required: 49%1%1§oA thunderstorm is conjured over the caster's head. Every 3 seconds, all entities, besides the caster, are struck by lightning, which makes it a spell only used in drastic situations.§r
+
+tome3.page.nine=[§l§cMeteor§r§r]%1%1Element: §cPyromancy§r%1%1Lvl Required: 49%1%1§oStrange magic that summons a ball of magma and heated rock from the heavens, smashes down 9 blocks away from the player.§r
+
+tome3.page.ten=[§l§5Necro Bolt§r§r]%1%1Element: §5Necromancy§r%1%1Lvl Required: 52%1%1§oA powerful ball of Necrotic Energy is shot at the victim. Deals Instant Damage III. Heals the Undead§r
+
+
+
+##Tomemancy 101
+
+tomemancy.one=This book's purpose is to shed light on the the Tiers, Level Requirements and other important topics about the art of Tomemancy.%1
+
+tomemancy.two=§l<Tiers>§r%1%1  Tiers are categorizations made by the Wizards. They made their Tomes based around these Tiers. Basic, Apprentice, Acolyte and Advanced were these Tiers. Basic Tier Tomes are the weakest, which are mainly utility.
+
+tomemancy.three=Tomes are considered Basic if their level requirement is anywhere from lvl 0 to lvl 15. The most commonly used Tomes in this Tier are Waterball, Wall and Web. 
+
+tomemancy.four=  Apprentice Tomes are very versatile. They are great for attacks, they have amazing utility and they are great with defence. It is basically the all-rounder Tier. Its level requirement is anywhere from lvl 16 to lvl 30.
+
+tomemancy.five=There are lots of amazing Tomes in this Tier but a few are Float, Boost and Fire Burst.
+
+tomemancy.six=  Acolyte Tomes are where it gets strange. Tier-wise they are powerful but the special thing about this Tier is that this is where Fulmamantic (Curse) Tomes make a more impressional appearance. From spreading a Wither Disease and
+
+tomemancy.seven=warding yourself with and from flames to cursing your victim with hunger and freezing them into an ice cube, this Tier has some powerful afflictions. But as a flip coin, there is Cleanse, Greater Heal and Group Heal to make up for this.
+
+tomemancy.eight= Its level requirement falls at and within the range of the levels 31 and 45, which means there is some work to be done to cast them.
+
+tomemancy.nine=  Advanced Tomes are considered the most powerful and §olevel expensive§r of the Tiers, which a whopping level requirement of 46 and above. Some Tomes may not seem very powerful at first glance but all are either extremely deadly or extremely helpful.
+
+tomemancy.ten=Take for instance the [Curse of the Creeper], a Tome that curses the victim to combust after 25 seconds if they have no way of breaking the curse. What's worse, only the caster knows the victim has this curse,
+
+tomemancy.eleven=which makes this Tome very dangerous but it isn't the most deadly or destructive of the Advanced Tier.
+
+tomemancy.twelve=The Wizards seem to have very good reasons for segregating these Tomes, as if anyone could use them immediately, some very serious problems would arise.
+
+tomemancy.thirteen=§l<Requirements>§r%1%1  All Tomes have certain minimum levels at which they are able to be used by the Mage. Casting Tomes does not consume experience points (in most cases), so if you do not use these levels or gain any, you are kept at a constant Tier.
+
+tomemancy.fourteen=Your Tier rises every 15 levels, which is a lot of experience. Enchantment and repairing uses levels, which includes repairing your Tomes, so unless you have a steady way of gaining experience, you
+
+tomemancy.fifteen=might want to practice experience management. Dying also provides a unique threat. Dying normally sets a Mage straight back the Basic Tier, which is not good. So Mages normally take leaps and bounds to protect their lives
+
+tomemancy.sixteen=to prevent that very unfortunate situation.
+
+tomemancy.seventeen=§l<The Pages of Magic>§r%1%1 The Wizards further segregated Tomemancy by binding each type of magic to a §oPage§r. There were 9 of these pages. One for each element of Magic and the Page of Unbridled Magic, that granted the finder 
+
+tomemancy.eighteen=the use of all elements. This, along with the Lvl Requirement, made Tomemancy an art one had to be lucky and committed in practicing. The Pages can still be found around the world, although they are rare.
+
+tomemancy.nineteen=§l<Experience Tomes>§r%1%1  Experience Tomes are mystical books filled with experience. They are found around the world and grant varying amounts of experience, which are like pots of treasure for Enchanters and Mages alike.
+
+tomemancy.twenty=§l<Practising>§r%1%1 Some Mages do tasks that lead to them gaining experience, but other Mages simply practice their mystical art to gain XP. The Tier of Tome used determines the amount of XP that may be gained.
+
+tomemancy.twenty_one=Basic Tomes give around 5 experience points, Apprentice Tomes provide 12 experience points, Acolyte Tomes give 32 experience points and Advanced Tomes supply the most, 64 experience points. It should be known that there is a 65% chance of gaining XP 
+
+tomemancy.twenty_two=from Tome Casting. There is a 35% chance of gaining nothing.
+
+
+##A Hematurgist's Guide
+
+hema.page1=§l§4<Hematurgy>§r§4%1%1 This book's goal is to teach you all there is to know about the art of Hematurgy. As you may already know, there is an area of magic called Ancient Magic, which utilizes materials and, in some cases, the caster's health to cast magic.
+
+hema.page2=§4 Hematurgy falls into this category, along with Potions, Enchantments, etc. It uses the blood of the caster to create traps that, when stepped on, triggers the effects that have been magically programmed into it.
+
+hema.page3=§4 Hematurgy was created by the Wizards and Humans working together. The Wizards enchanted iron daggers to enchant blood (they still do, if you provide them the knife), turning it into something not unlike a conduit. The human Alchemists then came up with different formulas,
+
+hema.page4=§4watching how the different materials interacted with these blood conduits, which were named Blood Sigils. The results were amazing. It was realized that this conduit of magical power could do extraordinary things given the right material component.
+
+hema.page5=§4 Blood Sigils are created by making small incisions on the caster's body with an Enchanted Dagger. The Dagger enchants the blood it touches, causing it to pool at the caster's feet into a perfect circle with strange designs.
+
+hema.page6=§4 Further interaction with the right materials causes these strange designs to look rune-like. What they could mean, only the Wizards would know.
+
+hema.page7=§4§l<Concealing Sigils>§r%1%1%1§4 Sigils can be concealed from sight if one has an ink sac. If one is acquired, it can clear away any sigil from sight, making it seem as if nothing is there. In actuality, the sigil isn't changed, only hidden from sight.
+
+hema.page8=§4 This trick makes Hematurgical traps amazingly effective, hindering or helping their victims without their notice.
+
+hema.page9=§4§l<Sigilic Texts>§r%1%1§4 Sigilic Texts are research notes left around by Hematurgists of old. The art has never truly been lost but many stopped using it mainly because of its drawbacks. Hematurgy required the use of blood, which
+
+hema.page10=§4harmed the caster in return. This was not something everyone found pleasant and some even went on to call this form of magic "evil" and "vile" when it, in all honesty, was relatively less destructive than Tomemancy.
+
+hema.page11=§4 These research notes could be picked up almost anywhere, as the Hematurgists who hid them left them in various places and ruins. This is one type of mystical book that even Wizards do not sell. They must be found.
+
+hema.page12=§4 I hope the one who reads this book will see that this magic is not as evil as they say and can even be very helpful, if the right amount of care is taken. There is one warning I impart on you, however. Be careful of overusing this magic, for it may spell your doom.
+
+
+
+## Hemalurgy Recipes
+
+sigil.first1=§l<Sigil of Burning>§r%1%1§4Effect| Deals fire damage to the victim and burns them.%1%1Reagent| Coal, Charcoal%1%1Base Sigil| Blood Sigil
+
+##================
+
+sigil.two1=§l<Sigil of Freezing>§r%1%1§4Effect| Encapsulates the victim in ice.%1%1Reagent| Snowball%1%1Base Sigil| Blood Sigil
+
+##================
+
+sigil.three1=§l<Sigil of Poison>§r%1%1§4Effect| Poisons the victim for 25 seconds.%1%1Reagent| Spider Eye%1%1Base Sigil| Blood Sigil
+
+##================
+
+sigil.four1=§l<Sigil of Decay>§r%1%1§4Effect| Withers the victim for 25 seconds.%1%1Reagent| Wither Rose%1%1Base Sigil| Blood Sigil
+
+##================
+
+sigil.five1=§l<Sigil of Levitation>§r%1%1§4Effect| Levitates the victim for 25 seconds.%1%1Reagent| Feather%1%1Base Sigil| Blood Sigil
+
+##================
+
+sigil.six1=§l<Sigil of the Rod>§r%1%1§4Effect| Poisons the victim for 25 seconds.%1%1Reagent| Spider Eye%1%1Base Sigil| Blood Sigil
+
+##================
+
+sigil.seven1=§l<Sigil of Harming>§r%1%1§4Effect| Magically harms the victim. This form of damage bypasses armor.%1%1Reagent| Bone%1%1Base Sigil| Blood Sigil
+
+##================
+
+sigil.eight1=§l<Sigil of the Arachnid>§r%1%1§4Effect| Traps the victim in a box of webs.%1%1Reagent| String%1%1Base Sigil| Blood Sigil
+
+##================
+
+sigil.nine1=§l<Sigil of Combustion>§r%1%1§4Effect| A sigil that combusts on activation. You may not want to be the one that triggers it.%1%1Reagent| Gunpowder%1%1Base Sigil| Blood Sigil
+
+##================
+
+sigil.ten1=§l<Sigil of Warding>§r%1%1§4Effect| Surrounds the target in a dome of Blood Energy, protecting and shielding them from most things.%1%1Reagent| Iron Ingot%1%1Base Sigil| Blood Sigil
+
+##================
+
+sigil.11.one=§l<Sigil of Slime>§r%1%1§4Effect| A sticky substance is secreted on activation, heavily slowing the victim.%1%1Reagent| Slime Ball%1%1Base Sigil| Blood Sigil
+
+##================
+
+sigil.12.one=§l<Sigil of Fatigue>§r%1%1§4Effect| Tires the victim considerably, reducing their attack damage and mining speed by quite a bit.%1%1Reagent| Fermented Spider Eye%1%1Base Sigil| Blood Sigil
+
+##================
+
+sigil.13.one=§l<Sigil of Deliria>§r%1%1§4Effect| The victim is afflicted by a hallucination, making them go blind and nauseous.%1%1Reagent| Pufferfish%1%1Base Sigil| Blood Sigil
+
+##================
+
+sigil.14.one=§l<Sigil of the Sea>§r%1%1§4Effect| Grants the victim Conduit Power for 25 seconds.%1%1Reagent| Heart of the Sea%1%1Base Sigil| Blood Sigil
+
+##================
+
+sigil.15.one=§l<Sigil of Enclosure>§r%1%1§4Effect| Traps the victim in a small box of material.%1%1Reagent| Dirt, Cobblestone, Cobbled Deepslate, Obsidian, Snow, Sand or Netherrack.%1%1Base Sigil| Blood Sigil
+
+##================
+
+sigil.16.one=§l<Sigil of Regeneration>§r%1%1§4Effect| Regenerates the victim health for 25 seconds. A direct reverse of the Sigil of Poison.%1%1Reagent| Fermented Spider Eye%1%1Base Sigil| Sigil of Poison
+
+##================
+
+sigil.17.one=§l<Sigil of Fatal Poison>§r%1%1§4Effect| Fatally poisons the victim for 15 seconds. A direct empowerment of the sigil of Poison.%1%1Reagent| Poisonous Potato%1%1Base Sigil| Sigil of Poison
+
+##================
+
+sigil.18.one=§l<Sigil of Healing>§r%1%1§4Effect| Magically heals the victim if they are not undead.%1%1Reagent| Fermented Spider Eye%1%1Base Sigil| Sigil of Harming
+
+##================
+
+sigil.19.one=§l<Sigil of the Creeper>§r%1%1§4Effect| Curses the victim with the Curse of the Creeper.%1%1Reagent| [Tome] Curse of the Creeper%1%1Base Sigil| Blood Sigil
+
+##================
+
+sigil.20.one=§l<Sigil of Conflagration>§r%1%1§4Effect| On activation, releases a wave of flames, burning mobs in the area. A direct empowerment of Sigil of Burning.%1%1Reagent| Flint & Steel%1%1Base Sigil| Sigil of Burning
+
+##================
+
+sigil.21.one=§l<Sigil of Sight>§r%1%1§4Effect| Grants the target Night Vision for 25 seconds and rids them of Blindness. It is the direct reverse of the Sigil of Deliria%1%1Reagent| Fermented Spider Eye%1%1Base Sigil| Sigil of Deliria
+
+##================
+
+sigil.22.one=§l<Sigil of Dislocation>§r%1%1§4Effect| Warps the victim anywhere within a 100 block radius. Normally used to get out of dangerous situations.%1%1Reagent| Ender Pearl%1%1Base Sigil| Blood Sigil
+
+##================
+
+sigil.23.one=§l<Sigil of Biting>§r%1%1§4Effect| An Evocation Fang immediately takes a chomp out of whatever sets foot on this sigil.%1%1Reagent| Emerald%1%1Base Sigil| Blood Sigil
+
+##================
+
+sigil.24.one=§l<Sigil of Dousing>§r%1%1§4Effect| Water splashes onto the victim with enough force to damage them but also douses them if they are burning.%1%1Reagent| Bucket of Water%1%1Base Sigil| Blood Sigil

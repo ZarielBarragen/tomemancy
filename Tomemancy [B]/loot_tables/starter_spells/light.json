@@ -1,0 +1,40 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "tome:light",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§eAnd he said, \"Let there be light!\" and light came forth,",
+                "§eilluminating all dark crevices across the land and giving security",
+                "§eto all who were afraid.§r"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:heal",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§eJust a healing touch§r"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

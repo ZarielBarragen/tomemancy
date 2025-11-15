@@ -1,0 +1,49 @@
+{
+   "format_version":"1.16.0",
+   "minecraft:entity":{
+      "description":{
+         "identifier":"tome:water_spells",
+         "is_spawnable":false,
+         "is_summonable":true,
+         "is_experimental":false,
+         "scripts":{
+            "animate":[
+               "walk"
+            ]
+         },
+         "animations":{
+            "walk":"controller.animation.ded"
+         }
+        },
+      "component_groups": {
+        "dead":{
+            "minecraft:skin_id": {
+                "value": 1
+            }
+         }
+    },
+      "components":{
+         "minecraft:collision_box":{
+            "width":0.001,
+            "height":0.001
+         },
+         "minecraft:physics":{
+         },
+  			"minecraft:loot": {
+  				"table": "loot_tables/starter_spells/water.json"
+  		 	 },
+         "minecraft:scale":{
+            "value":0.002
+         }
+      },
+      "events":{
+       "minecraft:entity_spawned":{
+            "add":{
+               "component_groups":[
+                  "dead"
+               ]
+            }
+         }
+     }
+  }
+}

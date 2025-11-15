@@ -1,0 +1,78 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "tome:acceleration",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§dYou go fast. That's it.§r"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:displace",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§dPoof. I'm gone!§r"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:conceal",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§dFor those situations where being seen is dangerous.§r"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:magnetize",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§dPulls stuff to you when you're too lazy to go and get 'em",
+                "§dyourself§r"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:resistance",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§dPROTECC§r"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

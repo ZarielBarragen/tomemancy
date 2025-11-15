@@ -1,0 +1,78 @@
+{
+   "format_version": "1.16.220",
+   "minecraft:entity":{
+      "description":{
+         "identifier":"tome:fire_recieve",
+         "is_spawnable":false,
+         "is_summonable":true,
+         "is_experimental":false,
+			   "scripts":{
+           "animate":[
+             "warps"
+           ]
+         },
+         "animations":{
+           "warps":"controller.animation.warping_rules"
+         }
+      },
+      "component_groups": {
+          "ded": {
+            "minecraft:skin_id": {
+              "value": 1
+            },
+            "minecraft:instant_despawn": {}
+          }
+      },
+      "components":{
+         "minecraft:collision_box":{
+            "width":0.2,
+            "height":0.2
+         },
+    			"minecraft:type_family": {
+    				"family": [ "warps" ]
+    			},
+    			"minecraft:tick_world": {
+    				"never_despawn": true,
+    				"radius": 4
+    			},
+    			"minecraft:damage_sensor": {
+    				"triggers": [
+    					{
+    						"cause": "all",
+    						"deals_damage": false
+    					}
+    				]
+    			},
+          "minecraft:block_sensor": {
+            "sensor_radius": 2,
+            "on_break": [
+              {
+                "block_list": [
+                  "tome:blood_sigil"
+                ],
+                "on_block_broken": "death"
+              }
+            ]
+          },
+    			"minecraft:on_death": {
+    				"event": "death"
+    			},
+    			"minecraft:pushable": {
+    				"is_pushable": false,
+    				"is_pushable_by_piston": false
+    			},
+         "minecraft:scale":{
+            "value":0.2
+         }
+      },
+      "events":{
+       "death":{
+            "add":{
+               "component_groups":[
+                  "ded"
+               ]
+            }
+         }
+     }
+  }
+}

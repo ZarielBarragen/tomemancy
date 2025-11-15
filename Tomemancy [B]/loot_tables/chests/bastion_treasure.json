@@ -1,0 +1,820 @@
+{
+    "pools": [
+        {
+            "rolls": 3,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 15,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ],
+                    "name": "minecraft:netherite_ingot"
+                },
+                {
+                    "type": "item",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ],
+                    "name": "minecraft:enchanted_golden_apple"
+                },
+                {
+                    "type": "item",
+                    "weight": 8,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ],
+                    "name": "minecraft:netherite_scrap"
+                },
+                {
+                    "type": "item",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ],
+                    "name": "minecraft:ancient_debris",
+                    "weight": 4
+                },
+                {
+                    "type": "item",
+                    "weight": 6,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_damage",
+                            "damage": {
+                                "min": 0.8,
+                                "max": 1
+                            }
+                        },
+                        {
+                            "function": "enchant_randomly"
+                        }
+                    ],
+                    "name": "minecraft:diamond_sword"
+                },
+                {
+                    "type": "item",
+                    "weight": 6,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_damage",
+                            "damage": {
+                                "min": 0.8,
+                                "max": 1
+                            }
+                        },
+                        {
+                            "function": "enchant_randomly"
+                        }
+                    ],
+                    "name": "minecraft:diamond_chestplate"
+                },
+                {
+                    "type": "item",
+                    "weight": 6,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_damage",
+                            "damage": {
+                                "min": 0.8,
+                                "max": 1
+                            }
+                        },
+                        {
+                            "function": "enchant_randomly"
+                        }
+                    ],
+                    "name": "minecraft:diamond_helmet"
+                },
+                {
+                    "type": "item",
+                    "weight": 6,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_damage",
+                            "damage": {
+                                "min": 0.8,
+                                "max": 1
+                            }
+                        },
+                        {
+                            "function": "enchant_randomly"
+                        }
+                    ],
+                    "name": "minecraft:diamond_leggings"
+                },
+                {
+                    "type": "item",
+                    "weight": 6,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_damage",
+                            "damage": {
+                                "min": 0.8,
+                                "max": 1
+                            }
+                        },
+                        {
+                            "function": "enchant_randomly"
+                        }
+                    ],
+                    "name": "minecraft:diamond_boots"
+                },
+                {
+                    "type": "item",
+                    "weight": 6,
+                    "name": "minecraft:diamond_sword"
+                },
+                {
+                    "type": "item",
+                    "weight": 5,
+                    "name": "minecraft:diamond_chestplate"
+                },
+                {
+                    "type": "item",
+                    "weight": 5,
+                    "name": "minecraft:diamond_helmet"
+                },
+                {
+                    "type": "item",
+                    "weight": 5,
+                    "name": "minecraft:diamond_boots"
+                },
+                {
+                    "type": "item",
+                    "weight": 5,
+                    "name": "minecraft:diamond_leggings"
+                },
+                {
+                    "type": "item",
+                    "weight": 5,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 6
+                            }
+                        }
+                    ],
+                    "name": "minecraft:diamond"
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 3,
+                "max": 4
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 12,
+                                "max": 25
+                            }
+                        }
+                    ],
+                    "name": "minecraft:arrow",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 5
+                            }
+                        }
+                    ],
+                    "name": "minecraft:gold_block",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 9
+                            }
+                        }
+                    ],
+                    "name": "minecraft:gold_ingot",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 9
+                            }
+                        }
+                    ],
+                    "name": "minecraft:iron_ingot",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 5
+                            }
+                        }
+                    ],
+                    "name": "minecraft:crying_obsidian",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 8,
+                                "max": 23
+                            }
+                        }
+                    ],
+                    "name": "minecraft:quartz",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 5,
+                                "max": 15
+                            }
+                        }
+                    ],
+                    "name": "minecraft:gilded_blackstone",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 3,
+                                "max": 8
+                            }
+                        }
+                    ],
+                    "name": "minecraft:magma_cream",
+                    "weight": 1
+                },
+                {
+                    "type": "item",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 5
+                            }
+                        }
+                    ],
+                    "name": "minecraft:iron_block",
+                    "weight": 1
+                }
+            ]
+        },
+      {
+        "rolls": {
+          "min": 0,
+          "max": 1
+        },
+        "entries": [
+          {
+            "type": "item",
+            "name": "tome:ignite",
+            "weight": 100,
+            "functions": [
+              {
+                "function": "set_lore",
+                "lore": [
+  
+
+                ]
+              },
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "name": "tome:combust",
+            "weight": 100,
+            "functions": [
+              {
+                "function": "set_lore",
+                "lore": [
+  
+
+                ]
+              },
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "name": "tome:cauterize",
+            "weight": 100,
+            "functions": [
+              {
+                "function": "set_lore",
+                "lore": [
+  
+
+                ]
+              },
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "name": "tome:candlelight",
+            "weight": 80,
+            "functions": [
+              {
+                "function": "set_lore",
+                "lore": [
+  
+
+                ]
+              },
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "name": "tome:fire_bolt",
+            "weight": 75,
+            "functions": [
+              {
+                "function": "set_lore",
+                "lore": [
+  
+
+                ]
+              },
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "name": "tome:fire_burst",
+            "weight": 70,
+            "functions": [
+              {
+                "function": "set_lore",
+                "lore": [
+  
+
+                ]
+              },
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "name": "tome:fire_spray",
+            "weight": 65,
+            "functions": [
+              {
+                "function": "set_lore",
+                "lore": [
+  
+
+                ]
+              },
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "name": "tome:fireball",
+            "weight": 60,
+            "functions": [
+              {
+                "function": "set_lore",
+                "lore": [
+  
+
+                ]
+              },
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "name": "tome:ring_of_fire",
+            "weight": 55,
+            "functions": [
+              {
+                "function": "set_lore",
+                "lore": [
+  
+
+                ]
+              },
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "name": "tome:fire_ward",
+            "weight": 50,
+            "functions": [
+              {
+                "function": "set_lore",
+                "lore": [
+  
+
+                ]
+              },
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "name": "tome:meteor",
+            "weight": 20,
+            "functions": [
+              {
+                "function": "set_lore",
+                "lore": [
+  
+
+                ]
+              },
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "name": "tome:explosion",
+            "weight": 10,
+            "functions": [
+              {
+                "function": "set_lore",
+                "lore": [
+  
+
+                ]
+              },
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": "empty",
+            "weight": 45
+          }
+        ]
+      },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "tome:cauterize_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 7
+              }
+            }
+          ],
+          "weight": 120
+        },
+        {
+          "type": "item",
+          "name": "tome:combust_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 3,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 120
+        },
+        {
+          "type": "item",
+          "name": "tome:ignite_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 120
+        },
+        {
+          "type": "item",
+          "name": "tome:fire_bolt_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 6
+              }
+            }
+          ],
+          "weight": 80
+        },
+        {
+          "type": "item",
+          "name": "tome:fire_spray_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ],
+          "weight": 80
+        },
+        {
+          "type": "item",
+          "name": "tome:fireball_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 80
+        },
+        {
+          "type": "item",
+          "name": "tome:fire_burst_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 80
+        },
+        {
+          "type": "item",
+          "name": "tome:ring_of_fire_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 4
+              }
+            }
+          ],
+          "weight": 80
+        },
+        {
+          "type": "item",
+          "name": "tome:fire_ward_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 45
+        },
+        {
+          "type": "item",
+          "name": "tome:explosion_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ],
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "tome:meteor_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ],
+          "weight": 2
+        }
+      ]
+    },
+      {
+        "rolls": {
+          "min": 0,
+          "max": 1
+        },
+        "entries": [
+          {
+            "type": "item",
+            "name": "tome:fire_page",
+            "weight": 10,
+            "functions": [
+              {
+                "function": "set_lore",
+                "lore": [
+  
+                  "§c§kMysticalum Aeloum Finite§r"
+                ]
+              },
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": "empty",
+            "weight": 35
+          }
+        ]
+      },
+      {
+        "rolls": {
+          "min": 0,
+          "max": 2
+        },
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:written_book",
+            "weight": 10,
+            "functions": [
+              {
+                "function": "set_book_contents",
+                "author": "Sagerian Vinea",
+                "title": "Blood #1",
+                "pages": [
+                  "{\"rawtext\":[ {\"translate\":\"sigil.first1\", \"with\":[\"\n\"]}]}"
+                ]
+              },
+              {
+                "function": "set_name",
+                "name": "§r§fSigil of Burning"
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "name": "minecraft:written_book",
+            "weight": 10,
+            "functions": [
+              {
+                "function": "set_book_contents",
+                "author": "Miles A.",
+                "title": "Blood #20",
+                "pages": [
+                  "{\"rawtext\":[ {\"translate\":\"sigil.20.one\", \"with\":[\"\n\"]}]}"
+                ]
+              },
+              {
+                "function": "set_name",
+                "name": "§r§fSigil of Conflagration"
+              }
+            ]
+          },
+          {
+            "type": "empty",
+            "weight": 20
+          }
+        ]
+      }
+    ]
+}

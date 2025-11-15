@@ -1,0 +1,144 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.particles": {
+      "states": {
+        "default": {
+          "transitions": [ { "walking": "(0.25)" } ],
+          "on_entry": [ "/function particles" ]
+        },
+        "walking": {
+          "transitions": [ { "default": "(0.25)" } ],
+          "on_entry": [ "/function particles" ]
+        }
+      }
+    },
+		"controller.animation.summon": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"active": "query.skin_id == 1"
+						},
+						{
+							"active_2": "query.skin_id == 2"
+						}
+					]
+				},
+				"active": {
+					"on_entry": ["/particle tome:summoning ~ ~ ~", "/playsound mob.endermen.idle @a[r=5] ~~~ 7"]
+				},
+				"active_2": {
+					"on_entry": ["/particle tome:big_summoning ~ ~ ~", "/playsound mob.endermen.idle @a[r=5] ~~~ 7"]
+				}
+			}
+		},
+		"controller.animation.ded": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"active": "query.skin_id == 1"
+						}
+					]
+				},
+				"active": {
+					"on_entry": ["/kill @s"]
+				}
+			}
+		},
+		"controller.animation.ice_summon": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"active": "query.skin_id == 1"
+						}
+					]
+				},
+				"active": {
+					"on_entry": ["/particle tome:ice_summoning ~ ~ ~", "/playsound mob.endermen.idle @a[r=5] ~~~ 7"]
+				}
+			}
+		},
+		"controller.animation.f_summon": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"active": "query.skin_id == 1"
+						}
+					]
+				},
+				"active": {
+					"on_entry": ["/particle tome:forest_summoning ~ ~ ~", "/playsound mob.endermen.idle @a[r=5] ~~~ 7"]
+				}
+			}
+		},
+		"controller.animation.explode": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"active": "query.skin_id == 1"
+						},
+						{
+							"active_2": "query.skin_id == 2"
+						}
+					]
+				},
+				"active": {
+					"on_entry": ["/particle tome:flame_summoning ~ ~ ~", "/playsound mob.creeper.say @a[r=5] ~~~ 7"]
+				},
+				"active_2": {
+					"on_entry": [
+					  "/summon lightning_bolt ~~~",
+					  "/summon lightning_bolt ~~~",
+					  "/summon lightning_bolt ~~~",
+					  "/summon lightning_bolt ~~~",
+					  "/summon lightning_bolt ~~~",
+					  "/summon lightning_bolt ~~~"
+					 ]
+				}
+			}
+		},
+		"controller.animation.burst": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"active": "query.skin_id == 1"
+						},
+						{
+							"active_2": "query.skin_id == 2"
+						},
+						{
+							"active_3": "query.skin_id == 3"
+						},
+						{
+							"active_4": "query.skin_id == 4"
+						},
+						{
+							"active_5": "query.skin_id == 5"
+						}
+					]
+				},
+				"active": {
+					"on_entry": ["/particle vsys:absorption ~ ~ ~", "/kill @s"]
+				},
+				"active_2": {
+					"on_entry": ["/particle tome:water_splash ~ ~ ~", "/fill ~2 ~-1 ~-2 ~-2 ~1 ~2 air 0 replace fire 51", "/kill @s"]
+				},
+				"active_3": {
+					"on_entry": ["/fill ~1 ~-1 ~-1 ~-1 ~1 ~1 leaves 0 keep", "/kill @s"]
+				},
+				"active_4": {
+					"on_entry": ["/particle tome:water_splash ~ ~ ~", "/fill ~1 ~-1 ~-1 ~-1 ~1 ~1 air 0 replace fire 51", "/kill @s"]
+				},
+				"active_5": {
+					"on_entry": ["/particle vsys:absorption ~ ~ ~", "/effect @e[r=3] clear", "/kill @s"]
+				}
+			}
+		}
+  }
+}

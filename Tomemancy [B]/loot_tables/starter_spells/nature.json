@@ -1,0 +1,118 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "tome:absorb",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§aAbsorb the energy of the Overworld§r"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:boulder_shot",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§aEver wanna toss a boulder at someone? Well, your chance is here§r"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:druidic_missile",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§aBlast of the Druids§r"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:foliage_dome",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§aA dome of leavessss!", 
+                "§a*gets burnt down*",
+                "§a...oh"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:ground",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§aRelease your energy back into the Overworld§r"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:toxic_bullet",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§aThis Tome's so toxic. You do not wanna be friends with it.§r"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:wall",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§aOh, so you wanna kill me? Blocked(or in this case, Walled).§r"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:web",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§aThe Tome of sticky situations§r"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

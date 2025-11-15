@@ -1,0 +1,105 @@
+{
+   "format_version":"1.16.0",
+   "minecraft:entity":{
+      "description":{
+         "identifier":"tome:meteor",
+         "is_spawnable":false,
+         "is_summonable":true,
+         "is_experimental":false,
+         "runtime_identifier":"minecraft:snowball",
+         "scripts":{
+            "animate":[
+               "walk",
+               "walk_2"
+            ]
+         },
+         "animations":{
+            "walk":"controller.animation.particles",
+            "walk_2":"controller.animation.collide"
+         }
+        },
+      "component_groups": {
+         "minecraft:exploding": {
+          "minecraft:explode": {
+          "fuse_length": 0,
+          "fuse_lit": true,
+          "power": 3,
+          "causes_fire": true,
+          "breaks_blocks": true,
+          "fire_affected_by_griefing": true,
+          "destroy_affected_by_griefing": true
+        }
+      },
+      "shakes":{
+         "minecraft:skin_id": {
+           "value": 14
+         }
+      },
+      "mag:transform":{
+            "minecraft:instant_despawn":{
+            }
+         }
+    },
+      "components":{
+         "minecraft:collision_box":{
+            "width":0.7,
+            "height":0.7
+         },
+         "minecraft:timer":{
+            "time":5.0,
+            "time_down_event":{
+               "event":"mag:transform"
+            }
+         },
+         "minecraft:projectile": {
+           
+           "on_hit": {
+             "definition_event": {
+              "affect_projectile": true,
+              "event_trigger": {
+              "event": "shakey",
+              "target": "self"
+              }
+             }
+            },
+            "power": 1.6,
+            "gravity": 0.2,
+            "inertia": 1,
+            "liquid_inertia": 1,
+            "uncertainty_base": 0,
+            "uncertainty_multiplier": 0,
+            "anchor": 1,
+            "offset": [ 0, 0, 0 ],
+            "catch_fire": true
+         },
+         "minecraft:physics":{
+         },
+         "minecraft:scale":{
+            "value":0.8
+         }
+      },
+      "events":{
+       "minecraft:explode":{
+            "add":{
+               "component_groups":[
+                  "minecraft:exploding"
+               ]
+            }
+         },
+         "mag:transform":{
+            "add":{
+               "component_groups":[
+                  "mag:transform"
+               ]
+            }
+       },
+         "shakey":{
+            "add":{
+               "component_groups":[
+                  "shakes"
+               ]
+            }
+       }
+    }
+  }
+}

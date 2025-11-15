@@ -1,0 +1,915 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:golden_apple",
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:appleEnchanted",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:name_tag",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "enchant_randomly"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_pickaxe",
+          "weight": 5
+        },
+        {
+          "type": "empty",
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 2,
+        "max": 4
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ingot",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:redstone",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 4,
+                "max": 9
+              }
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:dye",
+          "functions": [
+            {
+              "function": "set_data",
+              "data": 4
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 4,
+                "max": 9
+              }
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "minecraft:coal",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 3,
+                "max": 8
+              }
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bread",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "minecraft:melon_seeds",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pumpkin_seeds",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:beetroot_seeds",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:glow_berries",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 3,
+                "max": 6
+              }
+            }
+          ],
+          "weight": 15
+        }
+      ]
+    },
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:rail",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 4,
+                "max": 8
+              }
+            }
+          ],
+          "weight": 20
+        },
+        {
+          "type": "item",
+          "name": "minecraft:golden_rail",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:detector_rail",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:activator_rail",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:torch",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 16
+              }
+            }
+          ],
+          "weight": 15
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "tome:acceleration",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:displace",
+          "weight": 95,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:magnetize",
+          "weight": 95,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:conceal",
+          "weight": 85,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:resistance",
+          "weight": 80,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:armor",
+          "weight": 75,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:vanish",
+          "weight": 70,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:blink",
+          "weight": 70,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:vanish",
+          "weight": 70,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:metal_skin",
+          "weight": 50,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:power_sacrifice",
+          "weight": 45,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:teleport",
+          "weight": 40,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:time_backward",
+          "weight": 35,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:time_forward",
+          "weight": 35,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:barrier",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:dragon_fireball",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "empty",
+          "weight": 45
+        }
+      ]
+    },
+     {
+      "rolls": {
+        "min": 1,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "tome:acceleration_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 7
+              }
+            }
+          ],
+          "weight": 120
+        },
+        {
+          "type": "item",
+          "name": "tome:conceal_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 6
+              }
+            }
+          ],
+          "weight": 120
+        },
+        {
+          "type": "item",
+          "name": "tome:magnetize_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 120
+        },
+        {
+          "type": "item",
+          "name": "tome:resistance_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ],
+          "weight": 120
+        },
+        {
+          "type": "item",
+          "name": "tome:aegis_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 85
+        },
+        {
+          "type": "item",
+          "name": "tome:vanish_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 6
+              }
+            }
+          ],
+          "weight": 85
+        },
+        {
+          "type": "item",
+          "name": "tome:blink_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 6
+              }
+            }
+          ],
+          "weight": 85
+        },
+        {
+          "type": "item",
+          "name": "tome:metal_skin_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 45
+        },
+        {
+          "type": "item",
+          "name": "tome:teleport_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 45
+        },
+        {
+          "type": "item",
+          "name": "tome:barrier_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "tome:dragon_breath_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "tome:mystic_page",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+
+                "§d§kMysticalum Aeloum Finite§r"
+              ]
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:all_page",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+
+                "§f§kMysticalum Aeloum Finite§r"
+              ]
+            },
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "empty",
+          "weight": 35
+        }
+      ]
+    },
+      {
+        "rolls": {
+          "min": 0,
+          "max": 2
+        },
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:written_book",
+            "weight": 10,
+            "functions": [
+              {
+                "function": "set_book_contents",
+                "author": "Dyna M. Ite",
+                "title": "Blood #9",
+                "pages": [
+                  "{\"rawtext\":[ {\"translate\":\"sigil.nine1\", \"with\":[\"\n\"]}]}"
+                ]
+              },
+              {
+                "function": "set_name",
+                "name": "§r§fSigil of Combustion"
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "name": "minecraft:written_book",
+            "weight": 10,
+            "functions": [
+              {
+                "function": "set_book_contents",
+                "author": "Giovanni",
+                "title": "Blood #15",
+                "pages": [
+                  "{\"rawtext\":[ {\"translate\":\"sigil.15.one\", \"with\":[\"\n\"]}]}"
+                ]
+              },
+              {
+                "function": "set_name",
+                "name": "§r§fSigil of Enclosure"
+              }
+            ]
+          },
+          {
+            "type": "item",
+            "name": "minecraft:written_book",
+            "weight": 10,
+            "functions": [
+              {
+                "function": "set_book_contents",
+                "author": "Simon I.",
+                "title": "Blood #22",
+                "pages": [
+                  "{\"rawtext\":[ {\"translate\":\"sigil.22.one\", \"with\":[\"\n\"]}]}"
+                ]
+              },
+              {
+                "function": "set_name",
+                "name": "§r§fSigil of Dislocation"
+              }
+            ]
+          },
+          {
+            "type": "empty",
+            "weight": 20
+          }
+        ]
+      }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "tome:tome_table",
+			"register_to_creative_menu": true,
+			"category": "items",
+			"properties": {
+				"tome:rotation": [2, 3, 4, 5]
+			}
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"category": "items"
+			},
+			"minecraft:destroy_time": 3.0,
+			"minecraft:friction": 0.6,
+			"minecraft:map_color": "#000000",
+			"minecraft:block_light_absorption": 0,
+			"minecraft:block_light_emission": 0.5,
+			"minecraft:flammable": {
+				"flame_odds": 0,
+				"burn_odds": 0
+			},
+			"minecraft:rotation": [0, 0, 0],
+			"minecraft:entity_collision": {
+				"origin": [-8, 0, -8],
+				"size": [16, 12, 16]
+			},
+			"minecraft:pick_collision": {
+				"origin": [-8, 0, -8],
+				"size": [16, 12, 16]
+			},
+			"minecraft:geometry": "geometry.tome_table",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "gib_table",
+					"render_method": "alpha_test"
+				}
+			},
+    	"minecraft:crafting_table": {
+    		"custom_description": "Tome Table",
+    		"grid_size": 3,
+    		"crafting_tags": [ "tome:tomes" ]
+      },
+			"minecraft:on_player_placing": {
+				"event": "placing"
+			}
+		},
+
+		"events": {
+			"placing": {
+				"set_block_property": {
+					"tome:rotation": "q.cardinal_facing_2d"
+				}
+			}
+		},
+		"permutations": [
+		  {
+				"condition": "q.block_property('tome:rotation') == 2",
+				"components": {
+					"minecraft:rotation": [0, 180, 0]
+				}
+			},
+			{
+				"condition": "q.block_property('tome:rotation') == 3",
+				"components": {
+					"minecraft:rotation": [0, 0, 0]
+				}
+			},
+			{
+				"condition": "q.block_property('tome:rotation') == 4",
+				"components": {
+					"minecraft:rotation": [0, 270, 0]
+				}
+			},
+			{
+				"condition": "q.block_property('tome:rotation') == 5",
+				"components": {
+					"minecraft:rotation": [0, 90, 0]
+				}
+			}
+		]
+	}
+}

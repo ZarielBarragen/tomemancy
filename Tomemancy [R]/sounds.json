@@ -1,0 +1,186 @@
+{
+	"individual_event_sounds": {
+		"events": {}
+	},
+	"block_sounds": {},
+	"entity_sounds": {
+		"defaults": {
+			"volume": 1,
+			"pitch": [
+				0.8,
+				1.2
+			],
+			"events": {
+				"fall.big": {
+					"sound": "damage.fallbig",
+					"volume": 0.75,
+					"pitch": 1
+				},
+				"fall.small": {
+					"sound": "damage.fallsmall",
+					"volume": 0.75,
+					"pitch": 1
+				},
+				"splash": {
+					"sound": "random.splash",
+					"pitch": [
+						0.6,
+						1.4
+					]
+				},
+				"swim": {
+					"sound": "random.swim",
+					"pitch": [
+						0.6,
+						1.4
+					]
+				},
+				"fizz": {
+					"sound": "random.fizz",
+					"volume": 0.7,
+					"pitch": [
+						1.2,
+						2
+					]
+				},
+				"drink": {
+					"sound": "random.drink",
+					"volume": 0.5,
+					"pitch": [
+						0.9,
+						1
+					]
+				},
+				"eat": {
+					"sound": "random.eat",
+					"volume": [
+						0.5,
+						1.5
+					],
+					"pitch": [
+						0.8,
+						1.2
+					]
+				},
+				"ambient": {},
+				"flop": {},
+				"hurt": "game.player.hurt",
+				"death": "game.player.die",
+				"ambient.in.water": {},
+				"hurt.in.water": {},
+				"death.in.water": {},
+				"ambient.in.raid": {}
+			}
+		},
+		"entities": {
+			"tome:wizard": {
+        "events" : {
+          "ambient" : "mob.villager.idle",
+          "death" : "mob.villager.death",
+          "death.to.zombie" : "mob.villager.death",
+          "haggle" : "mob.villager.haggle",
+          "haggle.no" : "mob.villager.no",
+          "haggle.yes" : "mob.villager.yes",
+          "hurt" : "mob.villager.hit"
+        },
+        "pitch" : [ 0.80, 1.20 ],
+        "volume" : 1.0
+      },
+			"tome:skeleton_minion": {
+				"events": {
+					"ambient": "mob.skeleton.say",
+					"death": "mob.skeleton.death",
+					"hurt": {
+						"sound": "mob.skeleton.hurt",
+						"volume": 0.7
+					},
+					"step": {
+						"pitch": 1,
+						"sound": "mob.skeleton.step",
+						"volume": 1
+					}
+				},
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"volume": 1
+			},
+         "tome:void_shark" : {
+            "events" : {
+               "ambient" : "mob.endermen.idle",
+               "death" : "mob.endermen.death",
+               "hurt" : "mob.endermen.hit",
+               "mad" : "mob.endermen.scream",
+               "stare" : {
+                  "pitch" : 1.0,
+                  "sound" : "mob.endermen.stare",
+                  "volume" : 1.0
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+         },
+			"tome:skeleton_swordsman": {
+				"events": {
+					"ambient": "mob.skeleton.say",
+					"death": "mob.skeleton.death",
+					"hurt": {
+						"sound": "mob.skeleton.hurt",
+						"volume": 0.7
+					},
+					"step": {
+						"pitch": 1,
+						"sound": "mob.skeleton.step",
+						"volume": 1
+					}
+				},
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"volume": 1
+			},
+			"tome:zombie_minion": {
+				"events": {
+					"ambient": "mob.zombie.say",
+					"death": "mob.zombie.death",
+					"hurt": "mob.zombie.hurt",
+					"step": {
+						"pitch": 1,
+						"sound": "mob.zombie.step",
+						"volume": 0.45
+					}
+				},
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"volume": 1
+			},
+			"tome:small_spider": {
+            "events" : {
+               "ambient" : "mob.spider.say",
+               "death" : "mob.spider.death",
+               "hurt" : "mob.spider.say",
+               "step" : {
+                  "pitch" : [ 0.90, 1.10 ],
+                  "sound" : "mob.spider.step",
+                  "volume" : 0.350
+               }
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+			},
+			"tome:snow_golem": {
+            "events" : {
+               "death" : "mob.snowgolem.death",
+               "hurt" : "mob.snowgolem.hurt",
+               "shoot" : "mob.snowgolem.shoot"
+            },
+            "pitch" : [ 0.80, 1.20 ],
+            "volume" : 1.0
+			}
+		}
+	}
+}

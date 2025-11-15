@@ -1,0 +1,99 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "tome:aegis_scroll",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.scrolls_2"
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:foil": false,
+      "minecraft:hand_equipped": false,
+      "minecraft:icon":{
+         "texture":"mystic_scroll"
+      },
+      "minecraft:display_name":{
+         "value":"Scroll of §dAegis§r\nHas been known to replace armor"
+      },
+
+      "minecraft:cooldown":{
+          "category":"armor",
+          "duration": 70
+      },
+      "minecraft:can_destroy_in_creative": false,
+         "minecraft:on_use":{
+            "on_use":{
+               "event":"armored"
+            }
+         }
+      },
+      "events":{
+         "armored":{
+            "sequence": [
+              {
+            "condition": "query.scoreboard('block_magic') == 1 && query.remaining_durability >= 0",
+        "run_command": {
+            "command": [
+            "tellraw @s {\"rawtext\":[{\"text\":\"§8The Scroll's power is being blocked by an unknown force.\"}]}"
+            ],
+            "target": "holder"
+              }
+            },
+            {
+              "condition": "query.scoreboard('block_magic') == 0 && query.player_level >= 16 && query.scoreboard('mystic') == 1",
+              "randomize": [
+                {
+                  "weight": 965,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                      "scoreboard players add @s aegis_spell 1",
+                      "playsound armor.equip_diamond @a[r=5] ~~~ 7"
+                    ],
+                    "target": "holder"
+                  },
+              		"decrement_stack": {}
+                },
+                {
+                  "weight": 35,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                      "tellraw @s {\"rawtext\":[{\"text\":\"The Scroll backfired and you take 6 magical damage!\"}]}"
+                    ],
+                    "target": "holder"
+                  },
+                  "damage": {
+              			"type": "magic",
+              			"amount": 6,
+              			"target": "holder"
+            		  },
+              		"decrement_stack": {}
+                }
+              ]
+            },
+            {
+               "condition": "!query.scoreboard('mystic') == 1",
+               "run_command": {
+                 "command": ["tellraw @s {\"rawtext\":[{\"text\":\"You do not have the required Knowledge to use this Scroll.\"}]}"],
+                 "target": "holder"
+               }
+            },
+            {
+               "condition": "query.player_level < 16",
+               "run_command": {
+                 "command": ["tellraw @s {\"rawtext\":[{\"text\":\"Your Tier is too low to cast this Scroll.\"}]}"],
+                 "target": "holder"
+               }
+            }
+          ]
+        }
+      }
+    }
+  }

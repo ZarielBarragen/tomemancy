@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "tome:druidic_missile_recipe"
+    },
+
+    
+    "tags": [ "tome:tomes" ],
+    "pattern": [
+      " O ",
+      "OSO",
+      " O "
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:book"
+      },
+      "O": {
+        "item": "tome:druidic_missile_scroll"
+      }
+    },
+    "result": {
+      "item": "tome:druidic_missile"
+    }
+  }
+} 

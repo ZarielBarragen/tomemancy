@@ -1,0 +1,233 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "tome:wall_scroll",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.scrolls_1"
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:foil": false,
+      "minecraft:hand_equipped": false,
+      "minecraft:icon":{
+         "texture":"nature_scroll"
+      },
+      "minecraft:display_name":{
+         "value":"Scroll of §2Wall§r"
+      },
+
+      "minecraft:cooldown":{
+         "category":"tome:wall",
+         "duration": 3.5
+      },
+      "minecraft:can_destroy_in_creative": false,
+         "minecraft:on_use":{
+            "on_use":{
+               "event":"protec"
+            }
+         }
+      },
+      "events":{
+         "protec":{
+            "sequence": [
+              {
+            "condition": "query.scoreboard('block_magic') == 1 && query.remaining_durability >= 0",
+        "run_command": {
+            "command": [
+            "tellraw @s {\"rawtext\":[{\"text\":\"§8The Scroll's power is being blocked by an unknown force.\"}]}"
+            ],
+            "target": "holder"
+              }
+            },
+             {
+               "condition":"query.scoreboard('block_magic') == 0 && query.player_level >= 0 && query.player_level <= 15 && query.scoreboard('plant') == 1",
+               "randomize": [
+                 {
+                   "weight": 965,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                      "setblock ^ ^ ^3 tome:mystic_dirt 0 keep",
+                      "setblock ^1 ^ ^3 tome:mystic_dirt 0 keep",
+                      "setblock ^2 ^ ^3 tome:mystic_dirt 0 keep",
+                      "setblock ^-1 ^ ^3 tome:mystic_dirt 0 keep",
+                      "setblock ^-2 ^ ^3 tome:mystic_dirt 0 keep",
+                      "setblock ^ ^1 ^3 tome:mystic_dirt 0 keep",
+                      "setblock ^1 ^1 ^3 tome:mystic_dirt 0 keep",
+                      "setblock ^2 ^1 ^3 tome:mystic_dirt 0 keep",
+                      "setblock ^-1 ^1 ^3 tome:mystic_dirt 0 keep",
+                      "setblock ^-2 ^1 ^3 tome:mystic_dirt 0 keep",
+                      "setblock ^ ^2 ^3 tome:mystic_dirt 0 keep",
+                      "setblock ^1 ^2 ^3 tome:mystic_dirt 0 keep",
+                      "setblock ^2 ^2 ^3 tome:mystic_dirt 0 keep",
+                      "setblock ^-1 ^2 ^3 tome:mystic_dirt 0 keep",
+                      "setblock ^-2 ^2 ^3 tome:mystic_dirt 0 keep",
+                      "playsound use.gravel @a[r=5] ~~~ 6"
+                    ],
+                    "target": "holder"
+                   },
+              		"decrement_stack": {}
+                 },
+                 {
+                   "weight": 35,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                     "tellraw @s {\"rawtext\":[{\"text\":\"The Scroll backfired...nothing happened.\"}]}"
+                    ],
+                    "target": "holder"
+                   },
+              		"decrement_stack": {}
+                 }
+               ]
+             },
+             {
+               "condition":"query.scoreboard('block_magic') == 0 && query.player_level >= 16 && query.player_level <= 30 && query.scoreboard('plant') == 1",
+               "randomize": [
+                 {
+                   "weight": 965,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                      "setblock ^ ^ ^3 tome:mystic_stone 0 keep",
+                      "setblock ^1 ^ ^3 tome:mystic_stone 0 keep",
+                      "setblock ^2 ^ ^3 tome:mystic_stone 0 keep",
+                      "setblock ^-1 ^ ^3 tome:mystic_stone 0 keep",
+                      "setblock ^-2 ^ ^3 tome:mystic_stone 0 keep",
+                      "setblock ^ ^1 ^3 tome:mystic_stone 0 keep",
+                      "setblock ^1 ^1 ^3 tome:mystic_stone 0 keep",
+                      "setblock ^2 ^1 ^3 tome:mystic_stone 0 keep",
+                      "setblock ^-1 ^1 ^3 tome:mystic_stone 0 keep",
+                      "setblock ^-2 ^1 ^3 tome:mystic_stone 0 keep",
+                      "setblock ^ ^2 ^3 tome:mystic_stone 0 keep",
+                      "setblock ^1 ^2 ^3 tome:mystic_stone 0 keep",
+                      "setblock ^2 ^2 ^3 tome:mystic_stone 0 keep",
+                      "setblock ^-1 ^2 ^3 tome:mystic_stone 0 keep",
+                      "setblock ^-2 ^2 ^3 tome:mystic_stone 0 keep",
+                      "playsound use.stone @a[r=5] ~~~ 6"
+                    ],
+                    "target": "holder"
+                   },
+              		"decrement_stack": {}
+                 },
+                 {
+                   "weight": 35,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                     "tellraw @s {\"rawtext\":[{\"text\":\"The Scroll backfired...nothing happened.\"}]}"
+                    ],
+                    "target": "holder"
+                   },
+              		"decrement_stack": {}
+                 }
+               ]
+             },
+             {
+               "condition":"query.scoreboard('block_magic') == 0 && query.player_level >= 31 && query.player_level <= 45 && query.scoreboard('plant') == 1",
+               "randomize": [
+                 {
+                   "weight": 965,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                      "setblock ^ ^ ^3 tome:mystic_deepslate 0 keep",
+                      "setblock ^1 ^ ^3 tome:mystic_deepslate 0 keep",
+                      "setblock ^2 ^ ^3 tome:mystic_deepslate 0 keep",
+                      "setblock ^-1 ^ ^3 tome:mystic_deepslate 0 keep",
+                      "setblock ^-2 ^ ^3 tome:mystic_deepslate 0 keep",
+                      "setblock ^ ^1 ^3 tome:mystic_deepslate 0 keep",
+                      "setblock ^1 ^1 ^3 tome:mystic_deepslate 0 keep",
+                      "setblock ^2 ^1 ^3 tome:mystic_deepslate 0 keep",
+                      "setblock ^-1 ^1 ^3 tome:mystic_deepslate 0 keep",
+                      "setblock ^-2 ^1 ^3 tome:mystic_deepslate 0 keep",
+                      "setblock ^ ^2 ^3 tome:mystic_deepslate 0 keep",
+                      "setblock ^1 ^2 ^3 tome:mystic_deepslate 0 keep",
+                      "setblock ^2 ^2 ^3 tome:mystic_deepslate 0 keep",
+                      "setblock ^-1 ^2 ^3 tome:mystic_deepslate 0 keep",
+                      "setblock ^-2 ^2 ^3 tome:mystic_deepslate 0 keep",
+                      "playsound use.deepslate @a[r=5] ~~~ 6"
+                    ],
+                    "target": "holder"
+                   },
+              		"decrement_stack": {}
+                 },
+                 {
+                   "weight": 35,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                     "tellraw @s {\"rawtext\":[{\"text\":\"The Scroll backfired...nothing happened.\"}]}"
+                    ],
+                    "target": "holder"
+                   },
+              		"decrement_stack": {}
+                 }
+               ]
+             },
+             {
+               "condition":"query.scoreboard('block_magic') == 0 && query.player_level >= 46 && query.scoreboard('plant') == 1",
+               "randomize": [
+                 {
+                   "weight": 965,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                      "setblock ^ ^ ^3 tome:mystic_obsidian 0 keep",
+                      "setblock ^1 ^ ^3 tome:mystic_obsidian 0 keep",
+                      "setblock ^2 ^ ^3 tome:mystic_obsidian 0 keep",
+                      "setblock ^-1 ^ ^3 tome:mystic_obsidian 0 keep",
+                      "setblock ^-2 ^ ^3 tome:mystic_obsidian 0 keep",
+                      "setblock ^ ^1 ^3 tome:mystic_obsidian 0 keep",
+                      "setblock ^1 ^1 ^3 tome:mystic_obsidian 0 keep",
+                      "setblock ^2 ^1 ^3 tome:mystic_obsidian 0 keep",
+                      "setblock ^-1 ^1 ^3 tome:mystic_obsidian 0 keep",
+                      "setblock ^-2 ^1 ^3 tome:mystic_obsidian 0 keep",
+                      "setblock ^ ^2 ^3 tome:mystic_obsidian 0 keep",
+                      "setblock ^1 ^2 ^3 tome:mystic_obsidian 0 keep",
+                      "setblock ^2 ^2 ^3 tome:mystic_obsidian 0 keep",
+                      "setblock ^-1 ^2 ^3 tome:mystic_obsidian 0 keep",
+                      "setblock ^-2 ^2 ^3 tome:mystic_obsidian 0 keep",
+                      "playsound use.deepslate @a[r=5] ~~~ 6"
+                    ],
+                    "target": "holder"
+                   },
+              		"decrement_stack": {}
+                 },
+                 {
+                   "weight": 35,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                     "tellraw @s {\"rawtext\":[{\"text\":\"The Scroll backfired...nothing happened.\"}]}"
+                    ],
+                    "target": "holder"
+                   },
+              		"decrement_stack": {}
+                 }
+               ]
+             },
+            {
+               "condition": "!query.scoreboard('plant') == 1",
+               "run_command": {
+                 "command": ["tellraw @s {\"rawtext\":[{\"text\":\"You do not have the required Knowledge to use this Scroll.\"}]}"],
+                 "target": "holder"
+               }
+            }
+          ]
+        }
+      }
+    }
+  }

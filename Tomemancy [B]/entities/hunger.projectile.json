@@ -1,0 +1,102 @@
+{
+   "format_version":"1.16.220",
+   "minecraft:entity":{
+      "description":{
+         "identifier":"tome:hunger",
+         "is_spawnable":false,
+         "is_summonable":true,
+         "is_experimental":false,
+         "runtime_identifier":"minecraft:snowball",
+         "scripts":{
+            "animate":[
+               "walk",
+               "collide"
+            ]
+         },
+         "animations":{
+            "walk":"controller.animation.particles",
+            "collide":"controller.animation.collide"
+         }
+        },
+      "component_groups": {
+        "change":{
+            "minecraft:skin_id": {
+                "value": 2
+            }
+         }
+    },
+      "components":{
+         "minecraft:collision_box":{
+            "width":0.6,
+            "height":0.6
+         },
+         "minecraft:projectile": {
+             "on_hit": {
+                 "impact_damage": {
+                  "damage": 4,
+                  "knockback": false
+                },
+                "mob_effect": {
+                     "effect": "hunger",
+                     "durationeasy":400,
+                     "durationnormal": 400,
+                     "durationhard": 400,
+                     "amplifier": 1
+                  },
+                 "definition_event": {
+                  "affect_projectile": true,
+                  "event_trigger": {
+                  "event": "burst",
+                  "target": "self"
+                  }
+                 },
+                "stick_in_ground": {
+                  "shake_time" : 0.99
+                }
+              },
+              "power": 1.6,
+              "gravity": 0.004,
+              "inertia": 1,
+              "liquid_inertia": 0.6,
+              "uncertainty_base": 0,
+              "uncertainty_multiplier": 0,
+              "anchor": 1,
+              "offset": [ 0, -0.1, 0 ]
+         },
+         "minecraft:physics":{
+         },
+         "minecraft:scale":{
+            "value":0.6
+         },
+        "minecraft:despawn": {
+          "despawn_from_distance": {}
+        },
+  			"minecraft:environment_sensor": {
+  				"triggers": {
+  						"filters": {
+  							"test": "in_water",
+  							"value": true,
+  							"subject": "self"
+  						},
+  						"event": "kill"
+  					}
+  			},
+      "minecraft:conditional_bandwidth_optimization": {
+        "default_values": {
+          "max_optimized_distance": 80.0,
+          "max_dropped_ticks": 10,
+          "use_motion_prediction_hints": true
+        }
+      }
+    },
+    "events":{
+      "burst":{
+            "add":{
+               "component_groups":[
+                  "change"
+               ]
+            }
+         }
+     }
+   }
+ }

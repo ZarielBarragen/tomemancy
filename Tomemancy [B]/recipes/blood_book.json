@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "blood_book"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "BC"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:book"
+      },
+      "C": {
+        "item": "tome:iron_dagger"
+      }
+    },
+    "result": {
+      "item": "tome:blood_book"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "tome:exp_book",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:max_stack_size": 5,
+      "minecraft:foil": true,
+      "minecraft:hand_equipped": false,
+      "minecraft:icon":{
+         "texture": "exp_book"
+      },
+      "minecraft:display_name":{
+         "value":"Experience Tome"
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:on_use":{
+        "on_use":{
+          "event":"transform"
+          }
+        }
+      },
+      "events":{
+         "transform":{
+           "sequence": [
+             {
+                "run_command": {
+                    "command": [
+                      "xp 100 @s"
+                    ],
+                    "target": "holder"
+                },
+                "decrement_stack": {}
+              }
+            ]
+          }
+      }
+   }
+}

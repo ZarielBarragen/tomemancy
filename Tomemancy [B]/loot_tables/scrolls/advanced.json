@@ -1,0 +1,452 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "tome:absorb_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:acceleration_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:air_cushion_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:boulder_shot_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:cauterize_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:combust_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:conceal_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:curse_bolt_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:displace_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:douse_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:druidic_missile_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:foliage_dome_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:ground_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:heal_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:ignite_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:light_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:lightning_bolt_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:magnetize_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:resistance_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:summon_skeleton_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:summon_zombie_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:toxic_bullet_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:wall_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:water_ball_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:web_scroll",
+          "weight": 600
+        },
+        {
+          "type": "item",
+          "name": "tome:aegis_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:boost_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:candlelight_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:cave_spider_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:cave_spider_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:charm_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:electric_blitz_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:enfeeble_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:false_life_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:fangs_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:fatal_poison_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:fire_bolt_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:fire_burst_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:fire_spray_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:fireball_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:frost_dome_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:powdered_frost_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:heal_other_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:leaf_prison_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:light_ball_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:lightning_fangs_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:necro_ball_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:piercing_water_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:ring_of_fire_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:sand_ball_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:skeleton_legion_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:slime_ball_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:stalactites_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:summon_snow_golem_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:vanish_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:vigor_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:water_blast_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:water_ward_scroll",
+          "weight": 400
+        },
+        {
+          "type": "item",
+          "name": "tome:cleanse_scroll",
+          "weight": 200
+        },
+        {
+          "type": "item",
+          "name": "tome:decay_scroll",
+          "weight": 200
+        },
+        {
+          "type": "item",
+          "name": "tome:fire_ward_scroll",
+          "weight": 200
+        },
+        {
+          "type": "item",
+          "name": "tome:frost_blast_scroll",
+          "weight": 200
+        },
+        {
+          "type": "item",
+          "name": "tome:greater_heal_scroll",
+          "weight": 200
+        },
+        {
+          "type": "item",
+          "name": "tome:group_heal_scroll",
+          "weight": 200
+        },
+        {
+          "type": "item",
+          "name": "tome:hunger_scroll",
+          "weight": 200
+        },
+        {
+          "type": "item",
+          "name": "tome:levitate_scroll",
+          "weight": 200
+        },
+        {
+          "type": "item",
+          "name": "tome:lightning_carnage_scroll",
+          "weight": 200
+        },
+        {
+          "type": "item",
+          "name": "tome:metal_skin_scroll",
+          "weight": 200
+        },
+        {
+          "type": "item",
+          "name": "tome:poison_field_scroll",
+          "weight": 200
+        },
+        {
+          "type": "item",
+          "name": "tome:slow_scroll",
+          "weight": 200
+        },
+        {
+          "type": "item",
+          "name": "tome:snow_golem_rampage_scroll",
+          "weight": 200
+        },
+        {
+          "type": "item",
+          "name": "tome:teleport_scroll",
+          "weight": 200
+        },
+        {
+          "type": "item",
+          "name": "tome:weaken_scroll",
+          "weight": 200
+        },
+        {
+          "type": "item",
+          "name": "tome:wither_scroll",
+          "weight": 200
+        },
+        {
+          "type": "item",
+          "name": "tome:zombie_alliance_scroll",
+          "weight": 200
+        },
+        {
+          "type": "item",
+          "name": "tome:acid_blast_scroll",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "tome:barrier_scroll",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "tome:blessing_scroll",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "tome:colorful_display_scroll",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "tome:creeper_curse_scroll",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "tome:decay_orb_scroll",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "tome:dragon_fireball_scroll",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "tome:explosion_scroll",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "tome:gigavolt_scroll",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "tome:drown_scroll",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "tome:meteor_scroll",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "tome:geyser_scroll",
+          "weight": 30
+        },
+        {
+          "type": "item",
+          "name": "tome:necro_bolt_scroll",
+          "weight": 30
+        }
+      ]
+    }
+  ]
+}

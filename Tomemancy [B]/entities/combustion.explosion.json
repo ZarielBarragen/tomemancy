@@ -1,0 +1,56 @@
+{
+   "format_version":"1.13.0",
+   "minecraft:entity":{
+      "description":{
+         "identifier":"tome:combustion",
+         "is_spawnable":false,
+         "is_summonable":true,
+         "is_experimental":false,
+         "runtime_identifier":"minecraft:snowball",
+         "scripts":{
+            "animate":[
+               "walk"
+            ]
+         },
+         "animations":{
+            "walk":"controller.animation.particles"
+         }
+        },
+      "component_groups": {
+         "minecraft:exploding": {
+          "minecraft:explode": {
+          "fuse_length": 0,
+          "fuse_lit": true,
+          "power": 0.8,
+          "causes_fire": true,
+          "breaks_blocks": false,
+          "fire_affected_by_griefing": true,
+          "destroy_affected_by_griefing": true
+        }
+      }
+    },
+      "components":{
+         "minecraft:collision_box":{
+            "width":0.001,
+            "height":0.001
+         },
+          "minecraft:despawn": {
+              "despawn_from_distance": {}
+            },
+         "minecraft:physics":{
+         },
+         "minecraft:scale":{
+            "value":0.2
+         }
+      },
+      "events":{
+       "minecraft:entity_spawned":{
+            "add":{
+               "component_groups":[
+                  "minecraft:exploding"
+               ]
+            }
+         }
+     }
+  }
+}

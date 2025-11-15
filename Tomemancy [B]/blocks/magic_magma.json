@@ -1,0 +1,32 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "tome:magic_magma"
+        },
+        "components": {
+            "minecraft:ticking": {
+             "looping": false,
+             "range": [5, 6],
+          "on_tick": {
+          		"event": "disappear",
+    	      	"target": "self"
+    	      	}
+          },
+          "minecraft:unit_cube": {},
+          "minecraft:loot": "loot_tables/empty",
+	         "minecraft:explosion_resistance": 9999,
+            "minecraft:destroy_time": 99999999,
+            "minecraft:friction": 0.6,
+            "minecraft:map_color": "#000000",
+            "minecraft:block_light_absorption": 0.0
+            },
+            "events": {
+              "disappear": {
+		           "run_command": {
+	  	        	"command": ["setblock ~ ~ ~ lava replace"]
+	      	   }
+        	}
+        }
+    }
+}

@@ -1,0 +1,87 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "tome:air_cushion_scroll",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.scrolls_1"
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:foil": false,
+      "minecraft:hand_equipped": false,
+      "minecraft:icon":{
+         "texture":"storm_scroll"
+      },
+      "minecraft:display_name":{
+         "value":"Scroll of §7Air Cushion§r"
+      },
+
+      "minecraft:cooldown":{
+         "category":"tome:air_cushion",
+         "duration": 135
+      },
+      "minecraft:can_destroy_in_creative": false,
+         "minecraft:on_use":{
+            "on_use":{
+               "event":"cushion"
+            }
+         }
+      },
+      "events":{
+         "cushion":{
+            "sequence": [
+             {
+               "condition":"query.scoreboard('block_magic') == 0 && query.player_level >= 0 && query.scoreboard('wind') == 1",
+               "randomize": [
+                 {
+                   "weight": 965,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                     "effect @s slow_falling 120 1 true"
+                    ],
+                    "target": "holder"
+                   },
+              		"decrement_stack": {}
+                 },
+                 {
+                   "weight": 35,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                     "effect @s levitation 25 0 true",
+                     "tellraw @s {\"rawtext\":[{\"text\":\"Oh no- The Scroll- It's broken-\"}]}"
+                    ],
+                    "target": "holder"
+                   },
+              		"decrement_stack": {}
+                 }
+               ]
+             },
+            {
+            "condition": "query.scoreboard('block_magic') == 1 && query.remaining_durability >= 0",
+        "run_command": {
+            "command": [
+            "tellraw @s {\"rawtext\":[{\"text\":\"§8The Scroll's power is being blocked by an unknown force.\"}]}"
+            ],
+            "target": "holder"
+              }
+            },
+            {
+               "condition": "!query.scoreboard('wind') == 1",
+               "run_command": {
+                 "command": ["tellraw @s {\"rawtext\":[{\"text\":\"You do not have the required Knowledge to use this Scroll.§r\"}]}"],
+                 "target": "holder"
+               }
+            }
+          ]
+        }
+      }
+    }
+  }

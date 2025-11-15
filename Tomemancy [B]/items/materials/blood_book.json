@@ -1,0 +1,42 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "tome:blood_book",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:foil": true,
+      "minecraft:hand_equipped": false,
+      "minecraft:icon":{
+         "texture": "book_written"
+      },
+      "minecraft:display_name":{
+         "value":"§4A Hematurgist's Guide§r"
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:on_use":{
+        "on_use":{
+          "event":"transform"
+          }
+        }
+      },
+      "events":{
+         "transform":{
+           "sequence": [
+             {
+                "run_command": {
+                    "command": [
+                      "summon tome:hemalurgy ~ ~ ~"
+                    ],
+                    "target": "holder"
+                },
+                "decrement_stack": {}
+              }
+            ]
+          }
+      }
+   }
+}

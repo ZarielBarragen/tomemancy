@@ -1,0 +1,125 @@
+{
+  "format_version": "1.16.210",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "tome:ritual_pedestal",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+	  "runtime_identifier": "minecraft:armor_stand"
+    },
+	"component_groups": {
+	},
+  "components": {
+	"minecraft:environment_sensor": {
+    "triggers": [
+		  {
+        "filters": {
+      		"all_of":[
+      			{
+      			  "all_of":[
+      				  {
+      				    "test": "has_equipment", "operator": "==", "value": "tome:scroll"
+      				  }
+      				]
+      			}
+      		]
+				},
+            "event": "tome:scroll_in_hand"
+      },
+		  {
+        "filters": {
+      		"all_of":[
+      			{"test": "has_tag", "value": "scroll_equipped"},
+      			{
+      			  "all_of":[
+      				  {
+      				    "test": "has_equipment", "operator": "!=", "value": "tome:scroll"
+      				  }
+      				]
+      			}
+      		]
+				},
+            "event": "tome:scroll_not_in_hand"
+      }
+    ]
+	},
+	"minecraft:block_sensor": {
+          "sensor_radius": 1,
+          "on_break": [
+            {
+              "block_list": [
+				        "tome:scroll_table"
+              ],
+              "on_block_broken": "break"
+            }
+          ]
+        },
+      "minecraft:type_family": {
+        "family": [ "holder", "inanimate", "mob" ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 0.5
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+  	 "minecraft:equipment": {
+    	"slot_drop_chance": [
+        {
+          "slot": "slot.weapon.mainhand",
+          "drop_chance": 1
+        }
+    	]
+    },
+	  "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "all",
+          "deals_damage": false
+        }
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+      "minecraft:nameable": {
+		    "allow_name_tag_renaming": false
+      },
+      "minecraft:persistent": {
+      },
+      "minecraft:physics": {
+    		"has_collision": false,
+    		"has_gravity": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+      }
+    },
+
+    "events": {
+    	"break":{
+    			"run_command":{
+    				"command": "execute @s ~ ~ ~ detect ~ ~ ~ air 0 kill @s"				
+    			}
+    		},
+    	"tome:scroll_in_hand":{
+    		"remove":{"component_groups":["scroll_not_in_hand"]},
+    		"add":{"component_groups":["scroll_in_hand"]},
+    		"run_command":{
+    			"command": "tag @s add valid"
+    		}
+    	},
+    	"tome:scroll_not_in_hand":{
+    		"remove":{"component_groups":["scroll_in_hand"]},
+    		"add":{"component_groups":["scroll_not_in_hand"]},
+    		"run_command":{
+    			"command": "tag @s remove valid"
+    		}
+    	}
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "tome:copper_staff"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "XS"
+    ],
+    "key": {
+      "X": {
+        "item": "tome:base_staff"
+      },
+      "S": {
+        "item": "tome:copper_orb"
+      }
+    },
+    "result": {
+      "item": "tome:copper_staff"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "tome:candlelight"
+        },
+        "components": {
+            "minecraft:material_instances": {
+                "*": {
+                    "render_method": "blend"
+                }
+            },
+            "minecraft:ticking": {
+             "looping": true,
+             "range": [0.5, 0.5],
+          "on_tick": {
+          		"event": "disappear",
+    	      	"target": "self"
+    	      	}
+          },
+          "minecraft:entity_collision": false,
+          "minecraft:pick_collision": false,
+          "minecraft:loot": "loot_tables/empty",
+	         "minecraft:explosion_resistance": 200,
+            "minecraft:destroy_time": 2000000,
+            "minecraft:breathability": "air",
+            "minecraft:friction": 0.6,
+            "minecraft:map_color": "#000000",
+            "minecraft:block_light_absorption": 0.0,
+            "minecraft:block_light_emission": 1.0
+            },
+            "events": {
+              "disappear": {
+		           "run_command": {
+	  	        	"command": ["setblock ~ ~ ~ air replace"]
+	      	   }
+        	}
+       }
+    }
+}

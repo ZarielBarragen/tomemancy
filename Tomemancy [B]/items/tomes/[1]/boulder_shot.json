@@ -1,0 +1,236 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      
+      "identifier": "tome:boulder_shot",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.spells_1"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:foil": false,
+      "minecraft:hand_equipped": false,
+			"minecraft:durability": {
+				"max_durability": 400,
+				"damage_chance": {
+					"min": 0,
+					"max": 0
+				}
+			},
+    	"minecraft:repairable": {
+    		"repair_items": [
+    			{
+    				"items": ["minecraft:amethyst_shard", "minecraft:ink_sac"],
+    				"repair_amount": 2
+    			}
+    		]
+    	},
+      "minecraft:icon":{
+         "texture": "spell_1"
+      },
+      "minecraft:display_name": {
+         "value":"§2Boulder Shot\n§2Ecomancy| |§aBasic§r"
+      },
+      "minecraft:cooldown":{
+          "category":"boulder",
+          "duration": 2.5
+      },
+      "minecraft:on_use": {
+      "on_use": {
+          "event": "shoot",
+          "target": "self"
+          }
+        }
+      },
+      "events": {
+         "shoot": {
+				      "sequence": [
+             {
+            "condition":"query.scoreboard('block_magic') == 0 && query.player_level >= 12 && query.player_level <= 15 && query.scoreboard('plant') == 1 && query.remaining_durability > 1",
+            "shoot": {
+              "projectile": "tome:dirt_boulder",
+              "launch_power": 1.5,
+              "angle_offset": 0.5
+              },
+        "run_command": {
+            "command": [
+            "playsound dig.grass @a[r=5] ~~~ 6"
+            ],
+            "target": "holder"
+              },
+              "damage": {
+        			"type": "none",
+        			"amount": 1,
+        			"target": "self"
+        		   }
+             },
+             {
+            "condition":"query.scoreboard('block_magic') == 0 && query.player_level >= 16 && query.player_level <= 30 && query.scoreboard('plant') == 1 && query.remaining_durability > 1",
+            "shoot": {
+              "projectile": "tome:stone_boulder",
+              "launch_power": 1.5,
+              "angle_offset": 0.5
+              },
+        "run_command": {
+            "command": [
+            "playsound dig.stone @a[r=5] ~~~ 6"
+            ],
+            "target": "holder"
+              },
+              "damage": {
+        			"type": "none",
+        			"amount": 1,
+        			"target": "self"
+        		   }
+             },
+             {
+            "condition":"query.scoreboard('block_magic') == 0 && query.player_level >= 31 && query.player_level <= 45 && query.scoreboard('plant') == 1 && query.remaining_durability > 1",
+            "shoot": {
+              "projectile": "tome:deepslate_boulder",
+              "launch_power": 1.5,
+              "angle_offset": 0.5
+              },
+        "run_command": {
+            "command": [
+            "playsound dig.deepslate @a[r=5] ~~~ 6"
+            ],
+            "target": "holder"
+              },
+              "damage": {
+        			"type": "none",
+        			"amount": 1,
+        			"target": "self"
+        		   }
+             },
+             {
+            "condition":"query.scoreboard('block_magic') == 0 && query.player_level >= 46 && query.scoreboard('plant') == 1 && query.remaining_durability > 1",
+            "shoot": {
+              "projectile": "tome:obsidian_boulder",
+              "launch_power": 1.5,
+              "angle_offset": 0.5
+              },
+        "run_command": {
+            "command": [
+            "playsound dig.basalt @a[r=5] ~~~ 6"
+            ],
+            "target": "holder"
+              },
+              "damage": {
+        			"type": "none",
+        			"amount": 1,
+        			"target": "self"
+        		   }
+             },
+            {
+               "condition": "query.player_level < 12",
+               "run_command": {
+                 "command": ["tellraw @s {\"rawtext\":[{\"text\":\"§aYour Experience Level must be at level [12] before you can use this Tome.\"}]}"],
+                 "target": "holder"
+               }
+            },
+            {
+               "condition": "!query.scoreboard('plant') == 1",
+               "run_command": {
+                 "command": ["tellraw @s {\"rawtext\":[{\"text\":\"§aYou do not have the required Knowledge to use this Tome.§r\"}]}"],
+                 "target": "holder"
+               }
+            },
+            {
+            "condition": "query.scoreboard('block_magic') == 0 && query.player_level >= 12 && query.scoreboard('plant') == 1 && query.remaining_durability == 1",
+        "run_command": {
+            "command": [
+            "tellraw @s {\"rawtext\":[{\"text\":\"§8Your Tome crumbles before your eyes.\"}]}"
+            ],
+            "target": "holder"
+               },
+          		"damage": {
+          			"type": "none",
+          			"amount": 10,
+          			"target": "self"
+          		  }
+             },
+            {
+            "condition": "query.scoreboard('block_magic') == 1 && query.remaining_durability >= 0",
+        "run_command": {
+            "command": [
+            "tellraw @s {\"rawtext\":[{\"text\":\"§8The Tome's power is being blocked by an unknown force.\"}]}"
+            ],
+            "target": "holder"
+              }
+            },
+              {
+                "condition": "query.scoreboard('block_magic') == 0 && query.player_level >= 12 && query.player_level <= 15 && query.remaining_durability > 1",
+                "randomize": [
+                  {
+                    "weight": 35,
+                    "run_command": {
+                      "command": [
+                        "xp 2 @s"
+                      ],
+                    "target": "holder"
+                    }
+                  },
+                  {
+                    "weight": 65
+                  }
+                ]
+              },
+              {
+                "condition": "query.scoreboard('block_magic') == 0 && query.player_level >= 16 && query.player_level <= 30 && query.remaining_durability > 1",
+                "randomize": [
+                  {
+                    "weight": 35,
+                    "run_command": {
+                      "command": [
+                        "xp 12 @s"
+                      ],
+                    "target": "holder"
+                    }
+                  },
+                  {
+                    "weight": 65
+                  }
+                ]
+              },
+              {
+                "condition": "query.scoreboard('block_magic') == 0 && query.player_level >= 31 && query.player_level <= 45 && query.remaining_durability > 1",
+                "randomize": [
+                  {
+                    "weight": 35,
+                    "run_command": {
+                      "command": [
+                        "xp 32 @s"
+                      ],
+                    "target": "holder"
+                    }
+                  },
+                  {
+                    "weight": 65
+                  }
+                ]
+              },
+              {
+                "condition": "query.scoreboard('block_magic') == 0 && query.player_level >= 46 && query.remaining_durability > 1",
+                "randomize": [
+                  {
+                    "weight": 60,
+                    "run_command": {
+                      "command": [
+                        "xp 64 @s"
+                      ],
+                    "target": "holder"
+                    }
+                  },
+                  {
+                    "weight": 40
+                  }
+                ]
+              }
+           ]
+         }
+      }
+    }
+  }

@@ -1,0 +1,125 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      
+      "identifier": "tome:lightning_carnage",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.spells_3"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:foil": false,
+      "minecraft:hand_equipped": false,
+			"minecraft:durability": {
+				"max_durability": 400,
+				"damage_chance": {
+					"min": 0,
+					"max": 0
+				}
+			},
+    	"minecraft:repairable": {
+    		"repair_items": [
+    			{
+    				"items": ["minecraft:amethyst_shard", "minecraft:ink_sac"],
+    				"repair_amount": 2
+    			}
+    		]
+    	},
+      "minecraft:icon":{
+         "texture": "spell_3"
+      },
+      "minecraft:display_name": {
+         "value":"§eLightning Carnage\n§7Atmomancy| |§aAcolyte§r"
+      },
+      "minecraft:cooldown":{
+          "category":"lightning_carnage",
+          "duration": 30
+      },
+      
+      "minecraft:on_use": {
+      "on_use": {
+          "event": "carnage",
+          "target": "self"
+          }
+        }
+      },
+      "events": {
+         "carnage": {
+				      "sequence": [
+             {
+            "condition":"query.scoreboard('block_magic') == 0 && query.player_level >= 41 && query.scoreboard('wind') == 1 && query.remaining_durability > 1",
+            "run_command": {
+                "command": [
+                  "execute @e[r=15, rm=1, type=!item] ~ ~ ~ summon lightning_bolt ~ ~ ~",
+                  "playsound ambient.weather.thunder @a[r=5] ~~~ 7"
+                ],
+                "target": "holder"
+              },
+              "damage": {
+        			"type": "none",
+        			"amount": 1,
+        			"target": "self"
+        		   }
+             },
+            {
+            "condition": "query.scoreboard('block_magic') == 1 && query.remaining_durability >= 0",
+        "run_command": {
+            "command": [
+            "tellraw @s {\"rawtext\":[{\"text\":\"§8The Tome's power is being blocked by an unknown force.\"}]}"
+            ],
+            "target": "holder"
+              }
+            },
+            {
+               "condition": "query.player_level < 41",
+               "run_command": {
+                 "command": ["tellraw @s {\"rawtext\":[{\"text\":\"§aYour Experience Level must be at level [41] before you can use this Tome.\"}]}"],
+                 "target": "holder"
+               }
+            },
+            {
+               "condition": "!query.scoreboard('wind') == 1",
+               "run_command": {
+                 "command": ["tellraw @s {\"rawtext\":[{\"text\":\"§7You do not have the required Knowledge to use this Tome.§r\"}]}"],
+                 "target": "holder"
+               }
+            },
+            {
+            "condition": "query.scoreboard('block_magic') == 0 && query.player_level >= 41 && query.scoreboard('wind') == 1 && query.remaining_durability <= 1",
+        "run_command": {
+            "command": [
+            "tellraw @s {\"rawtext\":[{\"text\":\"§8Your Tome crumbles before your eyes.\"}]}"
+            ],
+            "target": "holder"
+               },
+          		"damage": {
+          			"type": "none",
+          			"amount": 15,
+          			"target": "self"
+          		  }
+             },
+              {
+                "condition": "query.scoreboard('block_magic') == 0 && query.player_level >= 41 && query.remaining_durability > 1",
+                "randomize": [
+                  {
+                    "weight": 35,
+                    "run_command": {
+                      "command": [
+                        "xp 32 @s"
+                      ],
+                    "target": "holder"
+                    }
+                  },
+                  {
+                    "weight": 65
+                  }
+                ]
+              }
+           ]
+         }
+      }
+    }
+  }

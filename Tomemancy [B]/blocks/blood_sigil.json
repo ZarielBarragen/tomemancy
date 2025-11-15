@@ -1,0 +1,1135 @@
+{
+    "format_version": "1.16.220",
+    "minecraft:block": {
+        "description": {
+            "identifier": "tome:blood_sigil",
+            "properties": {
+                "tome:type": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+                "tome:type_2": [0, 1, 2, 3, 4],
+                "tome:shelter_type": [0, 1, 2, 3, 4, 5, 6, 7],
+                "tome:good": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+                "tome:concealed": [0, 1]
+            }
+      },
+        "components": {
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "blood",
+                    "render_method": "blend"
+                }
+            },
+            "minecraft:geometry": "geometry.sigil_circle",
+            "minecraft:entity_collision": {
+               "origin": [-8,0,-8],
+                "size": [16,4,16]
+            },
+            "minecraft:pick_collision": {
+                "origin": [-8,0,-8],
+                "size": [16,2,16]
+            },
+            "minecraft:on_step_on": {
+             "event": "active",
+             "target": "self"
+	          },
+            "minecraft:on_interact": {
+             "event": "interactions",
+             "target": "self"
+	          },
+            "minecraft:on_player_destroyed": {
+             "event": "active",
+             "target": "self"
+	          },
+            "minecraft:placement_filter": {
+            	"conditions": [
+            		{
+            			"allowed_faces": ["up"],
+            			"block_filter": [
+            				{
+            					"tags": "!query.any_tag('water')"
+            				}
+            			]
+            		}
+            	]
+            },
+            "minecraft:destroy_time": 3.0,
+            "minecraft:friction": 0.6,
+            "minecraft:loot": "loot_tables/empty",
+            "minecraft:map_color": "#800c0c",
+            "minecraft:block_light_absorption": 0.0,
+            "minecraft:block_light_emission": 0.0
+            },
+            "events": {
+              
+             "interactions": {
+               "sequence": [
+                 {
+                   "condition": "query.block_property ('tome:type') == 0 && query.block_property ('tome:type_2') == 0 && query.block_property ('tome:good') == 0 && query.get_equipped_item_name('main_hand') == 'quartz'",
+                    "run_command": {
+                      "command": [
+                        "setblock ~~~ tome:ritual_circle"
+                      ],
+                      "target": "self"
+                    },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "(query.block_property ('tome:type') > 0) || (query.block_property ('tome:type_2') > 0) || (query.block_property ('tome:good') > 0) && query.block_property('tome:concealed') == 0 && query.get_equipped_item_name('main_hand') == 'ink_sac'",
+                   "set_block_property": {
+                     "tome:concealed": 1
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:concealed') == 1 && query.get_equipped_item_name('main_hand') == 'glow_ink_sac'",
+                   "set_block_property": {
+                     "tome:concealed": 0
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'coal'",
+                   "set_block_property": {
+                     "tome:type": 1
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'charcoal'",
+                   "set_block_property": {
+                     "tome:type": 1
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'snowball'",
+                   "set_block_property": {
+                     "tome:type": 2
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'spider_eye'",
+                   "set_block_property": {
+                     "tome:type": 3
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'wither_rose'",
+                   "set_block_property": {
+                     "tome:type": 4
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'feather'",
+                   "set_block_property": {
+                     "tome:type": 5
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'copper_ingot'",
+                   "set_block_property": {
+                     "tome:type": 6
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'gunpowder'",
+                   "set_block_property": {
+                     "tome:type": 7
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'pufferfish'",
+                   "set_block_property": {
+                     "tome:type": 8
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'ender_pearl'",
+                   "set_block_property": {
+                     "tome:type": 9
+                   },
+                   "decrement_stack": {
+                   }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'string'",
+                   "set_block_property": {
+                     "tome:type": 10
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'bone'",
+                   "set_block_property": {
+                     "tome:type": 11
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'slime_ball'",
+                   "set_block_property": {
+                     "tome:type": 12
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'iron_ingot'",
+                   "set_block_property": {
+                     "tome:type": 13
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'fermented_spider_eye'",
+                   "set_block_property": {
+                     "tome:type": 14
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'heart_of_the_sea'",
+                   "set_block_property": {
+                     "tome:type": 0,
+                     "tome:type_2": 1
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'dirt'",
+                   "set_block_property": {
+                     "tome:type": 0,
+                     "tome:type_2": 2,
+                     "tome:shelter_type": 0
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'cobblestone'",
+                   "set_block_property": {
+                     "tome:type": 0,
+                     "tome:type_2": 2,
+                     "tome:shelter_type": 1
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'netherrack'",
+                   "set_block_property": {
+                     "tome:type": 0,
+                     "tome:type_2": 2,
+                     "tome:shelter_type": 2
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'snow'",
+                   "set_block_property": {
+                     "tome:type": 0,
+                     "tome:type_2": 2,
+                     "tome:shelter_type": 3
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'cobbled_deepslate'",
+                   "set_block_property": {
+                     "tome:type": 0,
+                     "tome:type_2": 2,
+                     "tome:shelter_type": 4
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'sand:0'",
+                   "set_block_property": {
+                     "tome:type": 0,
+                     "tome:type_2": 2,
+                     "tome:shelter_type": 5
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'sand:1'",
+                   "set_block_property": {
+                     "tome:type": 0,
+                     "tome:type_2": 2,
+                     "tome:shelter_type": 6
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'obsidian'",
+                   "set_block_property": {
+                     "tome:type": 0,
+                     "tome:type_2": 2,
+                     "tome:shelter_type": 7
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'emerald'",
+                   "set_block_property": {
+                     "tome:type": 0,
+                     "tome:type_2": 3
+                   },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'water_bucket'",
+                   "set_block_property": {
+                     "tome:type": 0,
+                     "tome:type_2": 4
+                   },
+	          	     "run_command": {
+              			"command": [
+              			   "replaceitem entity @s slot.weapon.mainhand 0 bucket 0"
+              			 ],
+              			 "target": "other"
+              		 }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') == 3 && query.block_property('tome:good') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'fermented_spider_eye'",
+                      "set_block_property": {
+                        "tome:type": 0,
+                        "tome:type_2": 0,
+                        "tome:good": 1
+                       },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') == 11 && query.block_property('tome:good') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'fermented_spider_eye'",
+                      "set_block_property": {
+                        "tome:type": 0,
+                        "tome:type_2": 0,
+                        "tome:good": 2
+                       },
+                   "decrement_stack": {
+                    }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') == 3 && query.block_property('tome:good') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'poisonous_potato'",
+                      "set_block_property": {
+                        "tome:type": 0,
+                        "tome:type_2": 0,
+                        "tome:good": 3
+                       },
+                     "decrement_stack": {
+                      }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') == 7 && query.block_property('tome:good') < 1 && query.block_property('tome:type_2') < 1 && query.player_level >= 52 && query.get_equipped_item_name('main_hand') == 'tome:creeper_curse'",
+                      "set_block_property": {
+                        "tome:type": 0,
+                        "tome:type_2": 0,
+                        "tome:good": 4
+                       },
+  	          	     "damage": {
+                			"type": "durability",
+                			"target": "other",
+                			"amount": 15
+                		 }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') == 1 && query.block_property('tome:good') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'flint_and_steel'",
+                      "set_block_property": {
+                        "tome:type": 0,
+                        "tome:type_2": 0,
+                        "tome:good": 5
+                       },
+                     "decrement_stack": {
+                      }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') == 8 && query.block_property('tome:good') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'fermented_spider_eye'",
+                      "set_block_property": {
+                        "tome:type": 0,
+                        "tome:type_2": 0,
+                        "tome:good": 6
+                       },
+                     "decrement_stack": {
+                      }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') == 12 && query.block_property('tome:good') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'fermented_spider_eye'",
+                      "set_block_property": {
+                        "tome:type": 0,
+                        "tome:type_2": 0,
+                        "tome:good": 7
+                       },
+                     "decrement_stack": {
+                      }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') == 8 && query.block_property('tome:good') < 1 && query.block_property('tome:type_2') < 1 && query.get_equipped_item_name('main_hand') == 'fermented_spider_eye'",
+                      "set_block_property": {
+                        "tome:type": 0,
+                        "tome:type_2": 0,
+                        "tome:good": 8
+                       },
+                     "decrement_stack": {
+                      }
+                   }
+                 ]
+               },
+             "active": {
+               "sequence": [
+                 {
+                   "condition": "query.block_property('tome:type') == 1",
+	          	     "damage": {
+              			"type": "fire",
+              			"target": "other",
+              			"amount": 4
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') == 2",
+	          	     "run_command": {
+              			"command": [
+              			   "fill ~-1 ~ ~1 ~1 ~2 ~-1 ice replace double_plant",
+              			   "fill ~-1 ~ ~1 ~1 ~2 ~-1 ice replace air",
+              			   "fill ~-1 ~ ~1 ~1 ~2 ~-1 ice replace tome:blood_sigil",
+              			   "setblock ~ ~ ~ ice replace"
+              			 ],
+              			 "target": "self"
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') == 3",
+                   "add_mob_effect": {
+  		              	"effect": "poison",
+  		              	"target": "other",
+  		              	"duration": 25,
+  		              	"amplifier": 0
+                   },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') == 4",
+                   "add_mob_effect": {
+  		              	"effect": "wither",
+  		              	"target": "other",
+  		              	"duration": 35,
+  		              	"amplifier": 1
+                   },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') == 5",
+                   "add_mob_effect": {
+  		              	"effect": "levitation",
+  		              	"target": "other",
+  		              	"duration": 10,
+  		              	"amplifier": 1
+                   },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') == 6",
+	          	     "run_command": {
+              			"command": [
+              			   "summon lightning_bolt ~ ~ ~"
+              			 ],
+              			 "target": "self"
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     },
+	          	     "damage": {
+              			"type": "lightning",
+              			"target": "other",
+              			"amount": 2
+              		 }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') == 7",
+	          	     "run_command": {
+              			"command": [
+              			   "summon tome:boom ~ ~ ~"
+              			 ],
+              			 "target": "self"
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') == 8",
+	          	     "run_command": {
+              			"command": [
+              			   "effect @s nausea 45 3 false",
+              			   "effect @s blindness 45 3 false"
+              			 ],
+              			 "target": "other"
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') == 9",
+                   "teleport": {
+                     "max_range": [100, 100, 100],
+                     "target": "other"
+                   },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') == 10",
+	          	     "run_command": {
+              			"command": [
+              			   "fill ~-1 ~ ~1 ~1 ~2 ~-1 web replace double_plant",
+              			   "fill ~-1 ~ ~1 ~1 ~2 ~-1 web replace red_flower",
+              			   "fill ~-1 ~ ~1 ~1 ~2 ~-1 web replace yellow_flower",
+              			   "fill ~-1 ~ ~1 ~1 ~2 ~-1 web replace air",
+              			   "fill ~-1 ~ ~1 ~1 ~2 ~-1 web replace tome:blood_sigil",
+              			   "setblock ~ ~ ~ web 0 replace"
+              			 ],
+              			 "target": "other"
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') == 11",
+	          	     "damage": {
+                			"type": "magic",
+                			"target": "other",
+                			"amount": 8
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') == 12",
+	          	     "run_command": {
+              			"command": [
+              			   "effect @s slowness 25 3 true"
+              			 ],
+              			 "target": "other"
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') == 13",
+	          	     "run_command": {
+              			"command": [
+              			   "function dome_blood"
+              			 ],
+              			 "target": "other"
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type') == 14",
+	          	     "run_command": {
+              			"command": [
+              			   "effect @s weakness 45 3 false",
+              			   "effect @s mining_fatigue 45 3 false"
+              			 ],
+              			 "target": "other"
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type_2') == 1",
+                   "add_mob_effect": {
+  		              	"effect": "conduit_power",
+  		              	"target": "other",
+  		              	"duration": 45,
+  		              	"amplifier": 1
+                   },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type_2') == 2 && query.block_property('tome:shelter_type') == 0",
+	          	     "run_command": {
+              			"command": [
+              			   "structure load mystructure:dirt ~-1 ~ ~-1 0_degrees none layer_by_layer 0 true"
+              			 ],
+              			 "target": "other"
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type_2') == 2 && query.block_property('tome:shelter_type') == 1",
+	          	     "run_command": {
+              			"command": [
+              			   "structure load mystructure:stone ~-1 ~ ~-1 0_degrees none layer_by_layer 0 true"
+              			 ],
+              			 "target": "other"
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type_2') == 2 && query.block_property('tome:shelter_type') == 2",
+	          	     "run_command": {
+              			"command": [
+              			   "structure load mystructure:netherrack ~-1 ~ ~-1 0_degrees none layer_by_layer 0 true"
+              			 ],
+              			 "target": "other"
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type_2') == 2 && query.block_property('tome:shelter_type') == 3",
+	          	     "run_command": {
+              			"command": [
+              			   "structure load mystructure:ice ~-1 ~ ~-1 0_degrees none layer_by_layer 0 true"
+              			 ],
+              			 "target": "other"
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type_2') == 2 && query.block_property('tome:shelter_type') == 4",
+	          	     "run_command": {
+              			"command": [
+              			   "structure load mystructure:deepslate ~-1 ~ ~-1 0_degrees none layer_by_layer 0 true"
+              			 ],
+              			 "target": "other"
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type_2') == 2 && query.block_property('tome:shelter_type') == 5",
+	          	     "run_command": {
+              			"command": [
+              			   "structure load mystructure:sand ~-1 ~ ~-1 0_degrees none layer_by_layer 0 true"
+              			 ],
+              			 "target": "other"
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type_2') == 2 && query.block_property('tome:shelter_type') == 6",
+	          	     "run_command": {
+              			"command": [
+              			   "structure load mystructure:red_sand ~-1 ~ ~-1 0_degrees none layer_by_layer 0 true"
+              			 ],
+              			 "target": "other"
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type_2') == 2 && query.block_property('tome:shelter_type') == 7",
+	          	     "run_command": {
+              			"command": [
+              			   "structure load mystructure:obsidian ~-1 ~ ~-1 0_degrees none layer_by_layer 0 true"
+              			 ],
+              			 "target": "other"
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type_2') == 3",
+	          	     "run_command": {
+              			"command": [
+              			   "summon evocation_fang ~ ~ ~"
+              			 ],
+              			 "target": "other"
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:type_2') == 4",
+	          	     "run_command": {
+              			"command": [
+              			   "particle tome:water_splash ~ ~0.1 ~",
+              			   "summon splash_potion ~ ~ ~",
+              			   "playsound random.splash @a[r=5] ~ ~ ~ 7.0"
+              			 ],
+              			 "target": "other"
+              		 },
+	          	     "damage": {
+                			"type": "drowning",
+                			"target": "other",
+                			"amount": 4
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:good') == 1",
+                   "add_mob_effect": {
+  		              	"effect": "regeneration",
+  		              	"target": "other",
+  		              	"duration": 25,
+  		              	"amplifier": 0
+                   },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:good') == 2",
+	          	     "damage": {
+                			"type": "magic",
+                			"target": "other",
+                			"amount": -8
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:good') == 3",
+                   "add_mob_effect": {
+  		              	"effect": "fatal_poison",
+  		              	"target": "other",
+  		              	"duration": 15,
+  		              	"amplifier": 0
+                   },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:good') == 4",
+	          	     "run_command": {
+              			"command": [
+              			   "tag @e[r=2] add creeper_cursed"
+              			 ],
+              			 "target": "other"
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:good') == 5",
+	          	     "run_command": {
+              			"command": [
+              			   "fill ~-2 ~ ~2 ~2 ~3 ~-2 fire replace double_plant",
+              			   "fill ~-2 ~ ~2 ~2 ~3 ~-2 fire replace air",
+              			   "fill ~-2 ~ ~2 ~2 ~3 ~-2 fire replace tome:blood_sigil",
+              			   "setblock ~ ~ ~ fire replace"
+              			 ],
+              			 "target": "other"
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:good') == 6",
+	          	     "run_command": {
+              			"command": [
+              			   "effect @s night_vision 45 3 false",
+              			   "effect @s blindness 0 2 false"
+              			 ],
+              			 "target": "other"
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:good') == 7",
+	          	     "run_command": {
+              			"command": [
+              			   "effect @s speed 45 1 false"
+              			 ],
+              			 "target": "other"
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 },
+                 {
+                   "condition": "query.block_property('tome:good') == 8",
+	          	     "run_command": {
+              			"command": [
+              			   "effect @s haste 45 1 false",
+              			   "effect @s strength 45 1 false"
+              			 ],
+              			 "target": "other"
+              		 },
+                   "die": {
+	          	      "target": "self"
+	          	     }
+                 }
+               ]
+             }
+         },
+         "permutations": [
+           {
+             "condition": "query.block_property('tome:type') == 1 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_fire",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:type') == 2 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_water",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:type') == 3 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_poison",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:type') == 4 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_wither",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:type') == 5 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_levitate",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:type') == 6 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_lightning",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:type') == 7 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_explosion",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:type') == 8 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_nauseate",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:type') == 9 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_abjure",
+                        "render_method": "blend"
+                    }
+                },
+                "minecraft:on_step_on": {
+                 "event": "active",
+                 "target": "self"
+    	          }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:type') == 10 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_web",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:type') == 11 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_damage",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:type') == 12 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_slime",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:type') == 13 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_ward",
+                        "render_method": "blend"
+                    }
+                }
+              }
+           },
+           {
+             "condition": "query.block_property('tome:type') == 14 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_weaken",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:type_2') == 1 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_conduit",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:type_2') == 2 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_shelter",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:type_2') == 3 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_wither",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:type_2') == 4 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_rain",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:good') == 1 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_regen",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:good') == 2 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_heal",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:good') == 3 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_poison",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:good') == 4 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_explosion",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:good') == 5 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_conflagrate",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:good') == 6 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_sight",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:good') == 7 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_strength",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property('tome:good') == 8 && query.block_property ('tome:concealed') == 0",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "blood_speed",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           },
+           {
+             "condition": "query.block_property ('tome:concealed') == 1",
+             "components": {
+                "minecraft:material_instances": {
+                    "*": {
+                        "texture": "transparent",
+                        "render_method": "blend"
+                    }
+                }
+             }
+           }
+        ]
+    }
+}

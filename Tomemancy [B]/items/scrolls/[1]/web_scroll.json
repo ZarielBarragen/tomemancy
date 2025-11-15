@@ -1,0 +1,105 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "tome:web_scroll",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.scrolls_1"
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:foil": false,
+      "minecraft:hand_equipped": false,
+      "minecraft:icon":{
+         "texture":"nature_scroll"
+      },
+      "minecraft:display_name":{
+         "value":"Scroll of §2Web§r"
+      },
+
+      "minecraft:cooldown":{
+          "category":"web",
+          "duration": 1.5
+      },
+      "minecraft:can_destroy_in_creative": false,
+         "minecraft:on_use":{
+            "on_use":{
+               "event":"shoot"
+            }
+         }
+      },
+      "events":{
+         "shoot":{
+            "sequence": [
+              {
+            "condition": "query.scoreboard('block_magic') == 1 && query.remaining_durability >= 0",
+        "run_command": {
+            "command": [
+            "tellraw @s {\"rawtext\":[{\"text\":\"§8The Scroll's power is being blocked by an unknown force.\"}]}"
+            ],
+            "target": "holder"
+              }
+            },
+             {
+               "condition":"query.player_level >= 0 && query.scoreboard('plant') == 1",
+               "randomize": [
+                 {
+                   "weight": 965,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                      "setblock ^ ^ ^3 web 0 keep",
+                      "setblock ^1 ^ ^3 web 0 keep",
+                      "setblock ^2 ^ ^3 web 0 keep",
+                      "setblock ^-1 ^ ^3 web 0 keep",
+                      "setblock ^-2 ^ ^3 web 0 keep",
+                      "setblock ^ ^1 ^3 web 0 keep",
+                      "setblock ^1 ^1 ^3 web 0 keep",
+                      "setblock ^2 ^1 ^3 web 0 keep",
+                      "setblock ^-1 ^1 ^3 web 0 keep",
+                      "setblock ^-2 ^1 ^3 web 0 keep",
+                      "setblock ^ ^2 ^3 web 0 keep",
+                      "setblock ^1 ^2 ^3 web 0 keep",
+                      "setblock ^2 ^2 ^3 web 0 keep",
+                      "setblock ^-1 ^2 ^3 web 0 keep",
+                      "setblock ^-2 ^2 ^3 web 0 keep",
+                      "playsound crossbow.shoot @a[r=5] ~~~ 6"
+                    ],
+                    "target": "holder"
+                   },
+              		"decrement_stack": {}
+                 },
+                 {
+                   "weight": 35,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                     "fill ~-1 ~ ~1 ~1 ~2 ~-1 web 0 replace air",
+                     "fill ~-1 ~ ~1 ~1 ~2 ~-1 web 0 replace double_plant",
+                     "fill ~-1 ~ ~1 ~1 ~2 ~-1 web 0 replace red_flower",
+                     "fill ~-1 ~ ~1 ~1 ~2 ~-1 web 0 replace yellow_flower",
+                     "tellraw @s {\"rawtext\":[{\"text\":\"The Scroll backfired and you're trapped in webs!\"}]}"
+                    ],
+                    "target": "holder"
+                   },
+              		"decrement_stack": {}
+                 }
+               ]
+             },
+            {
+               "condition": "!query.scoreboard('plant') == 1",
+               "run_command": {
+                 "command": ["tellraw @s {\"rawtext\":[{\"text\":\"You do not have the required Knowledge to use this Scroll.\"}]}"],
+                 "target": "holder"
+               }
+            }
+          ]
+        }
+      }
+    }
+  }

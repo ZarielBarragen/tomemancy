@@ -1,0 +1,46 @@
+{
+   "format_version": "1.16.220",
+   "minecraft:entity":{
+      "description":{
+         "identifier":"tome:dummy",
+         "is_spawnable":false,
+         "is_summonable":true,
+         "is_experimental":false
+        },
+      "component_groups": {
+        "dead":{
+            "minecraft:instant_despawn":{
+            }
+         }
+    },
+      "components":{
+         "minecraft:collision_box":{
+            "width":0.001,
+            "height":0.001
+         },
+         "minecraft:physics":{
+           "has_collision": false,
+           "has_gravity": false
+         },
+         "minecraft:scale":{
+            "value":0.002
+         },
+        "minecraft:timer":{
+          "time": 600.0,
+          "looping": false,
+          "time_down_event":{
+            "event":"dead"
+          }
+        }
+      },
+      "events":{
+       "dead":{
+            "add":{
+               "component_groups":[
+                  "dead"
+               ]
+            }
+         }
+     }
+  }
+}

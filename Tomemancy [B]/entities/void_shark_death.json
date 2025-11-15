@@ -1,0 +1,37 @@
+{
+   "format_version":"1.16.220",
+    "minecraft:entity": {
+     "description": {
+			"identifier": "tome:void_shark_death",
+			"is_spawnable": false,
+			"is_summonable": false,
+			"is_experimental": false
+        },
+        "component_groups": {
+            "tome:ded": {
+               "minecraft:damage_over_time": {
+                "damage_per_hurt": 20,
+                "time_between_hurt": 0
+              }
+            }
+        },
+        "components": {
+          "minecraft:scale":{
+            "value": 1.8
+          },
+          "minecraft:health": {
+            "value": 20,
+            "max": 20
+          }
+        },
+        "events": {
+          "dies": {
+            "add": {
+                "component_groups": [
+                    "tome:ded"
+               ]
+            }
+          }
+        }
+    }
+}

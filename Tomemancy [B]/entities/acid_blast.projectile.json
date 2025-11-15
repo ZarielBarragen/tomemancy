@@ -1,0 +1,84 @@
+{
+   "format_version":"1.16.220",
+   "minecraft:entity":{
+      "description":{
+         "identifier":"tome:acid_blast",
+         "is_spawnable":false,
+         "is_summonable":true,
+         "is_experimental":false,
+         "runtime_identifier":"minecraft:snowball",
+         "scripts":{
+            "animate":[
+               "walk"
+            ]
+         },
+         "animations":{
+            "walk":"controller.animation.particles"
+         }
+        },
+      "component_groups": {
+        "change":{
+            "minecraft:skin_id": {
+                "value": 1
+            }
+         }
+    },
+      "components":{
+         "minecraft:collision_box":{
+            "width":0.4,
+            "height":0.4
+         },
+         "minecraft:projectile": {
+             "on_hit": {
+                 "impact_damage": {
+                  "damage": 10
+                },
+                "spawn_aoe_cloud": {
+                  "potion": 25,
+                  "radius": 4.0,
+                  "radius_on_use": -0.5,
+                  "duration": 60,
+                  "affect_owner": false,
+                  "reapplication_delay": 10
+                },
+                "remove_on_hit": { }
+              },
+              "power": 1.6,
+              "gravity": 0.004,
+              "inertia": 1,
+              "liquid_inertia": 0.6,
+              "uncertainty_base": 0,
+              "uncertainty_multiplier": 0,
+              "anchor": 1,
+              "offset": [ 0, -0.1, 0 ]
+         },
+  			"minecraft:environment_sensor": {
+  				"triggers": {
+  						"filters": {
+  							"test": "in_water",
+  							"value": true,
+  							"subject": "self"
+  						},
+  						"event": "kill"
+  					}
+  			},
+         "minecraft:physics":{
+         },
+         "minecraft:scale":{
+            "value":0.6
+         },
+      "minecraft:despawn": {
+          "despawn_from_distance": {}
+        },
+      "minecraft:conditional_bandwidth_optimization": {
+        "default_values": {
+          "max_optimized_distance": 80.0,
+          "max_dropped_ticks": 10,
+          "use_motion_prediction_hints": true
+        }
+      }
+    },
+    "events":{
+     }
+   }
+ }

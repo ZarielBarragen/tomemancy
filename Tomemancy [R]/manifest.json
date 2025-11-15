@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "§oMade by §b@SpicyShelduck§r & §a@TheGibberishOne§r",
+        "name": "Tomemancy",
+        "uuid": "cbda2744-a815-478b-a087-127c4b510b41",
+        "version": [2, 0, 8],
+        "min_engine_version": [ 1, 21, 0 ]
+    },
+    "modules": [
+        {
+            "description": "",
+            "type": "resources",
+            "uuid": "08131971-35ac-49d2-bde4-573cea8c3f58",
+            "version": [2, 0, 8]
+        }
+    ]
+}

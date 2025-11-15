@@ -1,0 +1,282 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "spellbook": {
+      "textures": [
+        "textures/items/spellbook"
+        ]
+    },
+    "spell_1": {
+      "textures": [
+        "textures/items/spellbook"
+        ]
+    },
+    "spell_2": {
+      "textures": [
+        "textures/items/spellbook"
+        ]
+    },
+    "spell_3": {
+      "textures": [
+        "textures/items/spellbook"
+        ]
+    },
+    "spell_4": {
+      "textures": [
+        "textures/items/spellbook"
+        ]
+    },
+    "spell_5": {
+      "textures": [
+        "textures/items/spellbook"
+        ]
+    },
+    "spell_6": {
+      "textures": [
+        "textures/items/spellbook"
+        ]
+    },
+    "spell_7": {
+      "textures": [
+        "textures/items/spellbook"
+        ]
+    },
+    "staff": {
+      "textures": [
+        "textures/items/staves/empty_staff"
+        ]
+    },
+    "staff_1": {
+      "textures": [
+        "textures/items/staves/amethyst_staff"
+        ]
+    },
+    "staff_2": {
+      "textures": [
+        "textures/items/staves/copper_staff"
+        ]
+    },
+    "staff_3": {
+      "textures": [
+        "textures/items/staves/emerald_staff"
+        ]
+    },
+    "staff_4": {
+      "textures": [
+        "textures/items/staves/diamond_staff"
+        ]
+    },
+    "staff_5": {
+      "textures": [
+        "textures/items/staves/prismarine_staff"
+        ]
+    },
+    "staff_6": {
+      "textures": [
+        "textures/items/staves/quartz_staff"
+        ]
+    },
+    "emerald_orb": {
+      "textures": [
+        "textures/items/orbs/emerald_orb"
+        ]
+    },
+    "amethyst_orb": {
+      "textures": [
+        "textures/items/orbs/amethyst_orb"
+        ]
+    },
+    "quartz_orb": {
+      "textures": [
+        "textures/items/orbs/quartz_orb"
+        ]
+    },
+    "diamond_orb": {
+      "textures": [
+        "textures/items/orbs/diamond_orb"
+        ]
+    },
+    "prismarine_orb": {
+      "textures": [
+        "textures/items/orbs/prismarine_orb"
+        ]
+    },
+    "copper_orb": {
+      "textures": [
+        "textures/items/orbs/copper_orb"
+        ]
+    },
+    "exp_book": {
+      "textures": [
+        "textures/items/exp_tome"
+        ]
+    },
+    "aegis_head": {
+      "textures": [
+        "textures/items/magic_helmet"
+        ]
+    },
+    "aegis_chest": {
+      "textures": [
+        "textures/items/magic_chestplate"
+        ]
+    },
+    "aegis_legs": {
+      "textures": [
+        "textures/items/magic_leggings"
+        ]
+    },
+    "aegis_feet": {
+      "textures": [
+        "textures/items/magic_boots"
+        ]
+    },
+    "iron_dagger": {
+      "textures": [
+        "textures/items/dagger_iron"
+        ]
+    },
+    //Pages
+    "all_page": {
+      "textures": [
+        "textures/items/all_page"
+        ]
+    },
+    "blood_page": {
+      "textures": [
+        "textures/items/blood_page"
+        ]
+    },
+    "curse_page": {
+      "textures": [
+        "textures/items/curse_page"
+        ]
+    },
+    "fire_page": {
+      "textures": [
+        "textures/items/fire_page"
+        ]
+    },
+    "light_page": {
+      "textures": [
+        "textures/items/light_page"
+        ]
+    },
+    "mystic_page": {
+      "textures": [
+        "textures/items/mystic_page"
+        ]
+    },
+    "plant_page": {
+      "textures": [
+        "textures/items/plant_page"
+        ]
+    },
+    "undead_page": {
+      "textures": [
+        "textures/items/undead_page"
+        ]
+    },
+    "water_page": {
+      "textures": [
+        "textures/items/water_page"
+        ]
+    },
+    "wind_page": {
+      "textures": [
+        "textures/items/wind_page"
+        ]
+    },
+    "scroll": {
+      "textures": [
+        "textures/items/scrolls/scroll_base"
+        ]
+    },
+    "water_scroll": {
+      "textures": [
+        "textures/items/scrolls/water_scroll"
+        ]
+    },
+    "fire_scroll": {
+      "textures": [
+        "textures/items/scrolls/fire_scroll"
+        ]
+    },
+    "nature_scroll": {
+      "textures": [
+        "textures/items/scrolls/nature_scroll"
+        ]
+    },
+    "curse_scroll": {
+      "textures": [
+        "textures/items/scrolls/curse_scroll"
+        ]
+    },
+    "undead_scroll": {
+      "textures": [
+        "textures/items/scrolls/undead_scroll"
+        ]
+    },
+    "light_scroll": {
+      "textures": [
+        "textures/items/scrolls/light_scroll"
+        ]
+    },
+    "mystic_scroll": {
+      "textures": [
+        "textures/items/scrolls/mystic_scroll"
+        ]
+    },
+    "storm_scroll": {
+      "textures": [
+        "textures/items/scrolls/lightning_scroll"
+        ]
+    },
+    "red_rune": {
+      "textures": [
+        "textures/items/runes/red"
+        ]
+    },
+    "blue_rune": {
+      "textures": [
+        "textures/items/runes/blue"
+        ]
+    },
+    "purple_rune": {
+      "textures": [
+        "textures/items/runes/purple"
+        ]
+    },
+    "orange_rune": {
+      "textures": [
+        "textures/items/runes/orange"
+        ]
+    },
+    "green_rune": {
+      "textures": [
+        "textures/items/runes/green"
+        ]
+    },
+    "white_rune": {
+      "textures": [
+        "textures/items/runes/white"
+        ]
+    },
+    "yellow_rune": {
+      "textures": [
+        "textures/items/runes/yellow"
+        ]
+    },
+    "magenta_rune": {
+      "textures": [
+        "textures/items/runes/magenta"
+        ]
+    },
+    "gray_rune": {
+      "textures": [
+        "textures/items/runes/gray"
+        ]
+    }
+  }
+}

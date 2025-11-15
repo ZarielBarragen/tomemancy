@@ -1,0 +1,126 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "tome:enchanted_dagger",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:foil": true,
+      "minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 700,
+				"damage_chance": {
+					"min": 1,
+					"max": 1
+				}
+			},
+			"minecraft:weapon": {
+			  "on_hurt_entity": {
+			    "event": "life_steal"
+			  }
+			},
+			"minecraft:damage": 5,
+    	"minecraft:repairable": {
+    		"repair_items": [
+    			{
+    				"items": ["minecraft:iron_ingot"],
+    				"repair_amount": 4
+    			},
+    			{
+    				"items": ["minecraft:iron_nugget"],
+    				"repair_amount": 1
+    			}
+    		]
+    	},
+      "minecraft:icon":{
+         "texture": "iron_dagger"
+      },
+      "minecraft:display_name":{
+         "value":"Enchanted Dagger"
+      },
+      "minecraft:cooldown":{
+         "category":"blood",
+         "duration": 1.5
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:on_use":{
+        "on_use":{
+          "event":"lay_sigil"
+          }
+        }
+      },
+      "events":{
+         "lay_sigil":{
+           "sequence": [
+             {
+               "condition": "query.cardinal_facing == 0.0",
+                "swing":{
+                },
+                "run_command": {
+                    "command": [
+                      "setblock ~ ~ ~ tome:blood_sigil 0 replace",
+                      "playsound game.player.hurt @a[r=5] ~ ~ ~ 7.0"
+                    ],
+                    "target": "holder"
+                },
+            		"damage": {
+            			"type": "none",
+            			"amount": 4,
+            			"target": "self"
+            		}
+             },
+             {
+              "condition": "query.cardinal_facing == 0.0",
+              "damage": {
+              	"type": "magic",
+              	"amount": 2,
+              	"target": "holder"
+               }
+             }
+            ]
+          },
+         "life_steal":{
+           "sequence": [
+             {
+                "swing":{
+                },
+            		"damage": {
+            			"type": "none",
+            			"amount": 4,
+            			"target": "self"
+            		}
+             },
+             {
+            		"randomize": [
+            		  {
+            		    "weight": 70
+            		  },
+            		  {
+            		    "weight": 30,
+                		"damage": {
+                			"type": "magic",
+                			"amount": -3,
+                			"target": "holder"
+                		}
+            		  }
+            		]
+             }
+        	 ]
+         },
+         "damage":{
+           "sequence": [
+             {
+            		"damage": {
+            			"type": "none",
+            			"amount": 4,
+            			"target": "self"
+            		}
+             }
+        	 ]
+         }
+      }
+   }
+} 

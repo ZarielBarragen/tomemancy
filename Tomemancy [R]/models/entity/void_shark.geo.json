@@ -1,0 +1,88 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.void_shark",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 7,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-7, 0, -12], "size": [14, 17, 25], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "tail",
+					"parent": "body",
+					"pivot": [0, 8, 13],
+					"cubes": [
+						{"origin": [-5, 2, 13], "size": [10, 11, 20], "uv": [0, 42]}
+					]
+				},
+				{
+					"name": "tail_fin",
+					"parent": "tail",
+					"pivot": [0, 7, 29],
+					"cubes": [
+						{"origin": [-0.5, -3, 29], "size": [1, 25, 11], "uv": [60, 42]}
+					]
+				},
+				{
+					"name": "tail_wing",
+					"parent": "tail",
+					"pivot": [4, 9, 21],
+					"cubes": [
+						{"origin": [4, 9, 12], "size": [25, 0, 22], "pivot": [4, 9, 21], "rotation": [0, 0, -20], "uv": [31, 0]}
+					]
+				},
+				{
+					"name": "tail_wing2",
+					"parent": "tail",
+					"pivot": [-4, 9, 21],
+					"cubes": [
+						{"origin": [-29, 9, 12], "size": [25, 0, 22], "pivot": [-4, 9, 21], "rotation": [0, 0, 20], "uv": [31, 0], "mirror": true}
+					]
+				},
+				{
+					"name": "wing",
+					"parent": "body",
+					"pivot": [6, 1, 0],
+					"cubes": [
+						{"origin": [6, 1, -9], "size": [25, 0, 22], "pivot": [6, 1, 0], "rotation": [0, 0, 20], "uv": [31, 0]}
+					]
+				},
+				{
+					"name": "wing2",
+					"parent": "body",
+					"pivot": [-6, 1, 0],
+					"cubes": [
+						{"origin": [-31, 1, -9], "size": [25, 0, 22], "pivot": [-6, 1, 0], "rotation": [0, 0, -20], "uv": [31, 0], "mirror": true}
+					]
+				},
+				{
+					"name": "jaw",
+					"parent": "body",
+					"pivot": [0, 7, -12],
+					"cubes": [
+						{"origin": [-4, 4, -23], "size": [8, 5, 11], "pivot": [0, 6, -12], "rotation": [-15, 0, 0], "uv": [0, 73]}
+					]
+				},
+				{
+					"name": "jaw2",
+					"parent": "body",
+					"pivot": [0, 2, -12],
+					"cubes": [
+						{"origin": [-4, 1, -23], "size": [8, 5, 11], "pivot": [0, 3, -12], "rotation": [-20, 0, -180], "uv": [0, 73]}
+					]
+				}
+			]
+		}
+	]
+}

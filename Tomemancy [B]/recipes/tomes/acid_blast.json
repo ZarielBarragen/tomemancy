@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "tome:acid_blast_recipe"
+    },
+
+    
+    "tags": [ "tome:tomes" ],
+    "pattern": [
+      " O ",
+      "OSO",
+      " O "
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:book"
+      },
+      "O": {
+        "item": "tome:acid_blast_scroll"
+      }
+    },
+    "result": {
+      "item": "tome:acid_blast"
+    }
+  }
+} 

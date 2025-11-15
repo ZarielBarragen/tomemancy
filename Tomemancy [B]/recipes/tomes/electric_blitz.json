@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "tome:electric_blitz_recipe"
+    },
+
+    
+    "tags": [ "tome:tomes" ],
+    "pattern": [
+      " O ",
+      "OSO",
+      " O "
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:book"
+      },
+      "O": {
+        "item": "tome:electric_blitz_scroll"
+      }
+    },
+    "result": {
+      "item": "tome:electric_blitz"
+    }
+  }
+} 

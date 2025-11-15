@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tome:wizard",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "default": "textures/entity/wizard/wizard_green",
+        "apprentice": "textures/entity/wizard/wizard_blue",
+        "acolyte": "textures/entity/wizard/wizard_purple",
+        "advanced": "textures/entity/wizard/wizard_red"
+      },
+      "geometry": {
+        "default": "geometry.t_wizard"
+      },
+      "animations": {
+        "look_at_target": "animation.common.look_at_target",
+        "walk": "animation.wizard.move"
+      },
+      "scripts": {
+        "animate": [
+          { "walk": "query.modified_move_speed" },
+          "look_at_target"
+        ]
+      },
+     "render_controllers": [ "controller.render.wizard" ],
+     "spawn_egg": {
+				"overlay_color": "#2f2e12",
+				"base_color": "#f3f444"
+			}
+    }
+  }
+}

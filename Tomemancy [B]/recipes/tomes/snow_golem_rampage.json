@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "tome:snow_golem_rampage_recipe"
+    },
+
+    
+    "tags": [ "tome:tomes" ],
+    "pattern": [
+      " O ",
+      "OSO",
+      " O "
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:book"
+      },
+      "O": {
+        "item": "tome:snow_golem_rampage_scroll"
+      }
+    },
+    "result": {
+      "item": "tome:snow_golem_rampage"
+    }
+  }
+} 

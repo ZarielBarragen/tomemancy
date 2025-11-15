@@ -1,0 +1,97 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "tome:curse_bolt_scroll",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.scrolls_1"
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:foil": false,
+      "minecraft:hand_equipped": false,
+      "minecraft:icon":{
+         "texture":"curse_scroll"
+      },
+      "minecraft:display_name":{
+         "value":"Scroll of §8Curse Bolt§r"
+      },
+
+      "minecraft:cooldown":{
+          "category":"curse_bolt",
+          "duration": 1.5
+      },
+      "minecraft:can_destroy_in_creative": false,
+         "minecraft:on_use":{
+            "on_use":{
+               "event":"curse_bolt"
+            }
+         }
+      },
+      "events":{
+         "curse_bolt":{
+            "sequence": [
+            {
+              "condition": "query.scoreboard('block_magic') == 0 && query.player_level >= 0 && query.scoreboard('curse') == 1",
+              "randomize": [
+                {
+                  "weight": 965,
+                  "swing":{
+                  },
+                  "shoot": {
+                    "projectile": "tome:curse_bolt",
+                    "launch_power": 2.7,
+                    "angle_offset": 0.5
+                  },
+                  "run_command": {
+                    "command": [
+                      "playsound mob.evocation_illager.cast_spell @a[r=5] ~~~ 7"
+                    ],
+                    "target": "holder"
+                  },
+              		"decrement_stack": {}
+                },
+                {
+                  "weight": 35,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                      "summon tome:curse_bolt ~~~",
+                      "tellraw @s {\"rawtext\":[{\"text\":\"The Scroll backfired and you hit yourself!\"}]}"
+                    ],
+                    "target": "holder"
+                  },
+                  "damage": {
+              			"type": "magic",
+              			"amount": 3,
+              			"target": "self"
+            		  },
+              		"decrement_stack": {}
+                }
+              ]
+            },
+            {
+            "condition": "query.scoreboard('block_magic') == 1 && query.remaining_durability >= 0",
+        "run_command": {
+            "command": [
+            "tellraw @s {\"rawtext\":[{\"text\":\"§8The Scroll's power is being blocked by an unknown force.\"}]}"
+            ],
+            "target": "holder"
+              }
+            },
+            {
+               "condition": "!query.scoreboard('curse') == 1",
+               "run_command": {
+                 "command": ["tellraw @s {\"rawtext\":[{\"text\":\"You do not have the required Knowledge to use this Scroll.\"}]}"],
+                 "target": "holder"
+               }
+            }
+          ]
+        }
+      }
+    }
+  }

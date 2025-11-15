@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tome:void_shark",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "default": "textures/entity/void_shark/void_shark"
+      },
+      "geometry": {
+        "default": "geometry.void_shark"
+      },
+      "animations": {
+        "idle": "animation.void_shark.move"
+      },
+      "scripts": {
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [ "controller.render.void_shark" ]
+    }
+  }
+}

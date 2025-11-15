@@ -1,0 +1,131 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      
+      "identifier": "tome:emerald_staff",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.staves"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:foil": false,
+      "minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 140,
+				"damage_chance": {
+					"min": 0,
+					"max": 0
+				}
+			},
+    	"minecraft:repairable": {
+    		"repair_items": [
+    			{
+    				"items": ["minecraft:gold_ingot"],
+    				"repair_amount": 2
+    			}
+    		]
+    	},
+			"minecraft:enchantable": {
+				"value": 4,
+				"slot": "sword"
+			},
+    	"minecraft:weapon": {
+    	  "on_hurt_entity": {
+			    "event": "damage"
+			  }
+    	},
+			"minecraft:damage": 6,
+      "minecraft:icon":{
+         "texture": "staff_3"
+      },
+      "minecraft:display_name": {
+         "value":"Emerald Staff"
+      },
+      "minecraft:cooldown":{
+        "category":"emerald_staff",
+        "duration": 1.5
+      },
+      "minecraft:on_use": {
+      "on_use": {
+          "event": "shoot",
+          "target": "self"
+          }
+        }
+      },
+      "events": {
+        "shoot": {
+				  "sequence": [
+				    {
+				      "condition": "!query.is_sneaking && query.remaining_durability > 1",
+				      "shoot": {
+				        "projectile": "tome:druid_ball",
+				        "launch_power": 1.5,
+				        "angle_offset": 0.5
+				      },
+				      "run_command": {
+				        "command": [
+				          "playsound block.sweet_berry_bush.break @a[r=6] ~~~ 6"
+				        ]
+				      },
+              "damage": {
+                "type": "none",
+                "amount": 1,
+                "target": "self"
+              }
+				    },
+				    {
+				      "condition": "query.is_sneaking && query.remaining_durability > 1",
+				      "run_command": {
+				        "command": [
+				          "particle tome:poison_wave ~~~",
+				          "effect @e[rm=1, r=6] poison 10 1 true",
+				          "playsound block.sweet_berry_bush.break @a[r=5] ~~~ 6"
+				        ]
+				      },
+              "damage": {
+                "type": "none",
+                "amount": 1,
+                "target": "self"
+              }
+				    },
+				    {
+				      "condition": "query.remaining_durability == 1",
+				      "randomize": [
+				        {
+				          "weight": 5,
+    				      "run_command": {
+    				        "command": [
+    				          "tellraw @s {\"rawtext\":[{\"text\":\"§aYour Staff broke...\"}]}"
+    				        ]
+    				      },
+                  "damage": {
+                    "type": "none",
+                    "amount": 5,
+                    "target": "self"
+                  }
+				        },
+				        {
+				          "weight": 95,
+    				      "run_command": {
+    				        "command": [
+    				          "tellraw @s {\"rawtext\":[{\"text\":\"§aYour Staff needs to be repaired.\"}]}"
+    				        ]
+    				      }
+				        }
+				      ]
+				    }
+          ]
+        },
+        "damage": {
+          "damage": {
+            "type": "none",
+            "amount": 1,
+            "target": "self"
+          }
+        }
+      }
+    }
+  }

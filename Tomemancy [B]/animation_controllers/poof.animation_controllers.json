@@ -1,0 +1,84 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+		"controller.animation.undead_poof": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"active": "query.skin_id == 1"
+						}
+					]
+				},
+				"active": {
+					"on_entry": ["/particle tome:return ~ ~ ~", "@s despawn"]
+				}
+			}
+		},
+		"controller.animation.forest_poof": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"active": "query.skin_id == 1"
+						}
+					]
+				},
+				"active": {
+					"on_entry": ["/particle tome:nature_return ~ ~ ~", "@s despawn"]
+				}
+			}
+		},
+		"controller.animation.wizard_poof": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"active": "query.skin_id == 1"
+						}
+					]
+				},
+				"active": {
+					"on_entry": ["/particle tome:nature_return ~ ~ ~", "@s despawn"]
+				}
+			}
+		},
+		"controller.animation.stage_x_fishy": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"stage_2": "query.health < 100"
+						}
+					]
+				},
+				"stage_2": {
+					"transitions": [
+						{
+							"default": "query.health > 101"
+						}
+					],
+					"on_entry": [
+					  "@s fishy_transform"
+					]
+				}
+			}
+		},
+		"controller.animation.spawn": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"death": "query.is_alive"
+						}
+					]
+				},
+				"death": {
+					"on_entry": [
+					  "@s deadeth"
+					]
+				}
+			}
+		}
+  }
+}

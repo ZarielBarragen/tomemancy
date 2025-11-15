@@ -1,0 +1,101 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "tome:absorb_scroll",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.scrolls_1"
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:foil": false,
+      "minecraft:hand_equipped": false,
+      "minecraft:icon":{
+         "texture":"nature_scroll"
+      },
+      "minecraft:display_name":{
+         "value":"Scroll of §2Absorb§r"
+      },
+
+      "minecraft:cooldown":{
+         "category":"tome:absorb",
+         "duration": 5.0
+      },
+      "minecraft:can_destroy_in_creative": false,
+         "minecraft:on_use":{
+            "on_use":{
+               "event":"absorb_life"
+            }
+         }
+      },
+      "events":{
+         "absorb_life":{
+            "sequence": [
+             {
+               "condition":"query.scoreboard('block_magic') == 0 && query.player_level >= 0 && query.scoreboard('plant') == 1 && query.relative_block_has_any_tag(0,-2,0,'grass') == 1",
+               "randomize": [
+                 {
+                   "weight": 965,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                     "effect @s absorption 10 1 true",
+                     "particle tome:absorb ~ ~ ~",
+                     "playsound block.sweet_berry_bush.break @a[r=5] ~~~ 7",
+                     "fill ~-1 ~-1 ~1 ~1 ~ ~-1 dirt 0 replace grass 0"
+                    ],
+                    "target": "holder"
+                   },
+              		"decrement_stack": {}
+                 },
+                 {
+                   "weight": 35,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                     "effect @s poison 5 0 true",
+                     "tellraw @s {\"rawtext\":[{\"text\":\"The Scroll backfired and you're poisoned!\"}]}"
+                    ],
+                    "target": "holder"
+                   },
+              		"decrement_stack": {}
+                 }
+               ]
+             },
+            {
+            "condition": "query.scoreboard('block_magic') == 1 && query.remaining_durability >= 0",
+        "run_command": {
+            "command": [
+            "tellraw @s {\"rawtext\":[{\"text\":\"§8The Scroll's power is being blocked by an unknown force.\"}]}"
+            ],
+            "target": "holder"
+              }
+            },
+            {
+               "condition": "!query.scoreboard('plant') == 1",
+               "run_command": {
+                 "command": ["tellraw @s {\"rawtext\":[{\"text\":\"You do not have the required Knowledge to use this Scroll.\"}]}"],
+                 "target": "holder"
+               }
+            },
+            {
+            "condition": "query.scoreboard('block_magic') == 0 && query.player_level >= 0 && query.scoreboard('plant') == 1 && query.relative_block_has_any_tag(0,-2,0,'grass') < 1",
+            "swing":{
+            },
+        "run_command": {
+            "command": [
+            "tellraw @s {\"rawtext\":[{\"text\":\"§aYou need to be standing on grass to use this Scroll\"}]}"
+            ],
+            "target": "holder"
+               }
+             }
+          ]
+        }
+      }
+    }
+  }

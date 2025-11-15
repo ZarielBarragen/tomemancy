@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "quartz_orb"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " X ",
+      "XSX",
+      " X "
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:quartz"
+      },
+      "S": {
+        "item": "tome:fire_bolt_scroll"
+      }
+    },
+    "result": {
+      "item": "tome:quartz_orb"
+    }
+  }
+}

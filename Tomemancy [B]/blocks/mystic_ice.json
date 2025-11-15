@@ -1,0 +1,36 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "tome:mystic_ice"
+        },
+        "components": {
+            "minecraft:ticking": {
+             "looping": false,
+             "range": [40, 45],
+          "on_tick": {
+          		"event": "disappear",
+    	      	"target": "self"
+    	      	}
+          },
+          "minecraft:unit_cube": {},
+          "minecraft:loot": "loot_tables/empty",
+          "minecraft:breathability": "air",
+	         "minecraft:explosion_resistance": 15,
+            "minecraft:destroy_time": 10,
+            "minecraft:friction": 0.25,
+            "minecraft:map_color": "#000000",
+            "minecraft:block_light_absorption": 0.0
+            },
+            "events": {
+              "disappear": {
+		           "run_command": {
+	  	        	"command": [
+	  	        	  "setblock ~ ~ ~ water replace", 
+	  	        	  "playsound random.glass @a[r=5] ~~~ 8"
+	  	        	]
+	      	   }
+        	}
+        }
+    }
+}

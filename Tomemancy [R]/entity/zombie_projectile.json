@@ -1,0 +1,16 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tome:zombie_projectile",
+      "materials": { "default": "zombie" },
+      "textures": {
+        "default": "textures/entity/transparent"
+      },
+      "geometry": {
+        "default": "geometry.projectile"
+      },
+      "render_controllers": [ "controller.render.default" ]
+    }
+  }
+}

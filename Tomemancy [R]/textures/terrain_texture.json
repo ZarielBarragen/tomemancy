@@ -1,0 +1,137 @@
+{
+    "num_mip_levels": 4,
+    "padding": 8,
+    "resource_pack_name": "vanilla",
+    "texture_data": {
+        "transparent": {
+            "textures": "textures/blocks/transparent"
+      },
+        "blood": {
+            "textures": "textures/blocks/blood_sigil"
+      },
+        "blood_conduit": {
+            "textures": "textures/blocks/blood_conduit"
+      },
+        "blood_conflagrate": {
+            "textures": "textures/blocks/blood_conflagrate"
+      },
+        "blood_fire": {
+            "textures": "textures/blocks/blood_fire"
+      },
+        "blood_lightning": {
+            "textures": "textures/blocks/blood_lightning"
+      },
+        "blood_water": {
+            "textures": "textures/blocks/blood_water"
+      },
+        "blood_ward": {
+            "textures": "textures/blocks/blood_ward"
+      },
+        "blood_poison": {
+            "textures": "textures/blocks/blood_poison"
+      },
+        "blood_wither": {
+            "textures": "textures/blocks/blood_wither"
+      },
+        "blood_explosion": {
+            "textures": "textures/blocks/blood_explosion"
+      },
+        "blood_levitate": {
+            "textures": "textures/blocks/blood_levitate"
+      },
+        "blood_nauseate": {
+            "textures": "textures/blocks/blood_nauseate"
+      },
+        "blood_abjure": {
+            "textures": "textures/blocks/blood_abjure"
+      },
+        "blood_shelter": {
+            "textures": "textures/blocks/blood_shelter"
+      },
+        "blood_sight": {
+            "textures": "textures/blocks/blood_sight"
+      },
+        "blood_slime": {
+            "textures": "textures/blocks/blood_slime"
+      },
+        "blood_speed": {
+            "textures": "textures/blocks/blood_speed"
+      },
+        "blood_strength": {
+            "textures": "textures/blocks/blood_strength"
+      },
+        "blood_regen": {
+            "textures": "textures/blocks/blood_regen"
+      },
+        "blood_web": {
+            "textures": "textures/blocks/blood_web"
+      },
+        "blood_weaken": {
+            "textures": "textures/blocks/blood_weaken"
+      },
+        "blood_rain": {
+            "textures": "textures/blocks/blood_rain"
+      },
+        "blood_clear": {
+            "textures": "textures/blocks/blood_clear"
+      },
+        "blood_thunder": {
+            "textures": "textures/blocks/blood_thunder"
+      },
+        "blood_damage": {
+            "textures": "textures/blocks/blood_damage"
+      },
+        "blood_heal": {
+            "textures": "textures/blocks/blood_heal"
+      },
+        "blood_barrier": {
+            "textures": "textures/blocks/blood_barrier"
+      },
+        "ritual_pentagram": {
+            "textures": "textures/blocks/blood_ritual"
+      },
+        "red_rune": {
+            "textures": "textures/items/runes/red"
+      },
+        "blue_rune": {
+            "textures": "textures/items/runes/blue"
+      },
+        "purple_rune": {
+            "textures": "textures/items/runes/purple"
+      },
+        "magenta_rune": {
+            "textures": "textures/items/runes/magenta"
+      },
+        "orange_rune": {
+            "textures": "textures/items/runes/orange"
+      },
+        "green_rune": {
+            "textures": "textures/items/runes/green"
+      },
+        "gray_rune": {
+            "textures": "textures/items/runes/gray"
+      },
+        "yellow_rune": {
+            "textures": "textures/items/runes/yellow"
+      },
+        "white_rune": {
+            "textures": "textures/items/runes/white"
+      },
+        "green_scroll_table": {
+            "textures": "textures/blocks/green_scroll_table"
+      },
+        "blue_scroll_table": {
+            "textures": "textures/blocks/blue_scroll_table"
+      },
+        "purple_scroll_table": {
+            "textures": "textures/blocks/purple_scroll_table"
+      },
+        "red_scroll_table": {
+            "textures": "textures/blocks/red_scroll_table"
+      },
+        "gib_table": {
+            "textures": "textures/blocks/tome_table"
+      }
+    },
+   "texture_name": "atlas.terrain"
+}

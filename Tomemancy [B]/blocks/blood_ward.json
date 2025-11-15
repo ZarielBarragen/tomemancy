@@ -1,0 +1,37 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "tome:blood_ward"
+        },
+        "components": {
+            "minecraft:material_instances": {
+                "*": {
+                    "render_method": "blend"
+                }
+            },
+            "minecraft:ticking": {
+             "looping": false,
+             "range": [20, 23],
+          "on_tick": {
+          		"event": "disappear",
+    	      	"target": "self"
+    	      	}
+          },
+          "minecraft:loot": "loot_tables/empty",
+	         "minecraft:unwalkable": true,
+	         "minecraft:explosion_resistance": 30000,
+            "minecraft:destroy_time": 999999999,
+            "minecraft:friction": 0.6,
+            "minecraft:map_color": "#830505",
+            "minecraft:block_light_absorption": 0.0
+            },
+            "events": {
+              "disappear": {
+		           "run_command": {
+	  	        	"command": ["setblock ~ ~ ~ air replace"]
+	      	   }
+        	}
+        }
+    }
+}

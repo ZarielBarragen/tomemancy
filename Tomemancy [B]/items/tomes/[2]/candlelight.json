@@ -1,0 +1,126 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "tome:candlelight",
+      "category": "Items"
+    },
+    
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.spells_2"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:foil": false,
+      "minecraft:hand_equipped": false,
+			"minecraft:durability": {
+				"max_durability": 384,
+				"damage_chance": {
+					"min": 0,
+					"max": 0
+				}
+			},
+    	"minecraft:repairable": {
+    		"repair_items": [
+    			{
+    				"items": ["minecraft:amethyst_shard", "minecraft:emerald"],
+    				"repair_amount": 2
+    			}
+    		]
+    	},
+      "minecraft:icon":{
+         "texture":"spell_4"
+      },
+      "minecraft:display_name":{
+         "value":"§cCandlelight\n§cPyromancy| |§aApprentice§r"
+      },
+
+      "minecraft:cooldown":{
+          "category":"candlelight",
+          "duration": 60
+      },
+      "minecraft:can_destroy_in_creative": false,
+         "minecraft:on_use":{
+            "on_use":{
+               "event":"fire"
+            }
+         }
+      },
+      "events":{
+        "fire":{
+          "sequence": [
+             {
+            "condition":"query.scoreboard('block_magic') == 0 && query.player_level >= 16 && query.scoreboard('fire') == 1 && query.remaining_durability >= 8",
+        "run_command": {
+            "command": [
+            "scoreboard players set @s candle_spell 1",
+            "playsound fire.ignite @a[r=5] ~~~ 7",
+            "tellraw @s {\"rawtext\":[{\"text\":\"§cYou now have the [Candlelight] effect for 45 seconds.\"}]}"
+            ],
+            "target": "holder"
+              },
+        		  "damage": {
+          			"type": "none",
+          			"amount": 8,
+          			"target": "self"
+          		  }
+             },
+            {
+               "condition": "query.player_level < 16",
+               "run_command": {
+                 "command": ["tellraw @s {\"rawtext\":[{\"text\":\"§aYour Experience Level must be at level [16] before you can use this Tome.\"}]}"],
+                 "target": "holder"
+               }
+            },
+            {
+               "condition": "!query.scoreboard('fire') == 1",
+               "run_command": {
+                 "command": ["tellraw @s {\"rawtext\":[{\"text\":\"§cYou do not have the required Knowledge to use this Tome.§r\"}]}"],
+                 "target": "holder"
+               }
+            },
+            {
+            "condition": "query.scoreboard('block_magic') == 0 && query.player_level >= 16 && query.scoreboard('fire') == 1 && query.remaining_durability <= 8",
+        "run_command": {
+            "command": [
+            "tellraw @s {\"rawtext\":[{\"text\":\"§8Your Tome crumbles before your eyes.\"}]}"
+            ],
+            "target": "holder"
+               },
+          		"damage": {
+          			"type": "none",
+          			"amount": 15,
+          			"target": "self"
+          		  }
+             },
+            {
+            "condition": "query.scoreboard('block_magic') == 1 && query.remaining_durability >= 0",
+        "run_command": {
+            "command": [
+            "tellraw @s {\"rawtext\":[{\"text\":\"§8The Tome's power is being blocked by an unknown force.\"}]}"
+            ],
+            "target": "holder"
+              }
+            },
+              {
+                "condition": "query.scoreboard('block_magic') == 0 && query.player_level >= 16 && query.remaining_durability > 1",
+                "randomize": [
+                  {
+                    "weight": 35,
+                    "run_command": {
+                      "command": [
+                        "xp 12 @s"
+                      ],
+                    "target": "holder"
+                    }
+                  },
+                  {
+                    "weight": 65
+                  }
+                ]
+              }
+          ]
+         }
+      }
+  }
+}

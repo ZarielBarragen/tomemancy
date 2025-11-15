@@ -1,0 +1,44 @@
+{
+   "format_version":"1.16.220",
+    "minecraft:entity": {
+     "description": {
+			"identifier": "tome:void_shark_spawning",
+			"is_spawnable": false,
+			"is_summonable": false,
+			"is_experimental": false
+        },
+        "component_groups": {
+            "tome:summon": {
+                "minecraft:transformation": {
+                    "into": "tome:void_shark<minecraft:entity_spawned>",
+                    "keep_owner": false,
+                    "delay": {
+                      "value": 1.16
+                    }
+                }
+            }
+        },
+        "components": {
+          "minecraft:scale":{
+            "value": 1.8
+          },
+          "minecraft:damage_sensor": {
+            "triggers": [
+              {
+                "cause": "all",
+                "deals_damage": false
+              }
+            ]
+          }
+        },
+        "events": {
+          "minecraft:entity_spawned": {
+            "add": {
+                "component_groups": [
+                    "tome:summon"
+               ]
+            }
+          }
+        }
+    }
+}

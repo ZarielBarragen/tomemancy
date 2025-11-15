@@ -1,0 +1,150 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "Archivist Shelduck",
+              "title": "Guide #1",
+              "pages": [
+                "{\"rawtext\":[ {\"translate\":\"guide.page.acknowledge\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page.topic_0\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page.one\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page.two\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page.three\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page.four\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page.five\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page.topic_1\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page2.one\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page2.two\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page2.three\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page2.four\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page.topic_2\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page3.one\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page3.two\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page3.three\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page3.four\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page3.five\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page3.six\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page3.seven\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page.topic_3\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page4.one\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page4.two\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page4.three\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page4.four\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"guide.page4.five\", \"with\":[\"\n\"]}]}"
+              ]
+            },
+            {
+              "function": "set_name",
+              "name": "§r§fTomenomica Historia"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "Archivist Shelduck",
+              "title": "Tome 101",
+              "pages": [
+                "{\"rawtext\":[ {\"translate\":\"tomemancy.one\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"tomemancy.two\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"tomemancy.three\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"tomemancy.four\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"tomemancy.five\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"tomemancy.six\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"tomemancy.seven\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"tomemancy.eight\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"tomemancy.nine\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"tomemancy.ten\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"tomemancy.eleven\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"tomemancy.twelve\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"tomemancy.thirteen\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"tomemancy.fourteen\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"tomemancy.fifteen\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"tomemancy.sixteen\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"tomemancy.seventeen\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"tomemancy.eighteen\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"tomemancy.nineteen\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"tomemancy.twenty\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"tomemancy.twenty_one\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"tomemancy.twenty_two\", \"with\":[\"\n\"]}]}"
+              ]
+            },
+            {
+              "function": "set_name",
+              "name": "§r§fTomemancy 101"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "tome:storage_tome",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "Backpack in a Tome! What could go wrong-?"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "Archivist Shelduck",
+              "title": "Scroll 101",
+              "pages": [
+                "{\"rawtext\":[ {\"translate\":\"scrolls.page1\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"scrolls.page2\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"scrolls.page3\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"scrolls.page4\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"scrolls.page5\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"scrolls.page6\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"scrolls.page7\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"scrolls.page8\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"scrolls.page9\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"scrolls.page10\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"scrolls.page11\", \"with\":[\"\n\"]}]}"
+              ]
+            },
+            {
+              "function": "set_name",
+              "name": "§r§fScrolls: Magical Lifesavers or Killers?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

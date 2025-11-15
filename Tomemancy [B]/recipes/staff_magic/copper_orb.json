@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "copper_orb"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " X ",
+      "XSX",
+      " X "
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:copper_ingot"
+      },
+      "S": {
+        "item": "tome:lightning_bolt_scroll"
+      }
+    },
+    "result": {
+      "item": "tome:copper_orb"
+    }
+  }
+}

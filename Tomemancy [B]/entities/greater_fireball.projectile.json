@@ -1,0 +1,110 @@
+{
+   "format_version":"1.13.0",
+   "minecraft:entity":{
+      "description":{
+         "identifier":"tome:greater_fireball",
+         "is_spawnable":false,
+         "is_summonable":true,
+         "is_experimental":false,
+         "runtime_identifier":"minecraft:snowball",
+         "scripts":{
+            "animate":[
+               "walk"
+            ]
+         },
+         "animations":{
+            "walk":"controller.animation.particles"
+         }
+        },
+      "component_groups": {
+         "minecraft:exploding": {
+          "minecraft:explode": {
+          "fuse_length": 0,
+          "fuse_lit": true,
+          "power": 2.0,
+          "causes_fire": true,
+          "breaks_blocks": true,
+          "fire_affected_by_griefing": false,
+          "destroy_affected_by_griefing": true
+        }
+      },
+      "die":{
+         "minecraft:instant_despawn":{
+          }
+       }
+    },
+      "components":{
+         "minecraft:collision_box":{
+            "width":0.2,
+            "height":0.2
+         },
+         "minecraft:timer":{
+            "time":2.0,
+            "time_down_event":{
+               "event":"kill"
+            }
+         },
+         "minecraft:projectile": {
+           
+           "on_hit": {
+               "impact_damage": {
+                "damage": 8,
+                "catch_fire": true,
+                "knockback": true
+              },
+             "definition_event": {
+              "affect_projectile": true,
+              "event_trigger": {
+              "event": "minecraft:explode",
+              "target": "self"
+              }
+             }
+            },
+            "power": 1.9,
+            "gravity": 0.004,
+            "inertia": 1,
+            "liquid_inertia": 0.1,
+            "uncertainty_base": 0,
+            "hit_sound": "fire.ignite",
+            "uncertainty_multiplier": 0,
+            "anchor": 1,
+            "offset": [ 0, -0.1, 0 ],
+            "catch_fire": true
+         },
+        "minecraft:despawn": {
+            "despawn_from_distance": {}
+          },
+  			"minecraft:environment_sensor": {
+  				"triggers": {
+  						"filters": {
+  							"test": "in_water",
+  							"value": true,
+  							"subject": "self"
+  						},
+  						"event": "kill"
+  					}
+  			},
+         "minecraft:physics":{
+         },
+         "minecraft:scale":{
+            "value":0.2
+         }
+      },
+      "events":{
+       "minecraft:explode":{
+            "add":{
+               "component_groups":[
+                  "minecraft:exploding"
+               ]
+            }
+         },
+      "kill":{
+            "add":{
+               "component_groups":[
+                  "die"
+               ]
+            }
+      }
+    }
+  }
+}

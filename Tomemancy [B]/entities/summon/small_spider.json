@@ -1,0 +1,184 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "tome:small_spider",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+			 "scripts":{
+            "animate":[
+               "poof"
+            ]
+         },
+         "animations":{
+            "poof":"controller.animation.forest_poof"
+        }
+    },
+
+
+    "component_groups": {
+        "despawned": {
+          "minecraft:instant_despawn":{
+          }
+        },
+        "die":{
+          "minecraft:skin_id": {
+            "value": 1
+           }
+         },
+         "tome:spider_tamed": {
+            "minecraft:is_tamed": {
+            },
+            "minecraft:behavior.hurt_by_target": {
+              "priority": 0,
+              "hurt_owner": false,
+              "must_see": false,
+              "max_dist": 32,
+              "walk_speed_multiplier": 1.0,
+              "sprint_speed_multiplier": 1.25
+            },
+            "minecraft:behavior.follow_owner": {
+              "priority": 6,
+              "speed_multiplier": 1.0,
+              "start_distance": 10,
+              "stop_distance": 4
+            },
+            "minecraft:behavior.leap_at_target": {
+              "priority": 1,
+              "yd": 0.4,
+              "must_be_on_ground": false
+            },
+            "minecraft:behavior.owner_hurt_by_target": {
+               "priority": 1
+            },
+            "minecraft:behavior.owner_hurt_target": {
+               "priority": 2
+            },
+            "minecraft:behavior.melee_attack": {
+              "priority": 0,
+              "track_target": true,
+              "reach_multiplier": 0.8
+            }
+        }
+    },
+
+    "components": {
+      "minecraft:is_hidden_when_invisible": {
+      },
+      "minecraft:type_family": {
+        "family": [ "spider", "summon", "arthropod" ]
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "on_damage": {
+            "filters": { "test": "has_damage", "value": "fatal" },
+            "event": "kill"
+          }
+        }
+      },
+      "minecraft:collision_box": {
+        "width": 0.8,
+        "height": 0.4
+      },
+      "minecraft:scale": {
+        "value": 0.4
+      },
+      "minecraft:health": {
+        "value": 8,
+        "max": 8
+      },
+      "minecraft:timer":{
+        "time":45.0,
+        "time_down_event":{
+        "event":"kill"
+        }
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:movement": {
+        "value": 0.35
+      },
+      "minecraft:navigation.climb": {
+        "can_path_over_water": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:attack": {
+        "damage": 2,
+        "effect_name": "poison",
+        "effect_duration": 5
+      },
+      "minecraft:behavior.float": {
+        "priority": 1
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 0.8
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 0,
+        "hurt_owner": false,
+        "must_see": false,
+        "max_dist": 32,
+        "walk_speed_multiplier": 1.0,
+        "sprint_speed_multiplier": 1.25
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+      }
+    },
+
+    "events": {
+      "kill":{
+            "add":{
+               "component_groups":[
+                  "die"
+               ]
+            }
+       },
+      "despawn":{
+        "add":{
+          "component_groups":[
+             "despawned"
+          ]
+        }
+      },
+      "tome:contracted":{
+            "add":{
+               "component_groups":[
+                  "tome:spider_tamed"
+               ]
+            }
+      }
+    }
+  }
+}

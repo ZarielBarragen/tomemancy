@@ -1,0 +1,51 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "tome:air_cushion",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§7A soft cushion of air to fall down on§r"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:lightning_bolt",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§7The gods are *not* happy-§r"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:downpour",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§7Low budget Rain Dance§r"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

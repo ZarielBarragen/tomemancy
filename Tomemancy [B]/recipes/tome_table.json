@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "tome:tome_crafting_table"
+    },
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " C ",
+      "ESE",
+      "OOO"
+    ],
+    "key": {
+      "C": {
+        "item": "minecraft:carpet",
+        "data": 0
+      },
+      "S": {
+        "item": "minecraft:gold_ingot"
+      },
+      "E": {
+        "item": "minecraft:amethyst_shard"
+      },
+      "O": {
+        "item": "minecraft:obsidian"
+      }
+    },
+    "result": {
+      "item": "tome:tome_table"
+    }
+  }
+} 

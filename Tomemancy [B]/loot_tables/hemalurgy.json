@@ -1,0 +1,39 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "Archivist Shelduck",
+              "title": "Hema 101",
+              "pages": [
+                "{\"rawtext\":[ {\"translate\":\"hema.page1\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"hema.page2\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"hema.page3\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"hema.page4\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"hema.page5\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"hema.page6\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"hema.page7\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"hema.page8\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"hema.page9\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"hema.page10\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"hema.page11\", \"with\":[\"\n\"]}]}",
+                "{\"rawtext\":[ {\"translate\":\"hema.page12\", \"with\":[\"\n\"]}]}"
+              ]
+            },
+            {
+              "function": "set_name",
+              "name": "§r§4A Hematurgist's Guide"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

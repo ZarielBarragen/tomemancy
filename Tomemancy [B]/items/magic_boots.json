@@ -1,0 +1,29 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "tome:magic_boots",
+			"category": "commands"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": false,
+			"minecraft:durability": {
+				"max_durability": 50
+			},
+			"minecraft:armor": {
+			  "protection": 2
+			},
+			"minecraft:wearable": {
+				"dispensable": true,
+				"slot": "slot.armor.feet"
+			},
+			"minecraft:icon": {
+				"texture": "aegis_feet"
+			},
+			"minecraft:display_name": {
+				"value": "Mystical Boots"
+			}
+		}
+		}
+	}

@@ -1,0 +1,36 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "tome:base_staff",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:foil": false,
+      "minecraft:hand_equipped": true,
+      "minecraft:render_offsets": {
+        "main_hand": {
+          "third_person": {
+            "position": [0.77,0.45,-1.05],
+            "scale": [0.15,0.15,0.15]
+          },
+         "first_person": {
+            "position": [0.5,0.5,0.5],
+            "rotation": [180, 75, 90],
+            "scale": [0.15,0.15,0.15]
+          }
+        }
+      },
+      "minecraft:icon":{
+         "texture":"staff"
+      },
+      "minecraft:display_name":{
+         "value":"Staff Base"
+      }
+    },
+    "events": {
+    }
+  }
+}

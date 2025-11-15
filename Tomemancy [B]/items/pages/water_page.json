@@ -1,0 +1,61 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "tome:water_page",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.pages"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:foil": true,
+      "minecraft:hand_equipped": false,
+      "minecraft:icon":{
+         "texture":"water_page"
+      },
+      "minecraft:display_name":{
+         "value":"§1Page of the Seas§r"
+      },
+
+      "minecraft:can_destroy_in_creative": false,
+         "minecraft:on_use":{
+            "on_use":{
+               "event":"choose"
+            }
+         }
+      },
+      "events":{
+         "choose":{
+            "sequence": [
+            {
+            "condition": "query.scoreboard('water') == 0",
+            "swing":{
+            },
+        "run_command": {
+            "command": [
+            "scoreboard players set @s water 1",
+            "loot give @s loot \"starter_spells/water\"",
+            "loot give @s loot \"starter_spells/water\"",
+            "tellraw @s {\"rawtext\":[{\"text\":\"§1You now have the knowledge of Hydromancy. Hydromantic Tomes are now available.§r\"}]}"
+            ],
+            "target": "holder"
+               },
+               "decrement_stack": {}
+             },
+              {
+                 "condition": "query.scoreboard('water') == 1",
+                 "run_command": {
+                   "command": [
+                     "tellraw @s {\"rawtext\":[{\"text\":\"§1You already have the knowledge of Hydromancy. This Page is now useless to you.§r\"}]}"
+                     ],
+                   "target": "holder"
+                 }
+              }
+            ]
+         }
+      }
+   }
+}

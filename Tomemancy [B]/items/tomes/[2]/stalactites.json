@@ -1,0 +1,132 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "tome:stalactites",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.spells_2"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:foil": false,
+      "minecraft:hand_equipped": false,
+			"minecraft:durability": {
+				"max_durability": 400,
+				"damage_chance": {
+					"min": 0,
+					"max": 0
+				}
+			},
+    	"minecraft:repairable": {
+    		"repair_items": [
+    			{
+    				"items": ["minecraft:amethyst_shard", "minecraft:ink_sac"],
+    				"repair_amount": 2
+    			}
+    		]
+    	},
+      "minecraft:icon":{
+         "texture":"spell_3"
+      },
+      "minecraft:display_name":{
+         "value":"§2Stalactite Fall\n§2Ecomancy| |§aApprentice§r"
+      },
+      "minecraft:cooldown":{
+         "category":"tome:fall",
+         "duration": 10
+      },
+      "minecraft:can_destroy_in_creative": false,
+         "minecraft:on_use":{
+            "on_use":{
+               "event":"fall"
+            }
+         }
+      },
+      "events":{
+         "fall":{
+            "sequence": [
+             {
+              "condition":"query.scoreboard('block_magic') == 0 && query.player_level >= 29 && query.scoreboard('plant') == 1 && query.remaining_durability > 1",
+            "swing":{
+            },
+            "run_command": {
+              "command": [
+                "scoreboard players add @s stalactite_spell 1",
+                "setblock ^^3^3 minecraft:pointed_dripstone 2 keep",
+                "setblock ^^3^4 minecraft:pointed_dripstone 2 keep",
+                "setblock ^^3^5 minecraft:pointed_dripstone 2 keep",
+                "setblock ^^3^6 minecraft:pointed_dripstone 2 keep",
+                "setblock ^^3^7 minecraft:pointed_dripstone 2 keep",
+                "setblock ^^3^8 minecraft:pointed_dripstone 2 keep",
+                "setblock ^^3^9 minecraft:pointed_dripstone 2 keep"
+                ],
+                "target": "holder"
+            },
+        		 "damage": {
+        			"type": "none",
+        			"amount": 1,
+        			"target": "self"
+        		   }
+           },
+            {
+               "condition": "query.player_level < 29",
+               "run_command": {
+                 "command": ["tellraw @s {\"rawtext\":[{\"text\":\"§aYour Experience Level must be at level [29] before you can use this Tome.\"}]}"],
+                 "target": "holder"
+               }
+            },
+            {
+               "condition": "!query.scoreboard('plant') == 1",
+               "run_command": {
+                 "command": ["tellraw @s {\"rawtext\":[{\"text\":\"§2You do not have the required Knowledge to use this Tome.§r\"}]}"],
+                 "target": "holder"
+               }
+            },
+            {
+            "condition": "query.scoreboard('block_magic') == 0 && query.player_level >= 29 && query.scoreboard('plant') == 1 && query.remaining_durability == 1",
+        "run_command": {
+            "command": [
+            "tellraw @s {\"rawtext\":[{\"text\":\"§8Your Tome crumbles before your eyes.\"}]}"
+            ],
+            "target": "holder"
+               },
+          		"damage": {
+          			"type": "none",
+          			"amount": 15,
+          			"target": "self"
+          		  }
+             },
+            {
+            "condition": "query.scoreboard('block_magic') == 1 && query.remaining_durability >= 0",
+        "run_command": {
+            "command": [
+            "tellraw @s {\"rawtext\":[{\"text\":\"§8The Tome's power is being blocked by an unknown force.\"}]}"
+            ],
+            "target": "holder"
+              }
+            },
+              {
+                "condition": "query.scoreboard('block_magic') == 0 && query.player_level >= 29 && query.remaining_durability > 1",
+                "randomize": [
+                  {
+                    "weight": 35,
+                    "run_command": {
+                      "command": [
+                        "xp 12 @s"
+                      ],
+                    "target": "holder"
+                    }
+                  },
+                  {
+                    "weight": 65
+                  }
+                ]
+              }
+          ]
+         }
+      }
+   }
+}

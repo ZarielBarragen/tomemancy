@@ -1,0 +1,358 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "tome:light",
+            "properties": {
+                "tome:dyes": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+                "tome:dyes_2": [0, 1]
+            }
+        },
+        "components": {
+            "minecraft:material_instances": {
+                "*": {
+                    "render_method": "blend",
+                    "face_dimming": true,
+                    "ambient_occlusion": true
+                }
+            },
+            "minecraft:on_interact": {
+             "event": "disappear",
+             "target": "self"
+	          },
+            "minecraft:ticking": {
+             "looping": true,
+             "range": [1, 1],
+          "on_tick": {
+          		"event": "particles",
+    	      	"target": "self"
+    	      	}
+          },
+          "minecraft:entity_collision": false,
+          "minecraft:pick_collision": {
+              "origin": [-8,0,-8],
+              "size": [16,16,16]
+          },
+          "minecraft:loot": "loot_tables/empty",
+	         "minecraft:explosion_resistance": 2,
+            "minecraft:destroy_time": 2000000,
+            "minecraft:friction": 0.6,
+            "minecraft:map_color": "#000000",
+            "minecraft:block_light_absorption": 0.0,
+            "minecraft:block_light_emission": 1.0
+            },
+            "events": {
+              "disappear": {
+                "sequence": [
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0",
+    		            "run_command": {
+    	  	        	  "command": ["setblock ~ ~ ~ air replace"]
+    	      	      }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0 && query.get_equipped_item_name('main_hand') == 'white_dye'",
+                    "set_block_property": {
+                      "tome:dyes": 0,
+                      "tome:dyes_2": 0
+                    },
+                   "decrement_stack": {
+                    }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0 && query.get_equipped_item_name('main_hand') == 'bonemeal'",
+                    "set_block_property": {
+                      "tome:dyes": 0,
+                      "tome:dyes_2": 0
+                    },
+                    "decrement_stack": {
+                    }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0 && query.get_equipped_item_name('main_hand') == 'ink_sac'",
+                    "set_block_property": {
+                      "tome:dyes": 1,
+                      "tome:dyes_2": 0
+                    },
+                    "decrement_stack": {
+                    }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0 && query.get_equipped_item_name('main_hand') == 'black_dye'",
+                    "set_block_property": {
+                      "tome:dyes": 1,
+                      "tome:dyes_2": 0
+                    },
+                    "decrement_stack": {
+                    }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0 && query.get_equipped_item_name('main_hand') == 'rose_red'",
+                    "set_block_property": {
+                      "tome:dyes": 2,
+                      "tome:dyes_2": 0
+                    },
+                    "decrement_stack": {
+                    }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0 && query.get_equipped_item_name('main_hand') == 'red_dye'",
+                    "set_block_property": {
+                      "tome:dyes": 2,
+                      "tome:dyes_2": 0
+                    },
+                    "decrement_stack": {
+                    }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0 && query.get_equipped_item_name('main_hand') == 'cactus_green'",
+                    "set_block_property": {
+                      "tome:dyes": 3,
+                      "tome:dyes_2": 0
+                    },
+                    "decrement_stack": {
+                    }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0 && query.get_equipped_item_name('main_hand') == 'green_dye'",
+                    "set_block_property": {
+                      "tome:dyes": 3,
+                      "tome:dyes_2": 0
+                    },
+                    "decrement_stack": {
+                    }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0 && query.get_equipped_item_name('main_hand') == 'cocoa_beans'",
+                    "set_block_property": {
+                      "tome:dyes": 4,
+                      "tome:dyes_2": 0
+                    },
+                    "decrement_stack": {
+                    }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0 && query.get_equipped_item_name('main_hand') == 'brown_dye'",
+                    "set_block_property": {
+                      "tome:dyes": 4,
+                      "tome:dyes_2": 0
+                    },
+                    "decrement_stack": {
+                    }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0 && query.get_equipped_item_name('main_hand') == 'lapis_lazuli'",
+                    "set_block_property": {
+                      "tome:dyes": 5,
+                      "tome:dyes_2": 0
+                    },
+                    "decrement_stack": {
+                    }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0 && query.get_equipped_item_name('main_hand') == 'blue_dye'",
+                    "set_block_property": {
+                      "tome:dyes": 5,
+                      "tome:dyes_2": 0
+                    },
+                    "decrement_stack": {
+                    }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0 && query.get_equipped_item_name('main_hand') == 'purple_dye'",
+                    "set_block_property": {
+                      "tome:dyes": 6,
+                      "tome:dyes_2": 0
+                    },
+                    "decrement_stack": {
+                    }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0 && query.get_equipped_item_name('main_hand') == 'cyan_dye'",
+                    "set_block_property": {
+                      "tome:dyes": 7,
+                      "tome:dyes_2": 0
+                    },
+                    "decrement_stack": {
+                    }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0 && query.get_equipped_item_name('main_hand') == 'light_gray_dye'",
+                    "set_block_property": {
+                      "tome:dyes": 8,
+                      "tome:dyes_2": 0
+                    },
+                    "decrement_stack": {
+                    }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0 && query.get_equipped_item_name('main_hand') == 'gray_dye'",
+                    "set_block_property": {
+                      "tome:dyes": 9,
+                      "tome:dyes_2": 0
+                    },
+                    "decrement_stack": {
+                    }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0 && query.get_equipped_item_name('main_hand') == 'pink_dye'",
+                    "set_block_property": {
+                      "tome:dyes": 10,
+                      "tome:dyes_2": 0
+                    },
+                    "decrement_stack": {
+                    }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0 && query.get_equipped_item_name('main_hand') == 'lime_dye'",
+                    "set_block_property": {
+                      "tome:dyes": 11,
+                      "tome:dyes_2": 0
+                    },
+                    "decrement_stack": {
+                    }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0 && query.get_equipped_item_name('main_hand') == 'dandelion_yellow'",
+                    "set_block_property": {
+                      "tome:dyes": 12,
+                      "tome:dyes_2": 0
+                    },
+                    "decrement_stack": {
+                    }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0 && query.get_equipped_item_name('main_hand') == 'yellow_dye'",
+                    "set_block_property": {
+                      "tome:dyes": 12,
+                      "tome:dyes_2": 0
+                    },
+                    "decrement_stack": {
+                    }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0 && query.get_equipped_item_name('main_hand') == 'light_blue_dye'",
+                    "set_block_property": {
+                      "tome:dyes": 13,
+                      "tome:dyes_2": 0
+                    },
+                    "decrement_stack": {
+                    }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0 && query.get_equipped_item_name('main_hand') == 'magenta_dye'",
+                    "set_block_property": {
+                      "tome:dyes": 14,
+                      "tome:dyes_2": 0
+                    },
+                    "decrement_stack": {
+                    }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') >= 0 && query.block_property('tome:dyes_2') >= 0 && query.get_equipped_item_name('main_hand') == 'orange_dye'",
+                    "set_block_property": {
+                      "tome:dyes": 0,
+                      "tome:dyes_2": 1
+                    },
+                    "decrement_stack": {
+                    }
+                  }
+                ]
+        	    },
+              "particles": {
+                "sequence": [
+                  {
+                    "condition": "query.block_property('tome:dyes') == 0 && query.block_property('tome:dyes_2') == 0",
+      		           "run_command": {
+      	  	        	"command": ["particle tome:light_spell ~ ~ ~"]
+      	      	     }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') == 2 && query.block_property('tome:dyes_2') == 0",
+      		           "run_command": {
+      	  	        	"command": ["particle tome:light_spell_red ~ ~ ~"]
+      	      	     }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') == 3 && query.block_property('tome:dyes_2') == 0",
+      		           "run_command": {
+      	  	        	"command": ["particle tome:light_spell_green ~ ~ ~"]
+      	      	     }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') == 4 && query.block_property('tome:dyes_2') == 0",
+      		           "run_command": {
+      	  	        	"command": ["particle tome:light_spell_brown ~ ~ ~"]
+      	      	     }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') == 5 && query.block_property('tome:dyes_2') == 0",
+      		           "run_command": {
+      	  	        	"command": ["particle tome:light_spell_blue ~ ~ ~"]
+      	      	     }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') == 6 && query.block_property('tome:dyes_2') == 0",
+      		           "run_command": {
+      	  	        	"command": ["particle tome:light_spell_purple ~ ~ ~"]
+      	      	     }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') == 7 && query.block_property('tome:dyes_2') == 0",
+      		           "run_command": {
+      	  	        	"command": ["particle tome:light_spell_cyan ~ ~ ~"]
+      	      	     }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') == 8 && query.block_property('tome:dyes_2') == 0",
+      		           "run_command": {
+      	  	        	"command": ["particle tome:light_spell_light_grey ~ ~ ~"]
+      	      	     }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') == 9 && query.block_property('tome:dyes_2') == 0",
+      		           "run_command": {
+      	  	        	"command": ["particle tome:light_spell_grey ~ ~ ~"]
+      	      	     }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') == 10 && query.block_property('tome:dyes_2') == 0",
+      		           "run_command": {
+      	  	        	"command": ["particle tome:light_spell_pink ~ ~ ~"]
+      	      	     }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') == 11 && query.block_property('tome:dyes_2') == 0",
+      		           "run_command": {
+      	  	        	"command": ["particle tome:light_spell_lime ~ ~ ~"]
+      	      	     }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') == 12 && query.block_property('tome:dyes_2') == 0",
+      		           "run_command": {
+      	  	        	"command": ["particle tome:light_spell_yellow ~ ~ ~"]
+      	      	     }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') == 13 && query.block_property('tome:dyes_2') == 0",
+      		           "run_command": {
+      	  	        	"command": ["particle tome:light_spell_light_blue ~ ~ ~"]
+      	      	     }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') == 14 && query.block_property('tome:dyes_2') == 0",
+      		           "run_command": {
+      	  	        	"command": ["particle tome:light_spell_magenta ~ ~ ~"]
+      	      	     }
+                  },
+                  {
+                    "condition": "query.block_property('tome:dyes') == 0 && query.block_property('tome:dyes_2') == 1",
+      		           "run_command": {
+      	  	        	"command": ["particle tome:light_spell_orange ~ ~ ~"]
+      	      	     }
+                  }
+                ]
+        	    }
+            }
+          }
+        }

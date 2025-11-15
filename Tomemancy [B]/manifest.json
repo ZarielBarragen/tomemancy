@@ -1,0 +1,24 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "§oMade by §b@SpicyShelduck§r & §a@TheGibberishOne§r",
+        "name": "Tomemancy",
+        "uuid": "3f948c87-5463-4b7a-b3ea-55fcd4ecb45b",
+        "version": [ 2, 0, 8 ],
+        "min_engine_version": [ 1, 21, 0 ]
+    },
+    "modules": [
+        {
+            "description": "",
+            "type": "data",
+            "uuid": "80330039-20e4-4b85-805f-d6af6a274681",
+            "version": [2, 0, 8]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "cbda2744-a815-478b-a087-127c4b510b41",
+            "version": [2, 0, 8]
+        }
+    ]
+}

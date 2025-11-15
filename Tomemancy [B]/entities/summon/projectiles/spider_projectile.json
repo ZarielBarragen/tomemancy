@@ -1,0 +1,94 @@
+{
+   "format_version":"1.16.220",
+    "minecraft:entity": {
+        "description": {
+			"identifier": "tome:spider_projectile",
+			"runtime_identifier": "minecraft:snowball",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			 "scripts":{
+            "animate":[
+               "walk",
+               "activate"
+            ]
+         },
+         "animations":{
+            "walk":"controller.animation.particles",
+            "activate":"controller.animation.f_summon"
+         }
+        },
+        "component_groups": {
+            "tome:summon": {
+                "minecraft:transformation": {
+                    "into": "tome:small_spider<tome:contracted>",
+                    "keep_owner": true,
+                    "delay": {
+                      "value": 2.0
+                    }
+                }
+            },
+             "idle": {
+              "minecraft:skin_id": {
+                  "value": 0
+              }
+            },
+            "activate": {
+              "minecraft:skin_id": {
+                  "value": 1
+              }
+            }
+        },
+        "components": {
+            "minecraft:projectile": {
+                "on_hit": {
+                    "impact_damage": {
+                      "damage": 0
+                      },
+                    "stick_in_ground": {
+                     "shake_time": 0.35
+                    },
+                    "definition_event": {
+                      "affect_projectile": true,
+                      "event_trigger": {
+                      "event": "tome:active",
+                      "target": "self"
+                      }
+                    }
+                },
+              "uncertainty_base": 10,
+              "uncertainty_multiplier": 2
+            },
+      			"minecraft:environment_sensor": {
+      				"triggers": {
+      						"filters": {
+      							"test": "in_water",
+      							"value": true,
+      							"subject": "self"
+      						},
+      						"event": "kill"
+      					}
+      			},
+          "minecraft:scale":{
+            "value":0.2
+          }
+        },
+        "events": {
+             "tome:active": {
+              "add": {
+                "component_groups": [
+                    "activate",
+                    "tome:summon"
+               ]
+            }
+          },
+          "minecraft:entity_spawned": {
+            "add": {
+                "component_groups": [
+                    "idle"
+               ]
+            }
+          }
+        }
+    }
+}

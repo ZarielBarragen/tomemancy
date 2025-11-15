@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "amethyst_orb"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " X ",
+      "XSX",
+      " X "
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:amethyst_shard"
+      },
+      "S": {
+        "item": "tome:druidic_missile_scroll"
+      }
+    },
+    "result": {
+      "item": "tome:amethyst_orb"
+    }
+  }
+}

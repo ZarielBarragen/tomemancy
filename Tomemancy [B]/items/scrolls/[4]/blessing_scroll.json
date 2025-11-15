@@ -1,0 +1,100 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "tome:blessing_scroll",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.scrolls_4"
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:foil": false,
+      "minecraft:hand_equipped": false,
+      "minecraft:icon":{
+         "texture":"light_scroll"
+      },
+      "minecraft:display_name":{
+         "value":"Scroll of §eBlessing§r"
+      },
+
+      "minecraft:cooldown":{
+         "category":"tome:blessing",
+         "duration": 40.0
+      },
+      "minecraft:can_destroy_in_creative": false,
+         "minecraft:on_use":{
+            "on_use":{
+               "event":"blessing"
+            }
+         }
+      },
+      "events":{
+         "blessing":{
+            "sequence": [
+              {
+            "condition": "query.scoreboard('block_magic') == 1 && query.remaining_durability >= 0",
+        "run_command": {
+            "command": [
+            "tellraw @s {\"rawtext\":[{\"text\":\"§8The Scroll's power is being blocked by an unknown force.\"}]}"
+            ],
+            "target": "holder"
+              }
+            },
+            {
+              "condition": "query.scoreboard('block_magic') == 0 && query.player_level >= 46 && query.scoreboard('light') == 1",
+              "randomize": [
+                {
+                  "weight": 965,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                      "effect @e[r=3] instant_health 1 1 true",
+                      "effect @e[r=3] regeneration 20 1 true",
+                      "execute @e[r=3] ~~~ particle tome:heal ~ ~ ~",
+                      "execute @e[r=3] ~~~ particle tome:light ~ ~ ~",
+                      "execute @a[r=3] ~~~ playsound mob.evocation_illager.cast_spell @a[r=5] ~ ~ ~ 7.0"
+                    ],
+                    "target": "holder"
+                  },
+              		"decrement_stack": {}
+                },
+                {
+                  "weight": 35,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                     "effect @s wither 9 0 true",
+                     "effect @s instant_damage 1 1 true",
+                      "execute @a[r=3] ~~~ playsound mob.evocation_illager.cast_spell @a[r=5] ~ ~ ~ 7.0",
+                     "tellraw @s {\"rawtext\":[{\"text\":\"The Scroll backfired and your healing somehow reversed-\"}]}"
+                    ],
+                    "target": "holder"
+                   },
+              		"decrement_stack": {}
+                }
+              ]
+            },
+            {
+               "condition": "!query.scoreboard('light') == 1",
+               "run_command": {
+                 "command": ["tellraw @s {\"rawtext\":[{\"text\":\"You do not have the required Knowledge to use this Scroll.\"}]}"],
+                 "target": "holder"
+               }
+            },
+            {
+               "condition": "query.player_level < 46",
+               "run_command": {
+                 "command": ["tellraw @s {\"rawtext\":[{\"text\":\"Your Tier is too low to cast this Scroll.\"}]}"],
+                 "target": "holder"
+               }
+            }
+          ]
+        }
+      }
+    }
+  }

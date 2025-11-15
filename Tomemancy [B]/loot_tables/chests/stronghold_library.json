@@ -1,0 +1,601 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 2,
+        "max": 10
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:paper",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 7
+              }
+            }
+          ],
+          "weight": 100
+        },
+        {
+          "type": "item",
+          "name": "minecraft:map",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:compass",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "weight": 60,
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "levels": 30,
+              "treasure": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "tome:acceleration",
+          "weight": 100,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:displace",
+          "weight": 95,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:magnetize",
+          "weight": 95,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:conceal",
+          "weight": 85,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:resistance",
+          "weight": 80,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:armor",
+          "weight": 75,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:vanish",
+          "weight": 70,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:blink",
+          "weight": 70,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:vanish",
+          "weight": 70,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:metal_skin",
+          "weight": 50,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:power_sacrifice",
+          "weight": 45,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:teleport",
+          "weight": 40,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:time_backward",
+          "weight": 35,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:time_forward",
+          "weight": 35,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:barrier",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:dragon_fireball",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+
+
+              ]
+            }
+          ]
+        },
+        {
+          "type": "empty",
+          "weight": 45
+        }
+      ]
+    },
+     {
+      "rolls": {
+        "min": 1,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "tome:acceleration_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 7
+              }
+            }
+          ],
+          "weight": 120
+        },
+        {
+          "type": "item",
+          "name": "tome:conceal_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 6
+              }
+            }
+          ],
+          "weight": 120
+        },
+        {
+          "type": "item",
+          "name": "tome:magnetize_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ],
+          "weight": 120
+        },
+        {
+          "type": "item",
+          "name": "tome:resistance_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ],
+          "weight": 120
+        },
+        {
+          "type": "item",
+          "name": "tome:aegis_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 85
+        },
+        {
+          "type": "item",
+          "name": "tome:vanish_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 6
+              }
+            }
+          ],
+          "weight": 85
+        },
+        {
+          "type": "item",
+          "name": "tome:blink_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 6
+              }
+            }
+          ],
+          "weight": 85
+        },
+        {
+          "type": "item",
+          "name": "tome:metal_skin_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 45
+        },
+        {
+          "type": "item",
+          "name": "tome:teleport_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ],
+          "weight": 45
+        },
+        {
+          "type": "item",
+          "name": "tome:barrier_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "tome:dragon_breath_scroll",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    },
+      {
+        "rolls": {
+          "min": 0,
+          "max": 2
+        },
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:written_book",
+            "weight": 10,
+            "functions": [
+              {
+                "function": "set_book_contents",
+                "author": "Simon I.",
+                "title": "Blood #22",
+                "pages": [
+                  "{\"rawtext\":[ {\"translate\":\"sigil.22.one\", \"with\":[\"\n\"]}]}"
+                ]
+              },
+              {
+                "function": "set_name",
+                "name": "§r§fSigil of Dislocation"
+              }
+            ]
+          },
+          {
+            "type": "empty",
+            "weight": 20
+          }
+        ]
+      }
+  ]
+}

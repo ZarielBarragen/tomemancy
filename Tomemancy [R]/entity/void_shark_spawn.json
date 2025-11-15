@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tome:void_shark_spawning",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "default": "textures/entity/void_shark/void_shark"
+      },
+      "geometry": {
+        "default": "geometry.void_shark"
+      },
+      "animations": {
+        "spawn": "animation.void_shark.spawn"
+      },
+      "scripts": {
+        "animate": [
+          "spawn"
+        ]
+      },
+      "render_controllers": [ "controller.render.void_shark" ],
+      "spawn_egg": {
+        "base_color": "#5b1ca9",
+        "overlay_color": "#390d64"
+      }
+    }
+  }
+}

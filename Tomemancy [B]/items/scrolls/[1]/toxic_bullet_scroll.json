@@ -1,0 +1,92 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "tome:toxic_bullet_scroll",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.scrolls_1"
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:foil": false,
+      "minecraft:hand_equipped": false,
+      "minecraft:icon":{
+         "texture":"nature_scroll"
+      },
+      "minecraft:display_name":{
+         "value":"Scroll of §2Toxic Bullet§r"
+      },
+
+      "minecraft:cooldown":{
+          "category":"toxic_bullet",
+          "duration": 1.5
+      },
+      "minecraft:can_destroy_in_creative": false,
+         "minecraft:on_use":{
+            "on_use":{
+               "event":"shoot"
+            }
+         }
+      },
+      "events":{
+         "shoot":{
+            "sequence": [
+             {
+               "condition":"query.scoreboard('block_magic') == 0 && query.player_level >= 0 && query.scoreboard('plant') == 1",
+               "randomize": [
+                 {
+                   "weight": 965,
+                  "swing":{
+                  },
+                  "shoot": {
+                    "projectile": "tome:toxic_bullet",
+                    "launch_power": 2.5,
+                    "angle_offset": 0.5
+                  },
+                  "run_command": {
+                    "command": [
+                     "playsound block.sweet_berry_bush.break @a[r=5] ~~~ 6"
+                    ],
+                    "target": "holder"
+                   },
+              		"decrement_stack": {}
+                 },
+                 {
+                   "weight": 35,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                     "effect @s poison 10 0 true",
+                     "tellraw @s {\"rawtext\":[{\"text\":\"The Scroll backfired and you're poisoned!\"}]}"
+                    ],
+                    "target": "holder"
+                   },
+              		"decrement_stack": {}
+                 }
+               ]
+             },
+             {
+            "condition": "query.scoreboard('block_magic') == 1 && query.remaining_durability >= 0",
+        "run_command": {
+            "command": [
+            "tellraw @s {\"rawtext\":[{\"text\":\"§8The Scroll's power is being blocked by an unknown force.\"}]}"
+            ],
+            "target": "holder"
+              }
+            },
+            {
+               "condition": "!query.scoreboard('plant') == 1",
+               "run_command": {
+                 "command": ["tellraw @s {\"rawtext\":[{\"text\":\"You do not have the required Knowledge to use this Scroll.\"}]}"],
+                 "target": "holder"
+               }
+            }
+          ]
+        }
+      }
+    }
+  }

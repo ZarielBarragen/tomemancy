@@ -1,0 +1,854 @@
+{
+  "tiers": [
+   {
+      "total_exp_required": 0,
+      "groups": [
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:leather",
+                  "quantity": {
+                    "min": 2,
+                    "max": 5
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 2,
+              "max_uses": 35,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:bone",
+                  "quantity": {
+                    "min": 5,
+                    "max": 10
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 3,
+              "max_uses": 35,
+              "reward_exp": true
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:paper",
+                  "quantity": {
+                    "min": 12,
+                    "max": 24
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 2
+                }
+              ],
+              "trader_exp": 3,
+              "max_uses": 35,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:feather",
+                  "quantity": {
+                    "min": 3,
+                    "max": 6
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 3,
+              "max_uses": 35,
+              "reward_exp": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "total_exp_required": 15,
+      "groups": [
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:spider_eye",
+                  "quantity": {
+                    "min": 5,
+                    "max": 16
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:sugar",
+                  "quantity": 6,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 3,
+              "max_uses": 16,
+              "reward_exp": true
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:written_book",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "set_book_contents",
+                      "author": "M. T. Void",
+                      "title": "Tome #1",
+                      "pages": [
+                        "{\"rawtext\":[ {\"translate\":\"page.blank\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.topic\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.two\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.three\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.four\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.five\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.five.two\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.five.three\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.five.four\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.six\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.six.two\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.six.three\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.six.four\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.six.five\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.seven\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.seven.two\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.eight\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.nine\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.ten\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.eleven\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.eleven.two\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.eleven.three\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.twelve\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.thirteen\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.fourteen\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.fifteen\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.sixteen\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.seventeen\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.eighteen\", \"with\":[\"\n\"]}]}",
+                        "{\"rawtext\":[ {\"translate\":\"tome.page.nineteen\", \"with\":[\"\n\"]}]}"
+                      ]
+                    }, 
+                    {
+                      "function": "set_name",
+                      "name": "§r§fThe Basic Tomepedia"
+                    }
+                  ]
+                }
+              ],
+              "trader_exp": 15,
+              "max_uses": 3,
+              "reward_exp": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "total_exp_required": 84,
+      "groups": [
+        {
+          "num_to_select": 2,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": {
+                    "min": 2,
+                    "max": 6
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tome:absorb",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 6,
+              "max_uses": 6,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": {
+                    "min": 2,
+                    "max": 6
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tome:ground",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 6,
+              "max_uses": 6,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": {
+                    "min": 2,
+                    "max": 6
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tome:douse",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 6,
+              "max_uses": 6,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": {
+                    "min": 2,
+                    "max": 6
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tome:ignite",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 6,
+              "max_uses": 6,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": {
+                    "min": 2,
+                    "max": 6
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tome:light",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 6,
+              "max_uses": 6,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": {
+                    "min": 2,
+                    "max": 6
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tome:downpour",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 6,
+              "max_uses": 6,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": {
+                    "min": 2,
+                    "max": 6
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tome:tunnel",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 6,
+              "max_uses": 6,
+              "reward_exp": true
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:nautilus_shell",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4
+                }
+              ],
+              "trader_exp": 6,
+              "max_uses": 18,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:blaze_powder",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 6
+                }
+              ],
+              "trader_exp": 3,
+              "max_uses": 18,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:blaze_powder",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 4
+                }
+              ],
+              "trader_exp": 2,
+              "max_uses": 18,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:blaze_powder",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 2
+                }
+              ],
+              "trader_exp": 1,
+              "max_uses": 18,
+              "reward_exp": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "total_exp_required": 180,
+      "groups": [
+        {
+          "num_to_select": 3,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": {
+                    "min": 5,
+                    "max": 10
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tome:acceleration",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 5,
+              "max_uses": 8,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": {
+                    "min": 5,
+                    "max": 10
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tome:air_cushion",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 5,
+              "max_uses": 8,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": {
+                    "min": 5,
+                    "max": 10
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tome:cauterize",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 5,
+              "max_uses": 8,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": {
+                    "min": 5,
+                    "max": 10
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tome:combust",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 5,
+              "max_uses": 8,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": {
+                    "min": 5,
+                    "max": 10
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tome:curse_bolt",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 5,
+              "max_uses": 8,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": {
+                    "min": 5,
+                    "max": 10
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tome:foliage_dome",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 5,
+              "max_uses": 8,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": {
+                    "min": 5,
+                    "max": 10
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tome:druidic_missile",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 5,
+              "max_uses": 8,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": {
+                    "min": 5,
+                    "max": 10
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tome:heal",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 5,
+              "max_uses": 8,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": {
+                    "min": 5,
+                    "max": 10
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tome:magnetize",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 5,
+              "max_uses": 8,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": {
+                    "min": 5,
+                    "max": 10
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tome:conceal",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 5,
+              "max_uses": 8,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": {
+                    "min": 5,
+                    "max": 10
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tome:water_ball",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 5,
+              "max_uses": 8,
+              "reward_exp": true
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:book",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 3
+                }
+              ],
+              "trader_exp": 6,
+              "max_uses": 20,
+              "reward_exp": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "total_exp_required": 320,
+      "groups": [
+        {
+          "num_to_select": 4,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": {
+                    "min": 8,
+                    "max": 14
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tome:lightning_bolt",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 9,
+              "max_uses": 10,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": {
+                    "min": 8,
+                    "max": 14
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tome:boulder_shot",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 8,
+              "max_uses": 10,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": {
+                    "min": 8,
+                    "max": 14
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tome:toxic_bullet",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 8,
+              "max_uses": 10,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": {
+                    "min": 8,
+                    "max": 14
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tome:summon_zombie",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 8,
+              "max_uses": 10,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": {
+                    "min": 8,
+                    "max": 14
+                  },
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "tome:summon_skeleton",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 8,
+              "max_uses": 10,
+              "reward_exp": true
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:scute",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 8
+                }
+              ],
+              "trader_exp": 6,
+              "max_uses": 20,
+              "reward_exp": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

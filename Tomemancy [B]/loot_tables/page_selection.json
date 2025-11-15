@@ -1,0 +1,129 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "tome:fire_page",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§cGrants Knowledge concerning the art of Pyromancy§r"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:water_page",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§bGrants Knowledge concerning the art of Hydromancy§r"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:plant_page",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§2Grants Knowledge concerning the art of Ecomancy§r"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:wind_page",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§7Grants Knowledge concerning the art of Aeromancy§r"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:light_page",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§eGrants Knowledge concerning the art of Lumomancy§r"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:curse_page",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§8Grants Knowledge concerning the art of Fulmamancy§r"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:mystic_page",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§dGrants Knowledge concerning the art of Mystomancy§r"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:undead_page",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§5Grants Knowledge concerning the art of Necromancy§r"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tome:all_page",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "§kThe Power You Seek Shall Come To You§r"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

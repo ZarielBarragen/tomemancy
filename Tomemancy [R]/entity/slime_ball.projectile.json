@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "tome:slime_ball",
+			"materials": {
+				"default": "zombie"
+			},
+			"textures": {
+				"default": "textures/items/slimeball"
+			},
+			"geometry": {
+				"default": "geometry.fireball"
+			},
+			"animations": {
+				"face_player": "animation.actor.billboard"
+			},
+			"scripts": {
+				"scale": 0.6,
+				"animate": [
+					"face_player"
+				]
+			},
+			"render_controllers": [
+				"controller.render.fireball"
+			]
+		}
+	}
+}

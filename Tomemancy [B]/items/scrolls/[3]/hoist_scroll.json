@@ -1,0 +1,96 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+
+      "identifier": "tome:hoist_scroll",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:creative_category": {
+        "parent": "itemGroup.name.scrolls_3"
+      },
+      "minecraft:max_stack_size": 16,
+      "minecraft:foil": false,
+      "minecraft:hand_equipped": false,
+      "minecraft:icon":{
+         "texture":"storm_scroll"
+      },
+      "minecraft:display_name":{
+         "value":"Scroll of §7Hoist§r"
+      },
+
+      "minecraft:cooldown":{
+          "category":"hoist",
+          "duration": 3
+      },
+      "minecraft:can_destroy_in_creative": false,
+         "minecraft:on_use":{
+            "on_use":{
+               "event":"hoist"
+            }
+         }
+      },
+      "events":{
+         "hoist":{
+            "sequence": [
+              {
+            "condition": "query.scoreboard('block_magic') == 1 && query.remaining_durability >= 0",
+        "run_command": {
+            "command": [
+            "tellraw @s {\"rawtext\":[{\"text\":\"§8The Scroll's power is being blocked by an unknown force.\"}]}"
+            ],
+            "target": "holder"
+              }
+            },
+             {
+               "condition":"query.scoreboard('block_magic') == 0 && query.player_level >= 31 && query.scoreboard('wind') == 1",
+               "randomize": [
+                 {
+                   "weight": 965,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                     "effect @e[rm=1, r=5] levitation 1 40 false",
+                     "playsound mob.evocation_illager.cast_spell @a[r=5] ~ ~ ~ 7.0"
+                    ],
+                    "target": "holder"
+                   },
+              		"decrement_stack": {}
+                 },
+                 {
+                   "weight": 35,
+                  "swing":{
+                  },
+                  "run_command": {
+                    "command": [
+                     "effect @s levitation 1 40 false",
+                     "playsound mob.evocation_illager.cast_spell @a[r=5] ~ ~ ~ 7.0",
+                     "tellraw @s {\"rawtext\":[{\"text\":\"The Scroll backfired and you've hoisted yourself!\"}]}"
+                    ],
+                    "target": "holder"
+                   },
+              		"decrement_stack": {}
+                 }
+               ]
+             },
+            {
+               "condition": "!query.scoreboard('wind') == 1",
+               "run_command": {
+                 "command": ["tellraw @s {\"rawtext\":[{\"text\":\"You do not have the required Knowledge to use this Scroll.§r\"}]}"],
+                 "target": "holder"
+               }
+            },
+            {
+               "condition": "query.player_level < 31",
+               "run_command": {
+                 "command": ["tellraw @s {\"rawtext\":[{\"text\":\"Your Tier is too low to cast this Scroll.\"}]}"],
+                 "target": "holder"
+               }
+            }
+          ]
+        }
+      }
+    }
+  }

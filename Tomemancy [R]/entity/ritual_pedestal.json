@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tome:ritual_pedestal",
+      "materials": {
+        "default": "armor_stand"
+      },
+      "textures": {
+        "default": ""
+      },
+      "animations": {
+        "flying": "animation.actor.billboard"
+      },
+      "scripts": {
+        "animate": [
+          "flying"
+        ]
+      },
+      "geometry": {
+        "default": "geometry.item_ritual_pedestal"
+      },
+      "render_controllers": [ "controller.render.default" ],
+      "enable_attachables": true
+    }
+  }
+}

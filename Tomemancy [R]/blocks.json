@@ -1,0 +1,89 @@
+{
+    "format_version": [ 1, 1, 0 ],
+    "tome:mystic_dirt": {
+      "textures": "dirt",
+      "sound": "gravel"
+    },
+    "tome:mystic_stone": {
+      "textures": "stone",
+      "sound": "stone"
+    },
+    "tome:mystic_deepslate": {
+      "textures": "cobbled_deepslate",
+      "sound": "deepslate"
+    },
+    "tome:mystic_obsidian": {
+      "textures": "obsidian",
+      "sound": "stone"
+    },
+    "tome:mystic_ice": {
+      "textures": "frosted_ice",
+      "sound": "glass"
+    },
+    "tome:magic_magma": {
+      "textures": "magma",
+      "sound": "stone"
+    },
+    "tome:wizard_sigil": {
+      "textures": "dirt",
+      "sound": "gravel"
+    },
+    "tome:light": {
+      "textures": "transparent"
+    },
+    "tome:candlelight": {
+      "textures": "transparent"
+    },
+    "tome:barrier_block": {
+      "textures": "transparent"
+    },
+    "tome:blood_sigil": {
+      "textures": "blood_sigil"
+    },
+    "tome:ritual_circle": {
+      "textures": "ritual_pentagram"
+    },
+    "tome:blood_ward": {
+      "textures": "blood_barrier"
+    },
+    "tome:red_rune": {
+      "carried_textures": "red_rune",
+      "textures": "red_rune"
+    },
+    "tome:blue_rune": {
+      "carried_textures": "blue_rune",
+      "textures": "blue_rune"
+    },
+    "tome:purple_rune": {
+      "carried_textures": "purple_rune",
+      "textures": "purple_rune"
+    },
+    "tome:yellow_rune": {
+      "carried_textures": "yellow_rune",
+      "textures": "yellow_rune"
+    },
+    "tome:magenta_rune": {
+      "carried_textures": "magenta_rune",
+      "textures": "magenta_rune"
+    },
+    "tome:gray_rune": {
+      "carried_textures": "gray_rune",
+      "textures": "gray_rune"
+    },
+    "tome:green_rune": {
+      "carried_textures": "green_rune",
+      "textures": "green_rune"
+    },
+    "tome:orange_rune": {
+      "carried_textures": "orange_rune",
+      "textures": "orange_rune"
+    },
+    "tome:white_rune": {
+      "carried_textures": "white_rune",
+      "textures": "white_rune"
+    },
+    "tome:scroll_table": {
+      "textures": "green_scroll_table",
+      "sound": "stone"
+    }
+}
