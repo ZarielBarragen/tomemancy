@@ -18,12 +18,15 @@
 				"dispensable": true,
 				"slot": "slot.armor.chest"
 			},
-			"minecraft:icon": {
-				"texture": "aegis_chest"
-			},
-			"minecraft:display_name": {
-				"value": "Mystical Chestplate"
-			}
-		}
-		}
-	}
+                        "minecraft:icon": {
+                                "texture": "aegis_chest"
+                        },
+                        "minecraft:display_name": {
+                                "value": "Mystical Chestplate"
+                        },
+                        "minecraft:item_lock": {
+                                "mode": "lock_in_slot"
+                        }
+                }
+                }
+        }

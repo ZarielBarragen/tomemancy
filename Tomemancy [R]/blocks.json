@@ -82,7 +82,7 @@
       "carried_textures": "white_rune",
       "textures": "white_rune"
     },
-    "tome:scroll_table": {
+    "tome:tome_table": {
       "textures": "green_scroll_table",
       "sound": "stone"
     }
