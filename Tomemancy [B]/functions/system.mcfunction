@@ -85,23 +85,23 @@ scoreboard objectives add aegis_active dummy aegis_active
 execute as @e[scores={aegis_spell=1..}] run scoreboard players add @s aegis_spell 1
 execute as @e[scores={aegis_spell=1..}] run scoreboard players add @s aegis_active 1
 
-execute as @e[scores={aegis_active=1}] run item replace entity @s armor.head tome:magic_helmet 1 {"minecraft:item_lock":{ "mode": "lock_in_slot" }}
+execute as @e[scores={aegis_active=1}] run replaceitem entity @s slot.armor.head 0 tome:magic_helmet 1 0
 
-execute as @e[scores={aegis_active=1}] run item replace entity @s armor.chest tome:magic_chestplate 1 {"minecraft:item_lock":{ "mode": "lock_in_slot" }}
+execute as @e[scores={aegis_active=1}] run replaceitem entity @s slot.armor.chest 0 tome:magic_chestplate 1 0
 
-execute as @e[scores={aegis_active=1}] run item replace entity @s armor.legs tome:magic_leggings 1 {"minecraft:item_lock":{ "mode": "lock_in_slot" }}
+execute as @e[scores={aegis_active=1}] run replaceitem entity @s slot.armor.legs 0 tome:magic_leggings 1 0
 
-execute as @e[scores={aegis_active=1}] run item replace entity @s armor.feet tome:magic_boots 1 {"minecraft:item_lock":{ "mode": "lock_in_slot" }}
+execute as @e[scores={aegis_active=1}] run replaceitem entity @s slot.armor.feet 0 tome:magic_boots 1 0
 
 execute as @e[scores={aegis_spell=500}] run tellraw @s {"rawtext":[{"text":"§d||Your [Aegis] effect has worn off. Your magical armor slowly disintegrates.||§r"}]}
 
-execute as @e[scores={aegis_spell=500..}] run clear @s tome:magic_helmet
+execute as @e[scores={aegis_spell=500..}] run replaceitem entity @s slot.armor.head 0 air 1 0
 
-execute as @e[scores={aegis_spell=500..}] run clear @s tome:magic_chestplate
+execute as @e[scores={aegis_spell=500..}] run replaceitem entity @s slot.armor.chest 0 air 1 0
 
-execute as @e[scores={aegis_spell=500..}] run clear @s tome:magic_leggings
+execute as @e[scores={aegis_spell=500..}] run replaceitem entity @s slot.armor.legs 0 air 1 0
 
-execute as @e[scores={aegis_spell=500..}] run clear @s tome:magic_boots
+execute as @e[scores={aegis_spell=500..}] run replaceitem entity @s slot.armor.feet 0 air 1 0
 
 execute as @e[scores={aegis_spell=501..}] run scoreboard players set @s aegis_spell 0
 execute as @e[scores={aegis_spell=501..}] run scoreboard players set @s aegis_active 0
@@ -119,9 +119,9 @@ execute as @e[scores={fire_ward_time=11..}] run scoreboard players set @s fire_w
 
 execute as @e[scores={fire_ward_spell=1.., fire_ward_time=10}] run execute as @e[r=3, family=monster] run damage @s 1 fire
 
-execute as @e[scores={fire_ward_spell=1.., fire_ward_time=10}] if block ~~~ web run setblock ~ ~ ~ air 0
+execute as @e[scores={fire_ward_spell=1.., fire_ward_time=10}] if block ~~~ web run setblock ~ ~ ~ air
 
-execute as @e[scores={fire_ward_spell=1.., fire_ward_time=10}] if block ~ ~1 ~ web run setblock ~ ~1 ~ air 0
+execute as @e[scores={fire_ward_spell=1.., fire_ward_time=10}] if block ~ ~1 ~ web run setblock ~ ~1 ~ air
 
 execute as @e[scores={fire_ward_spell=1.., fire_ward_time=10}] run particle tome:flame_ward ~ ~1 ~
 
@@ -234,7 +234,7 @@ execute as @e[scores={candle_spell=1..}] run scoreboard players add @s candle_sp
 execute as @e[scores={candle_spell=1..}] run scoreboard players add @s candle_timer 1
 execute as @e[scores={candle_timer=11..}] run scoreboard players set @s candle_timer 0
 
-execute at @e[scores={candle_spell=1..}] run setblock ~ ~2 ~ tome:candlelight 0 keep
+execute at @e[scores={candle_spell=1..}] run setblock ~ ~2 ~ tome:candlelight keep
 execute at @e[scores={candle_spell=1.., candle_timer=10}] run particle tome:candle_flame ~ ~2 ~
 
 execute as @e[scores={candle_spell=400}] run tellraw @s {"rawtext":[{"text":"§e||You have 20 seconds of Candlelight remaining||§r"}]}

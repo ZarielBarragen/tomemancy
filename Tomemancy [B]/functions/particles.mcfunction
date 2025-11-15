@@ -4,10 +4,10 @@ execute as @e[type=tome:explode] run particle tome:flame ^ ^0.1 ^
 execute as @e[type=tome:meteor] run particle tome:fireball ^ ^0.2 ^
 
 execute as @e[type=tome:water_blast] run particle tome:water_dart ^ ^0.1 ^
-execute as @e[type=tome:water_blast] run fill ~1 ~-1 ~-1 ~-1 ~1 ~1 air 0 replace fire 51
+execute as @e[type=tome:water_blast] run fill ~1 ~-1 ~-1 ~-1 ~1 ~1 air replace fire
 
 execute as @e[type=tome:water_ball] run particle tome:water_dart ^ ^0.1 ^
-execute as @e[type=tome:water_ball] run fill ~ ~-1 ~ ~ ~ ~ air 0 replace fire 51
+execute as @e[type=tome:water_ball] run fill ~ ~-1 ~ ~ ~ ~ air replace fire
 
 
 execute as @e[type=tome:piercing_water] run particle tome:water_trail ^ ^0.1 ^
@@ -51,7 +51,7 @@ execute as @e[type=tome:drown_ball] run particle tome:bubbles ^ ^0.1 ^
 execute as @e[type=tome:freezing_bolt] run particle tome:frost ^ ^0.1 ^
 
 execute as @e[type=tome:frost_blast] run particle tome:frost ^ ^0.1 ^
-execute as @e[type=tome:frost_blast] if block ~ ~-1 ~ water run fill ~-2 ~ ~2 ~2 ~ ~-2 frosted_ice 0 replace water 0
+execute as @e[type=tome:frost_blast] if block ~ ~-1 ~ water run fill ~-2 ~ ~2 ~2 ~ ~-2 frosted_ice replace water
 
 
 

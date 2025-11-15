@@ -18,12 +18,15 @@
 				"dispensable": true,
 				"slot": "slot.armor.legs"
 			},
-			"minecraft:icon": {
-				"texture": "aegis_legs"
-			},
-			"minecraft:display_name": {
-				"value": "Mystical Leggings"
-			}
-		}
-		}
-	}
+                        "minecraft:icon": {
+                                "texture": "aegis_legs"
+                        },
+                        "minecraft:display_name": {
+                                "value": "Mystical Leggings"
+                        },
+                        "minecraft:item_lock": {
+                                "mode": "lock_in_slot"
+                        }
+                }
+                }
+        }

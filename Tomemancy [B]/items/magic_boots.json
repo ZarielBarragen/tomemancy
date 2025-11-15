@@ -18,12 +18,15 @@
 				"dispensable": true,
 				"slot": "slot.armor.feet"
 			},
-			"minecraft:icon": {
-				"texture": "aegis_feet"
-			},
-			"minecraft:display_name": {
-				"value": "Mystical Boots"
-			}
-		}
-		}
-	}
+                        "minecraft:icon": {
+                                "texture": "aegis_feet"
+                        },
+                        "minecraft:display_name": {
+                                "value": "Mystical Boots"
+                        },
+                        "minecraft:item_lock": {
+                                "mode": "lock_in_slot"
+                        }
+                }
+                }
+        }

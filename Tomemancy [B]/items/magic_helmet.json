@@ -18,12 +18,15 @@
 				"dispensable": true,
 				"slot": "slot.armor.head"
 			},
-			"minecraft:icon": {
-				"texture": "aegis_head"
-			},
-			"minecraft:display_name": {
-				"value": "Mystical Helmet"
-			}
-		}
-		}
-	}
+                        "minecraft:icon": {
+                                "texture": "aegis_head"
+                        },
+                        "minecraft:display_name": {
+                                "value": "Mystical Helmet"
+                        },
+                        "minecraft:item_lock": {
+                                "mode": "lock_in_slot"
+                        }
+                }
+                }
+        }
